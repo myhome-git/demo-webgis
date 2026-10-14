@@ -1,10 +1,8 @@
-# Cloudflare Pages _redirects 配置（最终版 - 地址栏保持 main.html）
-# 仅使用 200 内部重写（服务端直接返回目标内容，不产生客户端重定向请求）
+# Cloudflare Pages _redirects 配置（循环修复版）
+# 仅保留一条 200 内部重写规则
+# 注意：严禁写"自指向"规则（如 main.html -> main.html），那会导致无限循环
+# 注意：严禁写 .html 与无后缀 URL 的互相重写，那会与默认 Clean URL 构成闭环
 
-# 1. 访问 /zhts/html/main.html 时：200 直接返回内容，地址栏保持 main.html
-#    此规则优先于 Cloudflare 默认 Clean URL 的 301（.html -> 无后缀），阻止地址栏变成 /main
-/zhts/html/main.html  /zhts/html/main.html  200
-
-# 2. 若直接访问无后缀 /zhts/html/main：200 内部重写为 main.html，地址栏保持 /main
-#    同样用 200（而非 307），避免与 Cloudflare Clean URL 形成循环
-/zhts/html/main  /zhts/html/main.html  200
+# 访问 /zhts/html/main（无后缀）时：200 内部重写为 main.html 内容
+# 地址栏保持无后缀 /main —— 这是 Cloudflare Pages 默认 Clean URL 的最终形态
+#/zhts/html/main  /zhts/html/main.html  200
