@@ -1,0 +1,354 @@
+input[disabled], fieldset[disabled] input, textarea[disabled], fieldset[disabled] textarea, button[disabled]{
+	background: #dcdbdb;
+}
+.diy-scrollbar{
+	width: 100%;
+	height: 100%;
+}
+.layui-tab{
+	margin: 0;
+	color: #fff;
+}
+.layui-tab-card{
+	height: 100%;
+	border: 0;
+}
+.layui-tab-card>.layui-tab-title{
+	background-color: rgba(25, 170, 141, 0.2);
+	border-bottom: 1px solid rgba(25, 170, 141, 0.6);
+}
+.layui-tab-card>.layui-tab-title .layui-this{
+	background-color: rgba(25, 170, 141, 0.4);
+}
+.layui-tab-card>.layui-tab-title .layui-this:after{
+	border: 0;
+}
+.layui-tab-title .layui-this{
+	color: #fff;
+}
+.layui-tab-content{
+	height: calc(100% - 40px - 60px);
+}
+.layui-form-label{
+	padding: 3px 3px;
+}
+.layui-form-item{
+	margin-bottom: 0;
+}
+.layui-input-block{
+	margin-left: 80px;
+}
+.layui-tab-card .layui-tab-panel-bottom-button{
+	border-top:1px solid rgba(25, 170, 141, 0.6);
+	padding: 10px 20px;
+}
+
+.css2drenderDom .x-common-panel{
+	width: 300px;
+	border: 1px solid rgba(25, 170, 141, 0.6);
+	background: rgba(25, 170, 141, 0.2);
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: 0 0 0.2em rgba(25, 170, 141, 1), 
+				 0 0 0.2em rgba(25, 170, 141, 1);
+	box-shadow: 0px 0px 10px 5px rgba(119,255,109,0.85);
+}
+.css2drenderDom .x-common-panel .x-panel-title{
+	background: rgba(25, 170, 141, 0.6);
+	border-bottom: 1px solid rgba(25, 170, 141, 0.6);
+	text-shadow : inherit;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.css2drenderDom .x-common-panel .x-panel-content{
+	text-shadow : inherit;
+	/*max-height: 140px;*/
+	overflow: auto;
+}
+
+.css2drenderDom > .label{
+	position: absolute;
+	display: none;
+	border: 1px solid rgb(0,127,127);
+	font-size: 28px;
+	color: rgba(21,240,6,1);
+}
+.css2drenderDom > .label > div > font{
+	position: relative;
+    left: 0px;
+    bottom: 0px;
+    white-space: nowrap;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0,1), 0 0 0.2em rgba(0,0,0, 1);
+}
+.css2drenderDom > .label > .aaa{
+	position: absolute;
+    left: 16px;
+    bottom: 34px;
+}
+.css2drenderDom > .label > .aaa:before{
+	display: block;
+	content: '';
+    width: calc(100% + 22px);
+    height: 39px;
+    background: url(/model3d/3dmodel/images/toRight.png) no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    bottom: -39px;
+    left: -22px;
+}
+.css2drenderDom > .label > .bbb{
+	position: absolute;
+    right: 16px;
+    bottom: 34px;
+}
+.css2drenderDom > .label > .bbb:before{
+	display: block;
+	content: '';
+    width: calc(100% + 22px);
+    height: 39px;
+    background: url(/model3d/3dmodel/images/toLeft.png) no-repeat;
+    background-position: 100% 100%;
+    position: absolute;
+    bottom: -39px;
+    left: 0px;
+}
+
+#process-window{
+	position: absolute;
+    /*background: rgba(183, 236, 205, 0.98);*/
+    height: 180px;
+    width: 300px;
+   	/*border: #7c77ce 2px solid;*/
+    text-align: center;
+    top: 400px;
+    left: 800px;
+    z-index: 5;
+    /*color: #3a443d;*/
+    color: white;
+    top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+#x-view-window{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,1);
+	overflow: hidden;
+}
+#model-main{
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,1);
+}
+#model-test{
+	position: absolute;
+	right: 10px;
+	top: calc(50% - 200px);
+	width: 300px;
+	border: 1px solid #0033CC;
+}
+#model-test li{
+	padding-bottom: 5px;
+}
+#iframe-3dmodel{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+#x-view-layer-control > div{
+	position: absolute;
+	z-index: 11;
+}
+#x-view-model-panel{
+	left: 0;
+	top: 60px;
+	width: auto;
+	height: calc(100% - 60px);
+	background: rgba(25, 170, 141, 0.2);
+}
+#x-view-model-panel > div{
+	float: left;
+}
+
+#x-view-model-children-tree-panel > div > .x-panel-title > .layui-input{
+	background-color: transparent;
+	color: #fff;
+	border:1px solid #1AB394 !important;
+	font-size: 14px;
+}
+#x-view-model-children-tree-panel > div > .x-panel-title > input:-moz-placeholder,
+#x-view-model-children-tree-panel > div > .x-panel-title > input::-moz-placeholder{
+	color: rgba(255,255,255,0.75);
+}
+#x-view-model-children-tree-panel > div > .x-panel-title > input::-webkit-input-placeholder{
+	color: rgba(255,255,255,0.75);
+}
+
+#x-view-model-panel #x-view-model-list-panel,
+#x-view-model-panel #x-view-model-children-tree-panel{
+	display: block;
+	position: relative;
+	width: 350px;
+	height: 100%;
+	border-right: 1px solid rgba(25, 170, 141, 0.6);
+}
+#x-view-model-panel #x-view-model-list-panel.panel-hidden,
+#x-view-model-panel #x-view-model-children-tree-panel.panel-hidden{
+	display: none;
+}
+#x-view-model-list-panel #x-view-model-tree,
+#x-view-model-children-tree-panel #x-view-model-children-tree{
+	height: calc(100% - 41px);
+	/*overflow: auto;*/
+}
+#x-view-model-children-tree-panel .layui-unselect.layui-form-checkbox{
+	padding-left: 20px;
+	margin-left: 10px;
+}
+#x-view-model-children-tree-panel .layui-form-checkbox[lay-skin=primary] span{
+	color: #fff;
+}
+#x-view-model-children-tree-panel .layui-unselect.layui-form-switch{
+	margin-top: -2px;
+	margin-left: 20px;
+}
+#x-view-model-children-tree-panel li a.http-result > .node_name{
+	color: #E2A31D;
+}
+#x-view-model-children-tree-panel .panel-hidden > .node_name{
+	color: red;
+}
+#x-view-model-children-tree-panel .panel-hidden{
+	display: none;
+}
+
+#x-view-content-right-panel{
+	position: relative;
+}
+#x-view-content-right-panel > div{
+	position: absolute;
+	width: 9999px;
+}
+#x-view-content-right-panel > div > div{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	outline: 0px solid #FF0000;
+}
+#x-view-content-right-panel #x-view-model-name{
+	cursor:pointer;
+	font-size: 20px;
+	white-space:nowrap;
+	text-shadow:0 0 0.2em rgba(25, 170, 141, 1),
+				-0 -0 0.2em rgba(25, 170, 141, 1);
+}
+#x-view-content-right-panel #x-view-model-name > font{
+	display: block;
+	margin: 0px 15px;
+	padding: 0px 15px;
+	border-bottom: 1px solid rgba(25, 170, 141, 0.6);
+	
+}
+#x-view-content-right-panel #x-view-model-action-name{
+	position: absolute;
+	left: 0;
+	top: 40px;
+	line-height: 30px;
+	white-space:nowrap;
+	text-shadow:0 0 0.2em rgba(25, 170, 141, 1),
+				-0 -0 0.2em rgba(25, 170, 141, 1);
+}
+#x-view-content-right-panel #x-view-model-action-name > font{
+	padding: 0px 15px;
+	margin: 0px 15px;
+}
+#x-view-content-right-panel #x-view-model-children-menu{
+	padding: 0px 20px;
+	border-bottom: 1px solid rgba(25, 170, 141, 0.6);
+}
+#x-view-content-right-panel #x-view-model-children-menu.panel-hidden{
+	display: none;
+}
+/*子节点编辑界面*/
+#x-view-model-children-edit-panel{
+	display: block;
+	right: 0;
+	top: 60px;
+	width: 300px;
+	height: calc(100% - 60px);
+	background: rgba(25, 170, 141, 0.2);
+	border-left: 1px solid rgba(25, 170, 141, 0.6);
+}
+#x-view-model-children-edit-panel.panel-hidden{
+	display: none;
+}
+#x-view-model-children-edit-panel .panel-hidden{
+	display: none;
+}
+.body-transparent .ztree li a{
+	color: rgba(255,255,255,1);
+}
+
+.body-transparent .ztree li a.curSelectedNode{
+	color: #333;
+}
+.body-transparent .x-panel-title{
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	background: rgba(25, 170, 141, 0.2);
+	border-bottom: 1px solid rgba(25, 170, 141, 0.6);
+	color: #fff;
+	overflow: hidden;
+}
+.body-transparent #x-view-model-children-tree-scrollbar .x-panel-title{
+	border: 0!important;
+}
+.body-transparent .x-panel-title > .btn-close{
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.body-transparent .x-panel-title > .btn-close .iconfont{
+	font-size: 20px;
+}
+.body-transparent .x-panel-title > .btn-search-close{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.body-transparent .x-panel-title > .btn-search-close .iconfont{
+	font-size: 20px;
+}
+.body-transparent .layui-breadcrumb a{
+	color: #fff!important;
+}
+.body-transparent .layui-breadcrumb span[lay-separator]{
+	color: #fff;
+}
+
+

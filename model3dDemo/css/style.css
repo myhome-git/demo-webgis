@@ -1,0 +1,128 @@
+:root{
+	--width:568px;
+	--hidth:-276px;
+	--r:40px;
+	--sr:-40px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+a {
+    text-decoration-line: none;
+}
+.navbar-default .navbar-brand-ex {
+    color: white;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: -15px;
+    cursor: pointer;
+    padding-left: 60px;
+    background: url(../img/biao.png) 5px center no-repeat;
+}
+.navbar-header-ex {
+    background-color: rgba(0,0,0,0.6);
+    padding-left: 15px;
+}
+.navbar-webgis {
+    z-index: 100;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.8);
+    border: 0;
+}
+.navbar-default .navbar-nav > li > .a-ex {
+    background-color: rgba(255,255,255,0.2);
+    color: #ccc;
+}
+.navbar-default .navbar-nav > li > .a-ex {
+    color: #ccc;
+}
+.glyphicon-ex {
+    line-height: inherit;
+}
+.navbar-default .navbar-nav > li > .a-ex:hover, 
+.navbar-default .navbar-nav > li > .a-ex:focus, 
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    cursor: pointer;
+}
+.bottom_btns {
+    bottom: 30px;
+    left: 50%;
+    width: var(--width);
+    margin-left: var(--hidth);
+}
+.bottom_btns, .little_btns {
+    position: absolute;
+    z-index: 98;
+    bottom: 40px;
+    right: 38px;
+}
+.bottom_btns .btn_box {
+    float: left;
+    margin: 0 15px;
+}
+
+.bottom_btns .btn_box .bbtns {
+    height: 48px;
+    width: 48px;
+    margin: auto;
+    background-color: rgba(35,52,74,0);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bottom_btns .bbtns, .little_btns .bbtns {
+    color: white;
+    background-color: rgba(0,60,136,0.5);
+    box-shadow: 0 1px 7px rgba(0,0,0,0.4);
+}
+.bottom_btns .btn_box .yx {
+    background-image: url(../img/mbyx1.png);
+}
+.bottom_btns .btn_box .yx:hover {
+    background-image: url(../img/mbyx2.png);
+}
+.bottom_btns .btn_box .btn_untext {
+    min-width: 48px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+    text-shadow: #000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    margin-top: 1px;
+}
+.btn_pro, #pk_box {
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(35,52,74,0.8);
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #95B8E7;
+    display: none;
+    bottom: 80px;
+    margin-left: -30px;
+    width: var(--width);
+}
+.bottom_btns .btn_box .sw:hover {
+    background-image: url(../img/swmx2.png);
+}
+.bottom_btns .btn_box .sw {
+    background-image: url(../img/swmx1.png);
+}
+.bottom_btns .btn_box .tj:hover {
+    background-image: url(../img/fbt2.png);
+}
+.bottom_btns .btn_box .tj {
+    background-image: url(../img/fbt1.png);
+}
+.bottom_btns .btn_box .rl:hover {
+    background-image: url(../img/rlt2.png);
+}
+.bottom_btns .btn_box .rl {
+    background-image: url(../img/rlt1.png);
+}

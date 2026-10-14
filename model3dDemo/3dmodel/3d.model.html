@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>三维模型操作</title>
+		<script>
+            var _name = location.pathname.match(/^\/[\w|-]*/);
+            document.writeln("<script src='" + _name + "/3dmodel/3d.model.Common.init.js?" + new Date().getTime() + "'><\/script>");
+        </script>
+		<!-- three.js -->
+		<script type="text/javascript" src="/model3dDemo/three/three.js"></script>
+		<script type="text/javascript" src="/model3dDemo/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="/model3dDemo/js/utls.js"></script>
+
+		<script type="text/javascript" src="/model3dDemo/three/js/shaders/OceanShaders.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/Ocean.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/background.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/drawHitArea.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/shaders/CopyShader.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/shaders/FXAAShader.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/dat-gui/dat.gui.js"></script>
+		<!-- 补间动画 -->
+		<script type="text/javascript" src="/model3dDemo/three/js/libs/tween.min.js"></script>
+
+		<script type="text/javascript" src="/model3dDemo/three/js/postprocessing/EffectComposer.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/postprocessing/RenderPass.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/postprocessing/ShaderPass.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/postprocessing/OutlinePass.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/base_scene.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/renderer_manager.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/enum.js"></script>
+		
+		<script type="text/javascript" src="/model3dDemo/three/js/lines/LineMaterial.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/lines/LineSegmentsGeometry.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/lines/LineGeometry.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/lines/LineSegments2.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/lines/Line2.js"></script>
+		<!-- 控制器 -->
+		<script type="text/javascript" src="/model3dDemo/three/js/controls/TrackballControls.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/controls/FlyControls.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/controls/OrbitControls.js"></script>
+
+		<script type="text/javascript" src="/model3dDemo/three/js/objects/Water.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/objects/Sky.js"></script>
+		
+		<!-- loader -->
+		<script type="text/javascript" src="/model3dDemo/three/js/loaders/OBJLoader.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/loaders/DRACOLoader.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/loaders/GLTFLoader.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/loaders/ColladaLoader.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/loaders/FBXLoader.js"></script>
+
+		<!-- cssrender -->
+		<script type="text/javascript" src="/model3dDemo/three/js/renderers/CSS2DRenderer.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/js/renderers/CSS3DRenderer.js"></script>
+		
+		<!-- 时间轴 -->
+		<script src="/model3dDemo/three/js/controls/TransformControls.js"></script>
+		<script src="/model3dDemo/three/js/libs/timeliner_gui.min.js"></script>
+		<script src="/model3dDemo/three/js/TimelinerController.js"></script>
+		<script src="/model3dDemo/three/beyon/timeliner.js"></script>		
+		<script src="/model3dDemo/three/beyon/scene_control.js"></script>	
+		<link rel="stylesheet" href="/model3dDemo/css/light.css" />
+
+		<!-- 脚本 -->
+		<script type="text/javascript" src="/model3dDemo/three/js/libs/stats.min.js"></script>
+		<script type="text/javascript" src="/model3dDemo/js/model_view.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/animation_control.js"></script>
+		<!-- 标绘 -->
+		<script type="text/javascript" src="/model3dDemo/three/beyon/beyon_manager.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/label.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/draw_help.js"></script>
+
+		<script type="text/javascript" src="/model3dDemo/three/beyon/operate_ui.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/model_manager.js"></script>
+		<script type="text/javascript" src="/model3dDemo/three/beyon/script_manager.js"></script>
+	
+		<link rel="stylesheet" href="/model3dDemo/three/3dview/main-page/page/css/htmleaf-demo.css" />
+		<link rel="stylesheet" href="/model3dDemo/three/3dview/main-page/page/css/process.css" />
+		<link rel="stylesheet" href="/model3dDemo/three/beyon/dat-gui/dat.gui.css" />
+		
+		<script src="/model3dDemo/three/3dview/main-page/page/model-class.js"></script>
+		<script>
+        	Response([
+        		{"c" : "fontAwesome"},
+        		{"c" : "layui.245"},
+				{"j" : "layui.245"},
+				{"j" : "x.template"},
+        		{"c" : "common"},
+        		{"j" : "x.util.base"},
+        		{"c" : window.Common.Config.PROBJECT_PATH+"/3d.model.css"}
+        	]);
+        </script>
+        <style>
+        	li{
+        		margin-bottom: 20px;
+        	}
+        </style>
+    </head>
+    <body class="body-transparent">
+    	<div id="x-view-window" class="x-view-window">
+    		<div id="iframe-3dmodel">
+    			<div id="model-main"></div>
+    		</div>
+    	</div>
+    	<div id="model-test" style="display: block;">
+    		<ul>
+    			<li>
+    				<button x-button-name="loadModel">加载模型</button>
+    				<button x-button-name="resetModel">重置模型</button>
+    			</li>
+    			<li>
+    				<button x-button-name="resolveModelNodeAllList">解析模型子节点</button>
+    			</li>
+    			<li>
+    				<button x-button-name="resolveModelNodeAnimateList">解析模型动画</button>
+    				<button x-button-name="GetModelNodeAnimateList">取出模型动画列表</button>
+    			</li>
+    			<li>
+    				<button x-button-name="GetModelNodeByName">根据name获取节点</button>
+    				<button x-button-name="getSeletedNode">获取选中节点</button>
+    			</li>
+    			<li>
+    				<select id="model-nodes" style="width: 140px;"></select>
+    				<div></div>
+    				<button x-button-name="getNodePosition">获取节点位置</button>
+    				<button x-button-name="childrenNodeShow">节点显示</button>
+    				<button x-button-name="childrenNodeHidden">节点隐藏</button>
+    				<button x-button-name="setModelNodeLabel">显示label</button>
+    				<button x-button-name="clearModelNodeLabel">清除label</button>
+    				<button x-button-name="setModelNodePosition">定位</button>
+    			</li>
+    			<li>	
+    				<button onclick="alert('请直接查看源码部分')">选中节点回调</button>
+    			</li>
+    		</ul>
+		</div>
+		<script>
+			Response([
+        		{"j" : "/model3dDemo/3dmodel/js/Class.3D.Scene.Control.js"},
+        		{"j" : "/model3dDemo/3dmodel/js/Class.3D.Model.Control.js"},
+        		{"j" : "/model3dDemo/3dmodel/3d.model.js"}
+        	]);
+		</script>
+    </body>
+</html>

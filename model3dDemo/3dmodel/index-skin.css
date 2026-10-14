@@ -1,0 +1,167 @@
+.body-transparent>.x-main-window .x-main-header{
+	box-shadow:2px 2px 2px rgba(0,0,0,0.3)
+}
+
+.body-transparent.skin-blue>.x-main-window .x-main-header,
+.body-transparent.skin-blue>.x-main-window .x-main-header .x-header-move-menu {
+	background: rgba(35, 119, 227, 0.3);
+}
+
+.body-transparent.skin-blue>.x-main-window .x-main-header:before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-bottom: 0px solid rgba(35, 119, 227, 0.3);
+}
+
+.body-transparent.skin-blue .x-main-foot {
+	background: rgba(0, 30, 68, 0.6);
+}
+
+.body-transparent.skin-blue .x-main-foot:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border-top: 1px solid rgba(35, 119, 227, 0.6);
+}
+
+.body-transparent.skin-blue #tool-bar-right {
+	background: transparent;
+}
+
+.body-transparent.skin-blue #tool-bar-right a[x-btn-type] {
+	border: 1px solid rgba(35, 119, 227, 0.6);
+	background: rgba(0, 30, 68, 0.6);
+}
+
+.body-transparent.skin-blue #tool-bar-right a.action[x-btn-type] {
+	background: rgba(0, 30, 68, 0.6);
+	border: 1px solid rgba(35, 119, 227, 0.6);
+}
+
+
+/*end*/
+
+.body-transparent.skin-green>.x-main-window .x-main-header{
+	box-shadow:2px 2px 5px rgba(0,0,0,0.6);
+}
+.body-transparent.skin-green>.x-main-window .x-main-header,
+.body-transparent.skin-green>.x-main-window .x-main-header .x-header-move-menu {
+	background: rgba(25, 170, 141, 0.3);
+}
+
+.body-transparent.skin-green>.x-main-window .x-main-header:before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-bottom: 0px solid rgba(25, 170, 141, 0.3);
+}
+
+.body-transparent.skin-green .x-main-foot {
+	background: rgba(0, 66, 53, 0.6);
+}
+
+.body-transparent.skin-green .x-main-foot:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border-top: 1px solid rgba(25, 170, 141, 0.6);
+}
+
+.body-transparent.skin-green #tool-bar-right {
+	background: transparent;
+}
+
+.body-transparent.skin-green #tool-bar-right a[x-btn-type] {
+	border: 1px solid rgba(25, 170, 141, 0.6);
+	background: rgba(0, 66, 53, 0.6);
+}
+
+.body-transparent.skin-green #tool-bar-right a.action[x-btn-type] {
+	background: rgba(0, 66, 53, 0.6);
+	border: 1px solid rgba(25, 170, 141, 0.6);
+}
+
+
+/*end*/
+.body-transparent.skin-red .layui-layer.layui-layer-page {
+	background: rgba(97, 38, 37, 0.6);
+	border: 1px solid rgba(229, 57, 53, 0.6);
+}
+
+.body-transparent.skin-red .layui-layer-title {
+	border-bottom: 1px solid rgba(229, 57, 53, 0.3);
+}
+
+.body-transparent.skin-red #window-search .search-box {
+	border: 1px solid rgba(229, 57, 53, 0.6);
+}
+
+.body-transparent.skin-red #window-search .search-box .x-search-input {
+	background: rgba(97, 38, 37, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0);
+	border-right: 1px solid rgba(229, 57, 53, 0.6);
+	color: #fff;
+}
+
+.body-transparent.skin-red #window-search .search-button {
+	background: rgba(97, 38, 37, 0.8);
+}
+
+.body-transparent.skin-red>.x-main-window .x-main-header,
+.body-transparent.skin-red>.x-main-window .x-main-header .x-header-move-menu {
+	background: rgba(229, 57, 53, 1);
+}
+
+.body-transparent.skin-red>.x-main-window .x-main-header:before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-bottom: 0px solid rgba(229, 57, 53, 0.3);
+}
+
+.body-transparent.skin-red .x-main-foot {
+	background: rgba(97, 38, 37, 0.6);
+}
+
+.body-transparent.skin-red .x-main-foot:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border-top: 1px solid rgba(229, 57, 53, 0.6);
+}
+
+.body-transparent.skin-red #tool-bar-right {
+	background: transparent;
+}
+
+.body-transparent.skin-red #tool-bar-right a[x-btn-type] {
+	border: 1px solid rgba(229, 57, 53, 0.6);
+	background: rgba(97, 38, 37, 0.6);
+}
+
+.body-transparent.skin-red #tool-bar-right a.action[x-btn-type] {
+	background: rgba(97, 38, 37, 0.6);
+	border: 1px solid rgba(229, 57, 53, 0.6);
+}
+
+
+/*end*/
