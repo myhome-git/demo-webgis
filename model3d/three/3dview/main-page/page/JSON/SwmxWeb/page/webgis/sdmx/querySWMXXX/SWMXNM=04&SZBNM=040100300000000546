@@ -1,0 +1,1796 @@
+{
+	"fwCount": 0,
+	"scCount": 0,
+	"hasFJ": 0,
+	"date": "",
+	"time": "",
+	"arrLevel": null,
+	"vMTNM": [],
+	"vZMX": [
+		{
+			"swmxnm": "04",
+			"zmxnm": "01",
+			"zmxmc": "AIM-120阿姆拉姆空空导弹",
+			"zmxzcmap": [
+				{
+					"zcnm": "01",
+					"zcmc": "AIM-120阿姆拉姆空空导弹",
+					"zcbz": "A_AIM-120空空导弹_01"
+				}, {
+					"zcnm": "02",
+					"zcmc": "AIM-120阿姆拉姆空空导弹",
+					"zcbz": "A_AIM-120空空导弹_02"
+				}
+			],
+			"zmxdhmap": [
+				{
+					"dhmc": "A_AIM_120空空导弹_01",
+					"dhnm": "01",
+					"dhksz": "198",
+					"dhjsz": "295"
+				}, {
+					"dhmc": "A_AIM_120空空导弹_02",
+					"dhnm": "02",
+					"dhksz": "198",
+					"dhjsz": "295"
+				}
+			]
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "02",
+			"zmxmc": "GBU-31/32/38联合直接攻击弹药",
+			"zmxzcmap": [
+				{
+					"zcnm": "762",
+					"zcmc": "GBU-31/32/38联合直接攻击弹药",
+					"zcbz": "C_GBU-313238联合直接攻击弹药"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "04",
+			"zmxmc": "AN/ASQ-239电子战系统",
+			"zmxzcmap": [
+				{
+					"zcnm": "761",
+					"zcmc": "ASQ-239电子战系统",
+					"zcbz": "C_ASQ-239电子战系统"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "06",
+			"zmxmc": "机身",
+			"zmxzcmap": [
+				{
+					"zcnm": "07",
+					"zcmc": "机身",
+					"zcbz": "A_机身"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "07",
+			"zmxmc": "驾驶舱",
+			"zmxzcmap": [
+				{
+					"zcnm": "04",
+					"zcmc": "MK16E弹射座椅",
+					"zcbz": "A_MK16E弹射座椅"
+				}, {
+					"zcnm": "17",
+					"zcmc": "驾驶舱盖",
+					"zcbz": "B_驾驶舱盖"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "08",
+			"zmxmc": "控制台",
+			"zmxzcmap": [
+				{
+					"zcnm": "06",
+					"zcmc": "操控台",
+					"zcbz": "A_操控台"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "09",
+			"zmxmc": "驾驶员",
+			"zmxzcmap": [
+				{
+					"zcnm": "08",
+					"zcmc": "驾驶员",
+					"zcbz": "A_驾驶员"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "10",
+			"zmxmc": "推进器",
+			"zmxzcmap": [
+				{
+					"zcnm": "05",
+					"zcmc": "变截面加力喷嘴",
+					"zcbz": "A_变截面加力喷嘴"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "11",
+			"zmxmc": "升力风扇",
+			"zmxzcmap": [
+				{
+					"zcnm": "09",
+					"zcmc": "升力风扇",
+					"zcbz": "A_升力风扇"
+				}, {
+					"zcnm": "10",
+					"zcmc": "升力风扇舱",
+					"zcbz": "A_升力风扇舱"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "12",
+			"zmxmc": "垂直尾翼",
+			"zmxzcmap": [
+				{
+					"zcnm": "15",
+					"zcmc": "垂直尾翼",
+					"zcbz": "B_垂直尾翼"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "13",
+			"zmxmc": "水平尾翼",
+			"zmxzcmap": [
+				{
+					"zcnm": "28",
+					"zcmc": "右侧水平尾翼",
+					"zcbz": "B_右侧水平尾翼"
+				}, {
+					"zcnm": "35",
+					"zcmc": "左侧水平尾翼",
+					"zcbz": "B_左侧水平尾翼"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "14",
+			"zmxmc": "机翼",
+			"zmxzcmap": [
+				{
+					"zcnm": "24",
+					"zcmc": "右侧后襟翼",
+					"zcbz": "B_右侧后襟翼"
+				}, {
+					"zcnm": "27",
+					"zcmc": "右侧前襟翼",
+					"zcbz": "B_右侧前襟翼"
+				}, {
+					"zcnm": "31",
+					"zcmc": "左侧后襟翼",
+					"zcbz": "B_左侧后襟翼"
+				}, {
+					"zcnm": "34",
+					"zcmc": "左侧前襟翼",
+					"zcbz": "B_左侧前襟翼"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "15",
+			"zmxmc": "舱门",
+			"zmxzcmap": [
+				{
+					"zcnm": "19",
+					"zcmc": "前起落架右侧舱门",
+					"zcbz": "B_前起落架右侧舱门"
+				}, {
+					"zcnm": "20",
+					"zcmc": "前起落架左侧舱门",
+					"zcbz": "B_前起落架左侧舱门"
+				}, {
+					"zcnm": "21",
+					"zcmc": "升力风扇上舱盖",
+					"zcbz": "B_升力风扇上舱盖"
+				}, {
+					"zcnm": "22",
+					"zcmc": "升力风扇下右侧舱盖",
+					"zcbz": "B_升力风扇下右侧舱盖"
+				}, {
+					"zcnm": "23",
+					"zcmc": "升力风扇下左侧舱盖",
+					"zcbz": "B_升力风扇下左侧舱盖"
+				}, {
+					"zcnm": "25",
+					"zcmc": "右侧后起落架舱门_01",
+					"zcbz": "B_右侧后起落架舱门_01"
+				}, {
+					"zcnm": "26",
+					"zcmc": "右侧后起落架舱门_02",
+					"zcbz": "B_右侧后起落架舱门_02"
+				}, {
+					"zcnm": "29",
+					"zcmc": "右侧右武器舱盖",
+					"zcbz": "B_右侧右武器舱盖"
+				}, {
+					"zcnm": "30",
+					"zcmc": "右侧左武器舱盖",
+					"zcbz": "B_右侧左武器舱盖"
+				}, {
+					"zcnm": "32",
+					"zcmc": "左侧后起落架舱门_01",
+					"zcbz": "B_左侧后起落架舱门_01"
+				}, {
+					"zcnm": "33",
+					"zcmc": "左侧后起落架舱门_02",
+					"zcbz": "B_左侧后起落架舱门_02"
+				}, {
+					"zcnm": "36",
+					"zcmc": "左侧右武器舱盖",
+					"zcbz": "B_左侧右武器舱盖"
+				}, {
+					"zcnm": "37",
+					"zcmc": "左侧左武器舱盖",
+					"zcbz": "B_左侧左武器舱盖"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "16",
+			"zmxmc": "起落架",
+			"zmxzcmap": [
+				{
+					"zcnm": "1458",
+					"zcmc": "前起落架",
+					"zcbz": "A_前起落架"
+				}, {
+					"zcnm": "38",
+					"zcmc": "前起落架",
+					"zcbz": "Combine_前起落架"
+				}, {
+					"zcnm": "39",
+					"zcmc": "右侧后起落架",
+					"zcbz": "Combine_右侧后起落架"
+				}, {
+					"zcnm": "40",
+					"zcmc": "左侧后起落架",
+					"zcbz": "Combine_左侧后起落架"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "17",
+			"zmxmc": "挂弹架",
+			"zmxzcmap": [
+				{
+					"zcnm": "16",
+					"zcmc": "挂弹架",
+					"zcbz": "B_挂弹架"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "179",
+			"zmxmc": "CBU-97/105/115传感器引信武器",
+			"zmxzcmap": [
+				{
+					"zcnm": "764",
+					"zcmc": "CBU-97/105/115传感器引信武器",
+					"zcbz": "C_GBU-97105115传感器引信武器"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "18",
+			"zmxmc": "空速管",
+			"zmxzcmap": [
+				{
+					"zcnm": "18",
+					"zcmc": "空速管",
+					"zcbz": "B_空速管"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "180",
+			"zmxmc": "AGM-158A联合空对地防区外发射导弹",
+			"zmxzcmap": [
+				{
+					"zcnm": "758",
+					"zcmc": "AGM-158A联合空对地防区外发射导弹",
+					"zcbz": "C_AGM-158A联合空对地防区外发射导弹"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "181",
+			"zmxmc": "GBU-39“小圆径I/II”炸弹",
+			"zmxzcmap": [
+				{
+					"zcnm": "763",
+					"zcmc": "GBU-93小圆径III炸弹",
+					"zcbz": "C_GBU-93小圆径III炸弹"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "182",
+			"zmxmc": "AIM-9“响尾蛇”空空导弹",
+			"zmxzcmap": [
+				{
+					"zcnm": "759",
+					"zcmc": "AIM-9响尾蛇空空导弹",
+					"zcbz": "C_AIM-9响尾蛇空空导弹"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "183",
+			"zmxmc": "AAQ-40目标瞄准系统",
+			"zmxzcmap": [
+				{
+					"zcnm": "757",
+					"zcmc": "AAQ-40目标瞄准系统",
+					"zcbz": "C_AAQ-40目标瞄准系统"
+				}
+			],
+			"zmxdhmap": []
+		}, {
+			"swmxnm": "04",
+			"zmxnm": "184",
+			"zmxmc": "AN/AQQ-37光电分布式孔径系统",
+			"zmxzcmap": [
+				{
+					"zcnm": "760",
+					"zcmc": "AN/AQQ-37光电分布式孔径系统",
+					"zcbz": "C_ANAQQ-37光电分布式孔径系统"
+				}
+			],
+			"zmxdhmap": []
+		}
+	],
+	"swmxlx": "歼击机",
+	"fzmxwjdxforOrg": null,
+	"swmxnm": "04",
+	"swmxmc": "F-35B“联合打击”战斗机",
+	"fzmxjdlj": null,
+	"fzmxwjdx": null,
+	"fzmxmtgs": null,
+	"preFtpUrl": "",
+	"szbnm": "040100300000000546",
+	"smxwz": "/web3d/data/model/F-35B/gltf/F-35B_HL_1516562.glb",
+	"zbzhmap": {
+		"SWMXTree": [
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "01",
+											"zmxmc": "AIM-120阿姆拉姆空空导弹",
+											"zmxzcmap": [
+												{
+													"zcnm": "01",
+													"zcmc": "AIM-120阿姆拉姆空空导弹",
+													"zcbz": "A_AIM-120空空导弹_01"
+												}, {
+													"zcnm": "02",
+													"zcmc": "AIM-120阿姆拉姆空空导弹",
+													"zcbz": "A_AIM-120空空导弹_02"
+												}
+											],
+											"zmxdhmap": [
+												{
+													"dhmc": "A_AIM_120空空导弹_01",
+													"dhnm": "01",
+													"dhksz": "198",
+													"dhjsz": "295"
+												}, {
+													"dhmc": "A_AIM_120空空导弹_02",
+													"dhnm": "02",
+													"dhksz": "198",
+													"dhjsz": "295"
+												}
+											]
+										},
+										"isflag": "1",
+										"xxxx": null,
+										"mxnm": "04",
+										"id": "01",
+										"text": "AIM-120阿姆拉姆空空导弹",
+										"iconCls": "",
+										"zmxnm": "01",
+										"zbnm": "040100300000000372"
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "02",
+											"zmxmc": "GBU-31/32/38联合直接攻击弹药",
+											"zmxzcmap": [
+												{
+													"zcnm": "762",
+													"zcmc": "GBU-31/32/38联合直接攻击弹药",
+													"zcbz": "C_GBU-313238联合直接攻击弹药"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": null,
+										"mxnm": "04",
+										"id": "02",
+										"text": "GBU-31/32/38联合直接攻击弹药",
+										"iconCls": "",
+										"zmxnm": "02",
+										"zbnm": "040100300000001804"
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "179",
+											"zmxmc": "CBU-97/105/115传感器引信武器",
+											"zmxzcmap": [
+												{
+													"zcnm": "764",
+													"zcmc": "CBU-97/105/115传感器引信武器",
+													"zcbz": "C_GBU-97105115传感器引信武器"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": null,
+										"mxnm": "04",
+										"id": "179",
+										"text": "CBU-97/105/115传感器引信武器",
+										"iconCls": "",
+										"zmxnm": "179",
+										"zbnm": "040100300000001795"
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "180",
+											"zmxmc": "AGM-158A联合空对地防区外发射导弹",
+											"zmxzcmap": [
+												{
+													"zcnm": "758",
+													"zcmc": "AGM-158A联合空对地防区外发射导弹",
+													"zcbz": "C_AGM-158A联合空对地防区外发射导弹"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": null,
+										"mxnm": "04",
+										"id": "180",
+										"text": "AGM-158A联合空对地防区外发射导弹",
+										"iconCls": "",
+										"zmxnm": "180",
+										"zbnm": "040100300000001788"
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "181",
+											"zmxmc": "GBU-39“小圆径I/II”炸弹",
+											"zmxzcmap": [
+												{
+													"zcnm": "763",
+													"zcmc": "GBU-93小圆径III炸弹",
+													"zcbz": "C_GBU-93小圆径III炸弹"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": null,
+										"mxnm": "04",
+										"id": "181",
+										"text": "GBU-39&ldquo;小圆径I/II&rdquo;炸弹",
+										"iconCls": "",
+										"zmxnm": "181",
+										"zbnm": "040100300000001806"
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "182",
+											"zmxmc": "AIM-9“响尾蛇”空空导弹",
+											"zmxzcmap": [
+												{
+													"zcnm": "759",
+													"zcmc": "AIM-9响尾蛇空空导弹",
+													"zcbz": "C_AIM-9响尾蛇空空导弹"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": null,
+										"mxnm": "04",
+										"id": "182",
+										"text": "AIM-9&ldquo;响尾蛇&rdquo;空空导弹",
+										"iconCls": "",
+										"zmxnm": "182",
+										"zbnm": "040100300000000370"
+									}
+								],
+								"isflag": "0",
+								"id": "04",
+								"text": "可装载导弹",
+								"state": "closed",
+								"iconCls": ""
+							}
+						],
+						"isflag": "0",
+						"id": "02",
+						"text": "武器装备",
+						"state": "closed",
+						"iconCls": ""
+					}, {
+						"children": [
+							{
+								"children": [
+									{
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "04",
+											"zmxmc": "AN/ASQ-239电子战系统",
+											"zmxzcmap": [
+												{
+													"zcnm": "761",
+													"zcmc": "ASQ-239电子战系统",
+													"zcbz": "C_ASQ-239电子战系统"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": null,
+										"mxnm": "04",
+										"id": "04",
+										"text": "AN/ASQ-239电子战系统",
+										"iconCls": "",
+										"zmxnm": "04",
+										"zbnm": "040100392090000007"
+									}
+								],
+								"isflag": "0",
+								"id": "16",
+								"text": "电子对抗侦察",
+								"state": "closed",
+								"iconCls": ""
+							}
+						],
+						"isflag": "0",
+						"id": "15",
+						"text": "电子战设备",
+						"state": "closed",
+						"iconCls": ""
+					}
+				],
+				"isflag": "0",
+				"id": "01",
+				"text": "装备载荷",
+				"state": "closed",
+				"iconCls": ""
+			}
+		],
+		"TreeNAME": "装备载荷树"
+	},
+	"wljgmap": {
+		"SWMXTree": [
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "10",
+											"zmxmc": "推进器",
+											"zmxzcmap": [
+												{
+													"zcnm": "05",
+													"zcmc": "变截面加力喷嘴",
+													"zcbz": "A_变截面加力喷嘴"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "10",
+										"text": "推进器",
+										"iconCls": "",
+										"zmxnm": "10",
+										"zbnm": null
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "11",
+											"zmxmc": "升力风扇",
+											"zmxzcmap": [
+												{
+													"zcnm": "09",
+													"zcmc": "升力风扇",
+													"zcbz": "A_升力风扇"
+												}, {
+													"zcnm": "10",
+													"zcmc": "升力风扇舱",
+													"zcbz": "A_升力风扇舱"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "11",
+										"text": "升力风扇",
+										"iconCls": "",
+										"zmxnm": "11",
+										"zbnm": null
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "15",
+											"zmxmc": "舱门",
+											"zmxzcmap": [
+												{
+													"zcnm": "19",
+													"zcmc": "前起落架右侧舱门",
+													"zcbz": "B_前起落架右侧舱门"
+												}, {
+													"zcnm": "20",
+													"zcmc": "前起落架左侧舱门",
+													"zcbz": "B_前起落架左侧舱门"
+												}, {
+													"zcnm": "21",
+													"zcmc": "升力风扇上舱盖",
+													"zcbz": "B_升力风扇上舱盖"
+												}, {
+													"zcnm": "22",
+													"zcmc": "升力风扇下右侧舱盖",
+													"zcbz": "B_升力风扇下右侧舱盖"
+												}, {
+													"zcnm": "23",
+													"zcmc": "升力风扇下左侧舱盖",
+													"zcbz": "B_升力风扇下左侧舱盖"
+												}, {
+													"zcnm": "25",
+													"zcmc": "右侧后起落架舱门_01",
+													"zcbz": "B_右侧后起落架舱门_01"
+												}, {
+													"zcnm": "26",
+													"zcmc": "右侧后起落架舱门_02",
+													"zcbz": "B_右侧后起落架舱门_02"
+												}, {
+													"zcnm": "29",
+													"zcmc": "右侧右武器舱盖",
+													"zcbz": "B_右侧右武器舱盖"
+												}, {
+													"zcnm": "30",
+													"zcmc": "右侧左武器舱盖",
+													"zcbz": "B_右侧左武器舱盖"
+												}, {
+													"zcnm": "32",
+													"zcmc": "左侧后起落架舱门_01",
+													"zcbz": "B_左侧后起落架舱门_01"
+												}, {
+													"zcnm": "33",
+													"zcmc": "左侧后起落架舱门_02",
+													"zcbz": "B_左侧后起落架舱门_02"
+												}, {
+													"zcnm": "36",
+													"zcmc": "左侧右武器舱盖",
+													"zcbz": "B_左侧右武器舱盖"
+												}, {
+													"zcnm": "37",
+													"zcmc": "左侧左武器舱盖",
+													"zcbz": "B_左侧左武器舱盖"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "15",
+										"text": "舱门",
+										"iconCls": "",
+										"zmxnm": "15",
+										"zbnm": null
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "16",
+											"zmxmc": "起落架",
+											"zmxzcmap": [
+												{
+													"zcnm": "1458",
+													"zcmc": "前起落架",
+													"zcbz": "A_前起落架"
+												}, {
+													"zcnm": "38",
+													"zcmc": "前起落架",
+													"zcbz": "Combine_前起落架"
+												}, {
+													"zcnm": "39",
+													"zcmc": "右侧后起落架",
+													"zcbz": "Combine_右侧后起落架"
+												}, {
+													"zcnm": "40",
+													"zcmc": "左侧后起落架",
+													"zcbz": "Combine_左侧后起落架"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "16",
+										"text": "起落架",
+										"iconCls": "",
+										"zmxnm": "16",
+										"zbnm": null
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "18",
+											"zmxmc": "空速管",
+											"zmxzcmap": [
+												{
+													"zcnm": "18",
+													"zcmc": "空速管",
+													"zcbz": "B_空速管"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "18",
+										"text": "空速管",
+										"iconCls": "",
+										"zmxnm": "18",
+										"zbnm": null
+									}
+								],
+								"isflag": "0",
+								"id": "33",
+								"text": "机身",
+								"state": "closed",
+								"iconCls": ""
+							}, {
+								"children": [
+									{
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "13",
+											"zmxmc": "水平尾翼",
+											"zmxzcmap": [
+												{
+													"zcnm": "28",
+													"zcmc": "右侧水平尾翼",
+													"zcbz": "B_右侧水平尾翼"
+												}, {
+													"zcnm": "35",
+													"zcmc": "左侧水平尾翼",
+													"zcbz": "B_左侧水平尾翼"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "13",
+										"text": "水平尾翼",
+										"iconCls": "",
+										"zmxnm": "13",
+										"zbnm": null
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "14",
+											"zmxmc": "机翼",
+											"zmxzcmap": [
+												{
+													"zcnm": "24",
+													"zcmc": "右侧后襟翼",
+													"zcbz": "B_右侧后襟翼"
+												}, {
+													"zcnm": "27",
+													"zcmc": "右侧前襟翼",
+													"zcbz": "B_右侧前襟翼"
+												}, {
+													"zcnm": "31",
+													"zcmc": "左侧后襟翼",
+													"zcbz": "B_左侧后襟翼"
+												}, {
+													"zcnm": "34",
+													"zcmc": "左侧前襟翼",
+													"zcbz": "B_左侧前襟翼"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "14",
+										"text": "机翼",
+										"iconCls": "",
+										"zmxnm": "14",
+										"zbnm": null
+									}
+								],
+								"isflag": "0",
+								"id": "34",
+								"text": "机翼",
+								"state": "closed",
+								"iconCls": ""
+							}, {
+								"children": [
+									{
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "07",
+											"zmxmc": "驾驶舱",
+											"zmxzcmap": [
+												{
+													"zcnm": "04",
+													"zcmc": "MK16E弹射座椅",
+													"zcbz": "A_MK16E弹射座椅"
+												}, {
+													"zcnm": "17",
+													"zcmc": "驾驶舱盖",
+													"zcbz": "B_驾驶舱盖"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "07",
+										"text": "驾驶舱",
+										"iconCls": "",
+										"zmxnm": "07",
+										"zbnm": null
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "08",
+											"zmxmc": "控制台",
+											"zmxzcmap": [
+												{
+													"zcnm": "06",
+													"zcmc": "操控台",
+													"zcbz": "A_操控台"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "08",
+										"text": "控制台",
+										"iconCls": "",
+										"zmxnm": "08",
+										"zbnm": null
+									}, {
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "09",
+											"zmxmc": "驾驶员",
+											"zmxzcmap": [
+												{
+													"zcnm": "08",
+													"zcmc": "驾驶员",
+													"zcbz": "A_驾驶员"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "09",
+										"text": "驾驶员",
+										"iconCls": "",
+										"zmxnm": "09",
+										"zbnm": null
+									}
+								],
+								"isflag": "0",
+								"id": "35",
+								"text": "座舱",
+								"state": "closed",
+								"iconCls": ""
+							}, {
+								"children": [
+									{
+										"zmx": {
+											"swmxnm": "04",
+											"zmxnm": "17",
+											"zmxmc": "挂弹架",
+											"zmxzcmap": [
+												{
+													"zcnm": "16",
+													"zcmc": "挂弹架",
+													"zcbz": "B_挂弹架"
+												}
+											],
+											"zmxdhmap": []
+										},
+										"isflag": "1",
+										"xxxx": [
+											{
+												"jgmc": "位置分布",
+												"sjz": "测试",
+												"jldw": "",
+												"sjlx": "文本（512字符）",
+												"sjzforOrg": "测试"
+											},
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null,
+											null
+										],
+										"mxnm": "04",
+										"id": "17",
+										"text": "挂弹架",
+										"iconCls": "",
+										"zmxnm": "17",
+										"zbnm": null
+									}
+								],
+								"isflag": "0",
+								"id": "37",
+								"text": "外挂设备",
+								"state": "closed",
+								"iconCls": ""
+							}
+						],
+						"isflag": "0",
+						"id": "32",
+						"text": "机体结构",
+						"state": "closed",
+						"iconCls": ""
+					}
+				],
+				"isflag": "0",
+				"id": "26",
+				"text": "物理结构",
+				"state": "closed",
+				"iconCls": ""
+			}
+		],
+		"TreeNAME": "物理结构树"
+	},
+	"xtzcmap": {
+		"SWMXTree": [
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "09",
+									"zmxmc": "驾驶员",
+									"zmxzcmap": [
+										{
+											"zcnm": "08",
+											"zcmc": "驾驶员",
+											"zcbz": "A_驾驶员"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									{
+										"jgmc": "型号",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（80字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "数量",
+										"sjz": "0",
+										"jldw": "套",
+										"sjlx": "文本（36字符）",
+										"sjzforOrg": "0"
+									}, {
+										"jgmc": "功能",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "能力",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "布局",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "主要设备",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}
+								],
+								"mxnm": "04",
+								"id": "09",
+								"text": "驾驶员",
+								"iconCls": "",
+								"zmxnm": "09",
+								"zbnm": null
+							}
+						],
+						"isflag": "0",
+						"id": "44",
+						"text": "指挥控制系统",
+						"state": "closed",
+						"iconCls": ""
+					}, {
+						"children": [
+							{
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "183",
+									"zmxmc": "AAQ-40目标瞄准系统",
+									"zmxzcmap": [
+										{
+											"zcnm": "757",
+											"zcmc": "AAQ-40目标瞄准系统",
+											"zcbz": "C_AAQ-40目标瞄准系统"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									null,
+									null,
+									null,
+									null,
+									null,
+									null
+								],
+								"mxnm": "04",
+								"id": "183",
+								"text": "AAQ-40目标瞄准系统",
+								"iconCls": "",
+								"zmxnm": "183",
+								"zbnm": null
+							}, {
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "184",
+									"zmxmc": "AN/AQQ-37光电分布式孔径系统",
+									"zmxzcmap": [
+										{
+											"zcnm": "760",
+											"zcmc": "AN/AQQ-37光电分布式孔径系统",
+											"zcbz": "C_ANAQQ-37光电分布式孔径系统"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									null,
+									null,
+									null,
+									null,
+									null,
+									null
+								],
+								"mxnm": "04",
+								"id": "184",
+								"text": "AN/AQQ-37光电分布式孔径系统",
+								"iconCls": "",
+								"zmxnm": "184",
+								"zbnm": null
+							}
+						],
+						"isflag": "0",
+						"id": "45",
+						"text": "武器控制系统",
+						"state": "closed",
+						"iconCls": ""
+					}, {
+						"children": [
+							{
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "10",
+									"zmxmc": "推进器",
+									"zmxzcmap": [
+										{
+											"zcnm": "05",
+											"zcmc": "变截面加力喷嘴",
+											"zcbz": "A_变截面加力喷嘴"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									{
+										"jgmc": "型号",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（80字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "数量",
+										"sjz": "0",
+										"jldw": "套",
+										"sjlx": "文本（36字符）",
+										"sjzforOrg": "0"
+									}, {
+										"jgmc": "功能",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "能力",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "布局",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "主要设备",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}
+								],
+								"mxnm": "04",
+								"id": "10",
+								"text": "推进器",
+								"iconCls": "",
+								"zmxnm": "10",
+								"zbnm": null
+							}, {
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "11",
+									"zmxmc": "升力风扇",
+									"zmxzcmap": [
+										{
+											"zcnm": "09",
+											"zcmc": "升力风扇",
+											"zcbz": "A_升力风扇"
+										}, {
+											"zcnm": "10",
+											"zcmc": "升力风扇舱",
+											"zcbz": "A_升力风扇舱"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									{
+										"jgmc": "型号",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（80字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "数量",
+										"sjz": "0",
+										"jldw": "套",
+										"sjlx": "文本（36字符）",
+										"sjzforOrg": "0"
+									}, {
+										"jgmc": "功能",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "能力",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "布局",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "主要设备",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}
+								],
+								"mxnm": "04",
+								"id": "11",
+								"text": "升力风扇",
+								"iconCls": "",
+								"zmxnm": "11",
+								"zbnm": null
+							}, {
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "18",
+									"zmxmc": "空速管",
+									"zmxzcmap": [
+										{
+											"zcnm": "18",
+											"zcmc": "空速管",
+											"zcbz": "B_空速管"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									{
+										"jgmc": "型号",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（80字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "数量",
+										"sjz": "0",
+										"jldw": "套",
+										"sjlx": "文本（36字符）",
+										"sjzforOrg": "0"
+									}, {
+										"jgmc": "功能",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "能力",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "布局",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "主要设备",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}
+								],
+								"mxnm": "04",
+								"id": "18",
+								"text": "空速管",
+								"iconCls": "",
+								"zmxnm": "18",
+								"zbnm": null
+							}
+						],
+						"isflag": "0",
+						"id": "47",
+						"text": "航行系统",
+						"state": "closed",
+						"iconCls": ""
+					}, {
+						"children": [
+							{
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "08",
+									"zmxmc": "控制台",
+									"zmxzcmap": [
+										{
+											"zcnm": "06",
+											"zcmc": "操控台",
+											"zcbz": "A_操控台"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									{
+										"jgmc": "型号",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（80字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "数量",
+										"sjz": "0",
+										"jldw": "套",
+										"sjlx": "文本（36字符）",
+										"sjzforOrg": "0"
+									}, {
+										"jgmc": "功能",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "能力",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "布局",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "主要设备",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}
+								],
+								"mxnm": "04",
+								"id": "08",
+								"text": "控制台",
+								"iconCls": "",
+								"zmxnm": "08",
+								"zbnm": null
+							}
+						],
+						"isflag": "0",
+						"id": "50",
+						"text": "通信系统",
+						"state": "closed",
+						"iconCls": ""
+					}, {
+						"children": [
+							{
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "04",
+									"zmxmc": "AN/ASQ-239电子战系统",
+									"zmxzcmap": [
+										{
+											"zcnm": "761",
+											"zcmc": "ASQ-239电子战系统",
+											"zcbz": "C_ASQ-239电子战系统"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									{
+										"jgmc": "型号",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（80字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "数量",
+										"sjz": "0",
+										"jldw": "套",
+										"sjlx": "文本（36字符）",
+										"sjzforOrg": "0"
+									}, {
+										"jgmc": "功能",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "能力",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "布局",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}, {
+										"jgmc": "主要设备",
+										"sjz": "测试",
+										"jldw": "",
+										"sjlx": "文本（512字符）",
+										"sjzforOrg": "测试"
+									}
+								],
+								"mxnm": "04",
+								"id": "04",
+								"text": "AN/ASQ-239电子战系统",
+								"iconCls": "",
+								"zmxnm": "04",
+								"zbnm": null
+							}
+						],
+						"isflag": "0",
+						"id": "51",
+						"text": "干扰系统",
+						"state": "closed",
+						"iconCls": ""
+					}
+				],
+				"isflag": "0",
+				"id": "43",
+				"text": "系统组成",
+				"state": "closed",
+				"iconCls": ""
+			}
+		],
+		"TreeNAME": "系统组成树"
+	},
+	"yhbwmap": {
+		"SWMXTree": [
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "04",
+									"zmxmc": "AN/ASQ-239电子战系统",
+									"zmxzcmap": [
+										{
+											"zcnm": "761",
+											"zcmc": "ASQ-239电子战系统",
+											"zcbz": "C_ASQ-239电子战系统"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									null
+								],
+								"mxnm": "04",
+								"id": "04",
+								"text": "AN/ASQ-239电子战系统",
+								"iconCls": "",
+								"zmxnm": "04",
+								"zbnm": null
+							}
+						],
+						"isflag": "0",
+						"id": "39",
+						"text": "核心区域",
+						"state": "closed",
+						"iconCls": ""
+					}, {
+						"children": [
+							{
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "11",
+									"zmxmc": "升力风扇",
+									"zmxzcmap": [
+										{
+											"zcnm": "09",
+											"zcmc": "升力风扇",
+											"zcbz": "A_升力风扇"
+										}, {
+											"zcnm": "10",
+											"zcmc": "升力风扇舱",
+											"zcbz": "A_升力风扇舱"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									null
+								],
+								"mxnm": "04",
+								"id": "11",
+								"text": "升力风扇",
+								"iconCls": "",
+								"zmxnm": "11",
+								"zbnm": null
+							}
+						],
+						"isflag": "0",
+						"id": "40",
+						"text": "重要设施",
+						"state": "closed",
+						"iconCls": ""
+					}, {
+						"children": [
+							{
+								"zmx": {
+									"swmxnm": "04",
+									"zmxnm": "10",
+									"zmxmc": "推进器",
+									"zmxzcmap": [
+										{
+											"zcnm": "05",
+											"zcmc": "变截面加力喷嘴",
+											"zcbz": "A_变截面加力喷嘴"
+										}
+									],
+									"zmxdhmap": []
+								},
+								"isflag": "1",
+								"xxxx": [
+									null
+								],
+								"mxnm": "04",
+								"id": "10",
+								"text": "推进器",
+								"iconCls": "",
+								"zmxnm": "10",
+								"zbnm": null
+							}
+						],
+						"isflag": "0",
+						"id": "41",
+						"text": "关键部位",
+						"state": "closed",
+						"iconCls": ""
+					}
+				],
+				"isflag": "0",
+				"id": "38",
+				"text": "要害部位",
+				"state": "closed",
+				"iconCls": ""
+			}
+		],
+		"TreeNAME": "要害部位树"
+	},
+	"zznlmap": {
+		"SWMXTree": [],
+		"TreeNAME": "作战能力树"
+	},
+	"issc": "0"
+}

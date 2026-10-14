@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script>
+			var _name = location.pathname.match(/^\/[\w|-]*/);
+			document.writeln("<script src='"+_name+"/3dmodel/Common.init.js?"+new Date().getTime()+"'><\/script>");
+		</script>
+		<script>
+			Response([
+				{"c":"common"},
+				{"c" : window.Common.Config.PROBJECT_PATH+"/css/layui-style.css"},
+				
+				{"c" :　"x.ztree"},
+				{"j" : "x.ztree"},
+				
+				{"j":"./dict.class.main.js"}
+			]);
+		</script>
+		<style>
+			body{
+				background: #fff;
+			}
+			.layui-layer.layui-layer-page.layui-layer-prompt .layui-layer-title,
+			.layui-laypage .layui-laypage-curr .layui-laypage-em{
+				background-color: rgba(30,159,255,1)!important;
+			}
+			.x-common-panel .x-panel-title{
+				color: #666;
+			}
+			.x-panel-content > .x-inlineblock{
+				margin-bottom: 10px;
+				margin-left: 10px;
+			}
+			.x-panel-content > .x-inlineblock > .x-inlineblock{
+				margin-left: 0;
+				margin-bottom: 0;
+			}
+			#x-hidden-window{
+				position: fixed;
+				left: 0;
+				top: 0;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+			}
+			#input-search-from > div{
+				float: left;
+				line-height: 30px;
+			}
+            .layui-layer-title {
+                    border-bottom: 1px solid rgba(35, 119, 227, 0.9);
+                    background-color: rgba(35, 119, 227, 0.9);
+                    color: #fff;
+            }
+            .layui-layer-ico.layui-layer-close.layui-layer-close1{
+                    background: url("/lbs/html/WebFrame/library/beyon/images/close-0.svg");
+            }
+            .x-view-window{
+            	position: fixed;
+            	left: 0;
+            	top: 0;
+            	width: 100%;
+            	height: 100%;
+            	overflow: auto;
+            	background-color: #fff;
+            }
+            
+		</style>
+	</head>
+	<body>
+		<div id="x-hidden-window"></div>
+		<div class="x-view-window">
+			<div class="x-common-panel" style="height: 100%;">
+				<div class="x-layout-left" style="height: 100%;overflow: auto;margin: 0;padding: 0;">
+					<div style="height: calc(100% - 50px);">
+						<div id="ztree-toolbar" style="padding:0px;float: left;margin: 10px;">
+							<button type="button" class="layui-btn layui-btn-xs" x-btn-name="refresh"><i class="iconfont fa fa-refresh"></i>刷新</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal" x-btn-name="add"><i class="iconfont fa fa-plus"></i>新增</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-normal" x-btn-name="update"><i class="iconfont fa fa-edit"></i>编辑</button>
+							<button type="button" class="layui-btn layui-btn-xs layui-btn-danger" x-btn-name="delete-multiple"><i class="iconfont fa fa-trash"></i>删除</button>
+						</div>
+						<div style="clear: both;padding: 3px;line-height: 30px;">如果不选择任何节点，则表示添加顶级分类</div>
+						<div class="x-common-panel" style="border-top: 1px solid #ccc;height: calc(100% - 30px);overflow: auto;">
+							<ul id="ztree-dict-class"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

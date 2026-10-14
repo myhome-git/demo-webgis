@@ -1,0 +1,16 @@
+1、model.json为模型配置表，为json数组对象
+每个模型配置参数如下：
+{
+"name":"p8a",                                          ---模型的名称
+"id":11,						---模型加载对应的唯一ID，不能重复
+"pos":{"lon":136.29,"lat":30,"alt":1000},		---位置，lon:精度;lat:纬度,alt:高程
+"layer":"55",						---三维模型图层，可不更改
+"type":0,						---三维加载模型方式，可不更改
+"url":"http://localhost:8025/data/model/p8a/gltf/p8a.glb",---模型文件的网络地址
+"mbnm":"1"						---模型对应的内码
+}
+2、model.json是请求得到的，请求地址在config.js中 modelSource.url
+var modelSource={
+	basePath:"http://10.55.188.185:8080/",
+	url:"http://localhost:8025/data/model/model.json"
+}

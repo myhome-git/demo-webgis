@@ -1,0 +1,838 @@
+{
+	"fwCount": 0,
+	"scCount": 0,
+	"hasFJ": 0,
+	"date": "",
+	"time": "",
+	"arrLevel": null,
+	"vMTNM": [],
+	"vZMX": [{
+		"zmxzcmap": [{
+			"zcnm": "01",
+			"zcmc": "船体",
+			"zcbz": "Combine_船体"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "01",
+		"zmxmc": "舰体"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "02",
+			"zcmc": "舰岛",
+			"zcbz": "Combine_舰岛"
+		}, {
+			"zcnm": "03",
+			"zcmc": "舰岛组建",
+			"zcbz": "Combine_舰岛组建"
+		}, {
+			"zcnm": "15",
+			"zcmc": "舰岛探灯",
+			"zcbz": "A_舰岛探灯"
+		}, {
+			"zcnm": "19",
+			"zcmc": "指挥灯",
+			"zcbz": "C_指挥灯"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "02",
+		"zmxmc": "舰岛"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "04",
+			"zcmc": "舰塔",
+			"zcbz": "Combine_舰塔"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "03",
+		"zmxmc": "舰塔"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "05",
+			"zcmc": "升降台",
+			"zcbz": "Combine_升降台"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "04",
+		"zmxmc": "升降台"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "06",
+			"zcmc": "螺旋桨",
+			"zcbz": "Combine_螺旋桨"
+		}, {
+			"zcnm": "13",
+			"zcmc": "右舵",
+			"zcbz": "Combine_右舵"
+		}, {
+			"zcnm": "14",
+			"zcmc": "左舵",
+			"zcbz": "Combine_左舵"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "05",
+		"zmxmc": "螺旋桨"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "07",
+			"zcmc": "爬梯",
+			"zcbz": "Combine_爬梯"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "06",
+		"zmxmc": "爬梯"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "08",
+			"zcmc": "气胀救生筏",
+			"zcbz": "Combine_气胀救生筏"
+		}, {
+			"zcnm": "18",
+			"zcmc": "救生圈",
+			"zcbz": "C_救生圈"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "07",
+		"zmxmc": "救生设备"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "10",
+			"zcmc": "栏杆",
+			"zcbz": "Combine_栏杆"
+		}, {
+			"zcnm": "11",
+			"zcmc": "C_组件",
+			"zcbz": "Combine_C_组件"
+		}, {
+			"zcnm": "12",
+			"zcmc": "B_组件",
+			"zcbz": "Combine_B_组件"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "08",
+		"zmxmc": "设施部件"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "16",
+			"zcmc": "舰岛舱门",
+			"zcbz": "A_舰岛舱门"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "09",
+		"zmxmc": "舱门"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "17",
+			"zcmc": "锚",
+			"zcbz": "A_锚"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "10",
+		"zmxmc": "船锚"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "23",
+			"zcmc": "SPS_10F水面搜索雷达",
+			"zcbz": "SPS_10F水面搜索雷达"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "11",
+		"zmxmc": "AN/SPS-48E型对空搜索雷达"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "24",
+			"zcmc": "SPS_49远程对空搜索雷达",
+			"zcbz": "SPS_49远程对空搜索雷达"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "12",
+		"zmxmc": "AN/SPS-67（V）对海搜索雷达"
+	}, {
+		"zmxzcmap": [{
+			"zcnm": "20",
+			"zcmc": "炮",
+			"zcbz": "A_炮"
+		}],
+		"zmxdhmap": [],
+		"swmxnm": "03",
+		"zmxnm": "13",
+		"zmxmc": "MK15型火神20毫米密集阵防空火炮"
+	}],
+	"smxwz": "/web3d/data/model/CVN-76/gltf/CVN-76.glb",
+	"xtzcmap": {
+		"SWMXTree": [{
+			"children": [{
+				"children": [{
+					"zmx": {
+						"zmxzcmap": [{
+							"zcnm": "02",
+							"zcmc": "舰岛",
+							"zcbz": "Combine_舰岛"
+						}, {
+							"zcnm": "03",
+							"zcmc": "舰岛组建",
+							"zcbz": "Combine_舰岛组建"
+						}, {
+							"zcnm": "15",
+							"zcmc": "舰岛探灯",
+							"zcbz": "A_舰岛探灯"
+						}, {
+							"zcnm": "19",
+							"zcmc": "指挥灯",
+							"zcbz": "C_指挥灯"
+						}],
+						"zmxdhmap": [],
+						"swmxnm": "03",
+						"zmxnm": "02",
+						"zmxmc": "舰岛"
+					},
+					"isflag": "1",
+					"xxxx": [{
+						"jgmc": "型号",
+						"sjz": "舰岛",
+						"jldw": "",
+						"sjlx": "文本（80字符）",
+						"sjzforOrg": "舰岛"
+					}, {
+						"jgmc": "数量",
+						"sjz": "1",
+						"jldw": "套",
+						"sjlx": "文本（36字符）",
+						"sjzforOrg": "1"
+					}, {
+						"jgmc": "功能",
+						"sjz": "指挥控制",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "指挥控制"
+					}, {
+						"jgmc": "能力",
+						"sjz": "指挥控制",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "指挥控制"
+					}, {
+						"jgmc": "布局",
+						"sjz": "统一布局",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "统一布局"
+					}, {
+						"jgmc": "主要设备",
+						"sjz": "指挥通信设备",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "指挥通信设备"
+					}],
+					"mxnm": "03",
+					"id": "02",
+					"text": "舰岛",
+					"iconCls": "",
+					"zmxnm": "02",
+					"zbnm": null
+				}, {
+					"zmx": {
+						"zmxzcmap": [{
+							"zcnm": "04",
+							"zcmc": "舰塔",
+							"zcbz": "Combine_舰塔"
+						}],
+						"zmxdhmap": [],
+						"swmxnm": "03",
+						"zmxnm": "03",
+						"zmxmc": "舰塔"
+					},
+					"isflag": "1",
+					"xxxx": [{
+						"jgmc": "型号",
+						"sjz": "舰塔",
+						"jldw": "",
+						"sjlx": "文本（80字符）",
+						"sjzforOrg": "舰塔"
+					}, {
+						"jgmc": "数量",
+						"sjz": "1",
+						"jldw": "套",
+						"sjlx": "文本（36字符）",
+						"sjzforOrg": "1"
+					}, {
+						"jgmc": "功能",
+						"sjz": "指挥控制",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "指挥控制"
+					}, {
+						"jgmc": "能力",
+						"sjz": "指挥控制",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "指挥控制"
+					}, {
+						"jgmc": "布局",
+						"sjz": "统一布局",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "统一布局"
+					}, {
+						"jgmc": "主要设备",
+						"sjz": "指挥通信设备",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "指挥通信设备"
+					}],
+					"mxnm": "03",
+					"id": "03",
+					"text": "舰塔",
+					"iconCls": "",
+					"zmxnm": "03",
+					"zbnm": null
+				}],
+				"isflag": "0",
+				"id": "44",
+				"text": "指挥控制系统",
+				"state": "closed",
+				"iconCls": ""
+			}, {
+				"children": [{
+					"zmx": {
+						"zmxzcmap": [{
+							"zcnm": "23",
+							"zcmc": "SPS_10F水面搜索雷达",
+							"zcbz": "SPS_10F水面搜索雷达"
+						}],
+						"zmxdhmap": [],
+						"swmxnm": "03",
+						"zmxnm": "11",
+						"zmxmc": "AN/SPS-48E型对空搜索雷达"
+					},
+					"isflag": "1",
+					"xxxx": [{
+						"jgmc": "型号",
+						"sjz": "ABCDE五种",
+						"jldw": "",
+						"sjlx": "文本（80字符）",
+						"sjzforOrg": "ABCDE五种"
+					}, {
+						"jgmc": "数量",
+						"sjz": "1",
+						"jldw": "套",
+						"sjlx": "文本（36字符）",
+						"sjzforOrg": "1"
+					}, {
+						"jgmc": "功能",
+						"sjz": "远程对空搜索、导弹探测、武器控制",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "远程对空搜索、导弹探测、武器控制"
+					}, {
+						"jgmc": "能力",
+						"sjz": "远程对空搜索、导弹探测、武器控制",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "远程对空搜索、导弹探测、武器控制"
+					}, {
+						"jgmc": "布局",
+						"sjz": "xxx布局",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "xxx布局"
+					}, {
+						"jgmc": "主要设备",
+						"sjz": "平面阵",
+						"jldw": "",
+						"sjlx": "文本（512字符）",
+						"sjzforOrg": "平面阵"
+					}],
+					"mxnm": "03",
+					"id": "11",
+					"text": "AN/SPS-48E型对空搜索雷达",
+					"iconCls": "",
+					"zmxnm": "11",
+					"zbnm": null
+				}],
+				"isflag": "0",
+				"id": "49",
+				"text": "预警探测系统",
+				"state": "closed",
+				"iconCls": ""
+			}],
+			"isflag": "0",
+			"id": "43",
+			"text": "系统组成",
+			"state": "closed",
+			"iconCls": ""
+		}],
+		"TreeNAME": "系统组成树"
+	},
+	"szbnm": "040100300000002280",
+	"zznlmap": {
+		"SWMXTree": [],
+		"TreeNAME": "作战能力树"
+	},
+	"yhbwmap": {
+		"SWMXTree": [{
+			"children": [{
+				"children": [{
+					"zmx": {
+						"zmxzcmap": [{
+							"zcnm": "02",
+							"zcmc": "舰岛",
+							"zcbz": "Combine_舰岛"
+						}, {
+							"zcnm": "03",
+							"zcmc": "舰岛组建",
+							"zcbz": "Combine_舰岛组建"
+						}, {
+							"zcnm": "15",
+							"zcmc": "舰岛探灯",
+							"zcbz": "A_舰岛探灯"
+						}, {
+							"zcnm": "19",
+							"zcmc": "指挥灯",
+							"zcbz": "C_指挥灯"
+						}],
+						"zmxdhmap": [],
+						"swmxnm": "03",
+						"zmxnm": "02",
+						"zmxmc": "舰岛"
+					},
+					"isflag": "1",
+					"xxxx": [null],
+					"mxnm": "03",
+					"id": "02",
+					"text": "舰岛",
+					"iconCls": "",
+					"zmxnm": "02",
+					"zbnm": null
+				}, {
+					"zmx": {
+						"zmxzcmap": [{
+							"zcnm": "04",
+							"zcmc": "舰塔",
+							"zcbz": "Combine_舰塔"
+						}],
+						"zmxdhmap": [],
+						"swmxnm": "03",
+						"zmxnm": "03",
+						"zmxmc": "舰塔"
+					},
+					"isflag": "1",
+					"xxxx": [null],
+					"mxnm": "03",
+					"id": "03",
+					"text": "舰塔",
+					"iconCls": "",
+					"zmxnm": "03",
+					"zbnm": null
+				}],
+				"isflag": "0",
+				"id": "39",
+				"text": "核心区域",
+				"state": "closed",
+				"iconCls": ""
+			}],
+			"isflag": "0",
+			"id": "38",
+			"text": "要害部位",
+			"state": "closed",
+			"iconCls": ""
+		}],
+		"TreeNAME": "要害部位树"
+	},
+	"zbzhmap": {
+		"SWMXTree": [{
+			"children": [{
+				"children": [{
+					"children": [{
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "20",
+								"zcmc": "炮",
+								"zcbz": "A_炮"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "13",
+							"zmxmc": "MK15型火神20毫米密集阵防空火炮"
+						},
+						"isflag": "1",
+						"xxxx": null,
+						"mxnm": "03",
+						"id": "13",
+						"text": "MK15型火神20毫米密集阵防空火炮",
+						"iconCls": "",
+						"zmxnm": "13",
+						"zbnm": null
+					}],
+					"isflag": "0",
+					"id": "06",
+					"text": "舰炮",
+					"state": "closed",
+					"iconCls": ""
+				}],
+				"isflag": "0",
+				"id": "02",
+				"text": "武器装备",
+				"state": "closed",
+				"iconCls": ""
+			}, {
+				"children": [{
+					"children": [{
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "23",
+								"zcmc": "SPS_10F水面搜索雷达",
+								"zcbz": "SPS_10F水面搜索雷达"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "11",
+							"zmxmc": "AN/SPS-48E型对空搜索雷达"
+						},
+						"isflag": "1",
+						"xxxx": null,
+						"mxnm": "03",
+						"id": "11",
+						"text": "AN/SPS-48E型对空搜索雷达",
+						"iconCls": "",
+						"zmxnm": "11",
+						"zbnm": null
+					}],
+					"isflag": "0",
+					"id": "09",
+					"text": "警戒引导雷达",
+					"state": "closed",
+					"iconCls": ""
+				}],
+				"isflag": "0",
+				"id": "08",
+				"text": "雷达",
+				"state": "closed",
+				"iconCls": ""
+			}],
+			"isflag": "0",
+			"id": "01",
+			"text": "装备载荷",
+			"state": "closed",
+			"iconCls": ""
+		}],
+		"TreeNAME": "装备载荷树"
+	},
+	"wljgmap": {
+		"SWMXTree": [{
+			"children": [{
+				"children": [{
+					"children": [{
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "02",
+								"zcmc": "舰岛",
+								"zcbz": "Combine_舰岛"
+							}, {
+								"zcnm": "03",
+								"zcmc": "舰岛组建",
+								"zcbz": "Combine_舰岛组建"
+							}, {
+								"zcnm": "15",
+								"zcmc": "舰岛探灯",
+								"zcbz": "A_舰岛探灯"
+							}, {
+								"zcnm": "19",
+								"zcmc": "指挥灯",
+								"zcbz": "C_指挥灯"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "02",
+							"zmxmc": "舰岛"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "02",
+						"text": "舰岛",
+						"iconCls": "",
+						"zmxnm": "02",
+						"zbnm": null
+					}, {
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "04",
+								"zcmc": "舰塔",
+								"zcbz": "Combine_舰塔"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "03",
+							"zmxmc": "舰塔"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "03",
+						"text": "舰塔",
+						"iconCls": "",
+						"zmxnm": "03",
+						"zbnm": null
+					}],
+					"isflag": "0",
+					"id": "28",
+					"text": "上层建筑",
+					"state": "closed",
+					"iconCls": ""
+				}, {
+					"children": [{
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "05",
+								"zcmc": "升降台",
+								"zcbz": "Combine_升降台"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "04",
+							"zmxmc": "升降台"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "04",
+						"text": "升降台",
+						"iconCls": "",
+						"zmxnm": "04",
+						"zbnm": null
+					}, {
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "07",
+								"zcmc": "爬梯",
+								"zcbz": "Combine_爬梯"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "06",
+							"zmxmc": "爬梯"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "06",
+						"text": "爬梯",
+						"iconCls": "",
+						"zmxnm": "06",
+						"zbnm": null
+					}, {
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "08",
+								"zcmc": "气胀救生筏",
+								"zcbz": "Combine_气胀救生筏"
+							}, {
+								"zcnm": "18",
+								"zcmc": "救生圈",
+								"zcbz": "C_救生圈"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "07",
+							"zmxmc": "救生设备"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "07",
+						"text": "救生设备",
+						"iconCls": "",
+						"zmxnm": "07",
+						"zbnm": null
+					}, {
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "10",
+								"zcmc": "栏杆",
+								"zcbz": "Combine_栏杆"
+							}, {
+								"zcnm": "11",
+								"zcmc": "C_组件",
+								"zcbz": "Combine_C_组件"
+							}, {
+								"zcnm": "12",
+								"zcmc": "B_组件",
+								"zcbz": "Combine_B_组件"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "08",
+							"zmxmc": "设施部件"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "08",
+						"text": "设施部件",
+						"iconCls": "",
+						"zmxnm": "08",
+						"zbnm": null
+					}],
+					"isflag": "0",
+					"id": "29",
+					"text": "主甲板",
+					"state": "closed",
+					"iconCls": ""
+				}, {
+					"children": [{
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "01",
+								"zcmc": "船体",
+								"zcbz": "Combine_船体"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "01",
+							"zmxmc": "舰体"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "01",
+						"text": "舰体",
+						"iconCls": "",
+						"zmxnm": "01",
+						"zbnm": null
+					}, {
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "16",
+								"zcmc": "舰岛舱门",
+								"zcbz": "A_舰岛舱门"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "09",
+							"zmxmc": "舱门"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "09",
+						"text": "舱门",
+						"iconCls": "",
+						"zmxnm": "09",
+						"zbnm": null
+					}, {
+						"zmx": {
+							"zmxzcmap": [{
+								"zcnm": "17",
+								"zcmc": "锚",
+								"zcbz": "A_锚"
+							}],
+							"zmxdhmap": [],
+							"swmxnm": "03",
+							"zmxnm": "10",
+							"zmxmc": "船锚"
+						},
+						"isflag": "1",
+						"xxxx": [{
+							"jgmc": "位置分布",
+							"sjz": "测试",
+							"jldw": "",
+							"sjlx": "文本（512字符）",
+							"sjzforOrg": "测试"
+						}, null, null, null, null, null, null, null, null, null, null],
+						"mxnm": "03",
+						"id": "10",
+						"text": "船锚",
+						"iconCls": "",
+						"zmxnm": "10",
+						"zbnm": null
+					}],
+					"isflag": "0",
+					"id": "30",
+					"text": "主船体",
+					"state": "closed",
+					"iconCls": ""
+				}],
+				"isflag": "0",
+				"id": "27",
+				"text": "舰体机构",
+				"state": "closed",
+				"iconCls": ""
+			}],
+			"isflag": "0",
+			"id": "26",
+			"text": "物理结构",
+			"state": "closed",
+			"iconCls": ""
+		}],
+		"TreeNAME": "物理结构树"
+	},
+	"swmxmc": "“里根”号核动力航母（CVN76）",
+	"swmxnm": "03",
+	"fzmxjdlj": null,
+	"fzmxwjdx": null,
+	"fzmxmtgs": null,
+	"preFtpUrl": "",
+	"swmxlx": "\t“尼米兹”级核动力航母",
+	"fzmxwjdxforOrg": null,
+	"issc": "0"
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>三维展示页面</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="three.js"></script>
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/utls.js"></script>
+
+	<!-- 页面js -->
+	<script type="text/javascript" src="test-data/data.js"></script>
+	<script type="text/javascript" src="ui/clock.js"></script>
+	<script type="text/javascript" src="ui/tabPanel.js"></script>
+
+	<script type="text/javascript" src="js/shaders/OceanShaders.js"></script>
+	<script type="text/javascript" src="js/Ocean.js"></script>
+	<script type="text/javascript" src="beyon/background.js"></script>
+	<script type="text/javascript" src="beyon/drawHitArea.js"></script>
+	<script src="js/shaders/CopyShader.js"></script>
+	<script src="js/shaders/FXAAShader.js"></script>
+	<script src="js/postprocessing/EffectComposer.js"></script>
+	<script src="js/postprocessing/RenderPass.js"></script>
+	<script src="js/postprocessing/ShaderPass.js"></script>
+	<script src="js/postprocessing/OutlinePass.js"></script>
+	<!-- 补间动画 -->
+	<script src="js/libs/tween.min.js"></script>
+	<script type="text/javascript" src="beyon/base_scene.js"></script>
+	<script type="text/javascript" src="beyon/renderer_manager.js"></script>
+	<script type="text/javascript" src="beyon/enum.js"></script>
+	<!-- 控制器 -->
+	<script type="text/javascript" src="js/controls/TrackballControls.js"></script>
+	<script type="text/javascript" src="js/controls/FlyControls.js"></script>
+	<script src="js/controls/OrbitControls.js"></script>
+
+	<script type="text/javascript" src="js/objects/Water.js"></script>
+	<script type="text/javascript" src="js/objects/Sky.js"></script>
+	
+	<script type="text/javascript" src="js/loaders/DRACOLoader.js"></script>
+	<script type="text/javascript" src="js/loaders/GLTFLoader.js"></script>
+	<script src="js/renderers/CSS2DRenderer.js"></script>
+	<link href="three-index.css" rel="stylesheet" type="text/css">
+	<link href="../js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../js/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id ="beyonmap-three-header" class = "beyonmap-panel beyonmap-header">
+		<div class="header-system-name">
+			<div class="logo">
+				<img src="../img/three/logo.png" />
+			</div>
+			<div class="system-title">
+				精细模型展示系统
+			</div>
+		</div>
+		<div class="header-system-clock">
+			<div id = "beyonmap-header-time" class = "beyonmap-inline-div beyonmap-time-text bigger">16:08:11</div>
+			<div class = "beyonmap-time-text smaller">
+				<div id = "beyonmap-header-date" style="padding: 15px 10px 5px 10px;">
+					2018/08/02
+				</div>
+				<div id = "beyonmap-header-week" style="padding: 5px 23px 5px 23px;">
+					星期四
+				</div>
+			</div>
+		</div>
+		<div class="header-system-setting">
+			<div class = "identity">
+				<img src = "" class = "identity-pic"/>
+			</div>
+			<div class = "identity identity-text">
+				<div id = "user-group">管理员</div>
+				<div id = "user-name">administer</div>
+			</div>
+			<div class = "identity close-button">
+				<img src = "" class = "identiy-close-pic"/>
+			</div>
+		</div>
+	</div>
+	<div id = "model-title-name">
+		拉森号
+	</div>
+	<div class ="beyonmap-panel beyonmap-three-part-panel beyonmap-left">
+		<div class = "beyonmap-classify-panel">
+			<div class="form-group">
+                <input id="mbid" type="text" class="form-control" style="width:150px;" placeholder="目标名称">
+                <div id="js_list" class="js_list" style="overflow: hidden;display: none;">
+                </div>
+            </div>
+			<ul class= "" id = "model-classify-tree">
+				
+			</ul>
+		</div>
+		<div class = "beyonmap-model-content">
+			<ul class= "" id = "model-content-tree">
+				
+			</ul>
+		</div>
+	</div>
+	<div class ="beyonmap-panel beyonmap-three-part-panel beyonmap-right">
+		<div class = "beyonmap-content">
+			<div class = "right-header-panel" id = "right-header-panel">
+				<!-- <button class="beyonmap-attribute-table-button active" id = "basic" >基本信息</button>
+				<button class="beyonmap-attribute-table-button" id = "mian" >舰船信息</button>
+				<button class="beyonmap-attribute-table-button" id = "other" >其他信息</button> -->
+			</div>
+
+			<div class="right-content-box" id = "right-content-box">
+				<div class = "right-content-tab-panel" data-idfy = "basic" style="">
+					<!-- <div class = "fieldset-picture">
+						<img src = "" class="field-picture-img" style="" />
+					</div>
+					<div class = "fieldset-common-content">
+						<div class = "fieldset-small-text-box">
+							<div class="fieldset-title">类别</div>
+							<div class="fieldset-text">舰船</div>
+						</div>
+						<div class = "fieldset-small-text-box">
+							<div class="fieldset-title">类别</div>
+							<div class="fieldset-text">舰船</div>
+						</div>
+						<div class = "fieldset-small-text-box">
+							<div class="fieldset-title">类别</div>
+							<div class="fieldset-text">舰船</div>
+						</div>
+					</div> -->
+				</div>
+				<div class = "right-content-tab-panel" data-idfy = "mian" style="display: none;"></div>
+				<div class = "right-content-tab-panel" data-idfy = "other" style="display: none;"></div>
+			</div>
+		</div>
+	</div>
+	<div id ="beyonmap-three-content"></div>
+
+	<script type="text/javascript" id ="panel_data">
+				
+		
+	</script>
+	<script type="text/javascript">
+		var base_scene;
+		//初始化钟表
+		var beyonmap_time = document.getElementById("beyonmap-header-time");
+		var beyonmap_date = document.getElementById("beyonmap-header-date");
+		var beyonmap_week = document.getElementById("beyonmap-header-week");
+		var beyonClocks = new beyonClock(beyonmap_time,beyonmap_date,beyonmap_week);
+
+		//初始化右侧属性框
+		var tabPanelManager = new tablePanel();
+		tabPanelManager.init();
+
+		var options={
+			size:{
+				width:1920,
+				height:1024
+			},                         //need
+			background : {
+				SceneBackgroundModel:SceneBackgroundModel.SKY,
+				param : 'skybox',
+			},
+			// background:{									//OPTIONS
+			// 	texture:{
+			// 		path:'textures/cube/skybox/',
+			// 		files:[
+			// 			'px.jpg', 'nx.jpg',
+			// 			'py.jpg', 'ny.jpg',
+			// 			'pz.jpg', 'nz.jpg'],
+			// 		},
+			// 	color:0xffffff
+			// },
+			// fogColor:0xffffff,
+			lights:{
+				ambient:{
+					color:0x404040,
+					intensity:4
+				},
+				direction:{
+					color:0xffffff,
+					intensity:4,
+					position:new THREE.Vector3(0, 50, 0)
+				},
+				spot1:{
+					color:0xffffff,
+					intensity:2,
+					position:new THREE.Vector3(0, 0, 100),  //This is set equal to Object3D.DefaultUp (0, 1, 0), so that the light shines from the top down.
+					distance:0.0,			//If non-zero, light will attenuate linearly from maximum intensity at the light's position down to zero at this distance from the light. Default is 0.0.
+					angle:0,		//Maximum extent of the spotlight, in radians, from its direction. Should be no more than Math.PI/2. The default is Math.PI/3.
+					penumbra:0.0,     //Percent of the spotlight cone that is attenuated due to penumbra. Takes values between zero and 1. The default is 0.0.                 
+					decay:1,		//The amount the light dims along the distance of the light.In physically correct mode, decay = 2 leads to physically realistic light falloff. The default is 1.
+					castShadow:false
+				}
+			},
+			camera:{                                   //option
+				fov:75,
+				aspect:1920/768,
+				near:0.1,
+				far:1000,
+				initPos:new THREE.Vector3(0,50,50)
+			},
+			controls:{
+				mode:2,
+				//针对flycontrols
+				moveSpeed:50, 
+				rollSpeed:0.1,
+				dragToLook:true,//
+				autoForward:false,
+				//other
+				rotateSpeed:1,
+				zoomSpeed : 1.2,
+				panSpeed : 0.8,
+				noZoom : false,
+				noPan : false,
+				staticMoving : true,
+				dynamicDampingFactor : 0.3
+			}
+		};
+		var scenes=[],renderer, container;
+		var lastWidth,lastHeight;
+		var mouse = new THREE.Vector2(), INTERSECTED;
+		var raycaster = new THREE.Raycaster();
+		var rendererManager;
+		var onProgress = function ( xhr ) {
+			if ( xhr.lengthComputable ) {
+				var percentComplete = xhr.loaded / xhr.total * 100;
+				console.log( Math.round(percentComplete, 2) + '% downloaded' );
+			}
+		};
+
+		var onError = function ( xhr ) {
+		};
+		function docMouse2containerMouse(pos){
+			pos.x-=container.offsetLeft;
+			pos.y-=container.offsetTop;
+		}
+
+		function onDocumentMouseMove( event ) {
+
+			event.preventDefault();
+			var pos=new THREE.Vector2(event.clientX,event.clientY);
+			docMouse2containerMouse(pos);
+			//
+			// scenes.forEach( function( scene ) {				
+			// 	if(scene.isMouseInside(pos))
+			// 	{
+			// 		mouse=scene.client2mouse(pos);
+			// 		scene.rayPick(raycaster,mouse);
+			// 	}
+			// });
+
+			rendererManager.onMouseMove(pos);	
+			
+
+		}
+
+		function onClick( event ) {
+
+			event.preventDefault();
+			var pos=new THREE.Vector2(event.clientX,event.clientY);
+			docMouse2containerMouse(pos);
+			//
+			// scenes.forEach( function( scene ) {				
+			// 	if(scene.isMouseInside(pos))
+			// 	{
+			// 		mouse=scene.client2mouse(pos);
+			// 		scene.rayPick(raycaster,mouse);
+			// 	}
+			// });
+
+			rendererManager.onLeftClick(pos);	
+			
+
+		}
+		var onWindowResize= function() {
+			
+			rendererManager.onWindowResize(container.offsetLeft,container.offsetTop,container.offsetWidth, container.offsetHeight);
+
+		};
+
+
+
+		function animate() {
+
+			rendererManager.render();
+			requestAnimationFrame( animate );
+
+		}
+
+		var background;
+		window.onload = function(){
+
+			container = document.getElementById("beyonmap-three-content");
+			lastWidth=container.offsetWidth;
+			lastHeight=container.offsetHeight;
+
+			//添加render
+			//0、渲染
+			rendererManager=new rendererManager();
+			var renderParams={
+				width:container.offsetWidth,
+				height:container.offsetHeight,
+				antialias:true,
+				postprocess:false
+			};
+			var renderObj=rendererManager.addRender(renderParams);
+			
+
+			//添加一个加载数据管理器
+			var loadManager = new THREE.LoadingManager();
+			loadManager.onProgress = function ( item, loaded, total ) {
+					console.log( item, loaded, total );
+			};
+			//构造一个scene
+			options.size.left=0; 
+			options.size.top=0;
+			options.size.width=container.offsetWidth/2; 
+			options.size.height=container.offsetHeight*2/3;
+			options.id="left";
+			options.outline=false;
+			var scene_left=renderObj.addBaseScene(options);
+
+			scenes.push(scene_left);
+			
+			var loader = new THREE.GLTFLoader(loadManager);
+
+			THREE.DRACOLoader.setDecoderPath( 'js/libs/draco/gltf/' );
+			loader.setDRACOLoader( new THREE.DRACOLoader() );
+
+			var url = "../data/model/B-52H/gltf/B-52H.glb";
+
+			var obj={
+				url:"../data/model/B-52H/gltf/B-52H.glb",
+				id:"B-52H"
+			}
+			scene_left.addModel(loader,obj,onProgress,onError)
+
+			// loader.load( url, function( data ) {
+
+			// 	gltf = data;
+			// 	gltf.scene.position.y = 2;
+			// 	var object = gltf.scene;
+			// 	scenes[0].addObject(object);
+
+			// },onProgress,onError);
+
+
+			//再添加一个scene
+			options.size.left+=options.size.width; 
+			options.size.top=0;
+			options.size.width=container.offsetWidth/2; 
+			options.size.height=container.offsetHeight*2/3;
+			options.id="right"
+			
+			var scene_right=renderObj.addBaseScene(options);
+
+			scenes.push(scene_right);
+
+
+			var obj2={
+				url:"../data/model/f22/f22.gltf",
+				id:"f22"
+			}
+			scene_right.addModel(loader,obj2,onProgress,onError)		
+
+			renderObj.setDomElement(container);
+
+			window.addEventListener( 'resize', onWindowResize, false );
+
+			container.addEventListener( 'mousemove', onDocumentMouseMove, false );
+			container.addEventListener( 'click', onClick, false );
+			animate();
+			scene_left.enableOutline(true);
+			scene_right.enableOutline(true);
+			
+}
+	</script>
+
+</body>
+</html>

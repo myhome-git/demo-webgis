@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script>
+			var _name = location.pathname.match(/^\/[\w|-]*/);
+			document.writeln("<script src='"+_name+"/3dmodel/Common.init.js?"+new Date().getTime()+"'><\/script>");
+		</script>
+		<script>
+			Response([
+				{"c":"common"},
+				{"c" : window.Common.Config.PROBJECT_PATH+"/css/layui-style.css"},
+				
+				{"c" :　"x.ztree"},
+				{"j" : "x.ztree"},
+				
+				{"j":"x.util.layui.table"},
+				{"j":"./model.main.json.js"},
+				{"j":"./model.main.js"}
+			]);
+		</script>
+		<style>
+			body{
+				background: #FFF;
+			}
+			.layui-laypage .layui-laypage-curr .layui-laypage-em{
+				background-color: rgba(30,159,255,1)!important;
+			}
+			.x-common-panel .x-panel-title{
+				color: #666;
+			}
+			.x-panel-content > .x-inlineblock{
+				margin-bottom: 10px;
+				margin-left: 10px;
+			}
+			.x-panel-content > .x-inlineblock > .x-inlineblock{
+				margin-left: 0;
+				margin-bottom: 0;
+			}
+			#x-hidden-window{
+				position: fixed;
+				left: 0;
+				top: 0;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+			}
+			#input-search-from > div{
+				float: left;
+				line-height: 30px;
+			}
+            .layui-layer-title {
+                border-bottom: 1px solid rgba(35, 119, 227, 0.9);
+                background-color: rgba(35, 119, 227, 0.9);
+                color: #fff;
+            }
+		</style>
+	</head>
+	<body>
+		<div id="x-hidden-window"></div>
+		<div class="x-common-panel" style="margin-left: 2px;margin-right: 2px;margin-bottom: 1px;">
+			<div class="x-common-panel">
+				<!--<div class="x-panel-title">
+					<i class="iconfont glyphicon glyphicon-leaf"></i>
+					<font id="search-class-name"></font><font>查询</font>
+				</div>-->
+				<div id="ElementTemplateMainDataSearchINPUT"></div>
+			</div>
+			<div class="x-common-panel">
+				<div class="x-panel-title" id="layui-table-top-toolbar" style="border-bottom: 0;">
+					<i class="iconfont glyphicon glyphicon-th-list"></i>
+					<font>数据列表</font>
+					<font style="margin-left: 30px;"></font>
+					<button type="button" class="layui-btn layui-btn-xs" x-btn-name="table-refresh"><i class="iconfont fa fa-refresh"></i>刷新数据</button>
+					<button type="button" class="layui-btn layui-btn-xs layui-btn-normal" x-btn-name="personnel-add"><i class="iconfont fa fa-plus"></i>新增</button>
+					<button type="button" class="layui-btn layui-btn-xs layui-btn-danger" x-btn-name="personnel-delete-multiple"><i class="iconfont fa fa-trash"></i>批量删除</button>
+				</div>
+				<div id="layui-table-search-data" lay-filter="table-datalist"></div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<!--表格搜索项-->
+<script type="text/html" id="TemplateTableSearchTABLE">
+{{if isRun==true}}
+	<div class="x-common-panel layui-form" style="padding: 0;border: 0;">
+		<div class="x-panel-content layui-form x-clearfix" style="padding: 10px;" id="input-search-from">
+			<input type="hidden" x-out-name="sortOrder" value="asc" />
+			<div class="x-inlineblock">
+				起始时间：
+			</div>
+			<div class="x-inlineblock input-date-icon">
+				<input type="text" class="layui-input input-time" placeholder="" autocomplete="off" name="time-start" id="layui-date-start" x-out-name="start" x-input-name="start">
+			</div>
+			<div class="x-inlineblock" style="">
+				结束时间：
+			</div>
+                        <div class="x-inlineblock input-date-icon">
+				<input type="text" class="layui-input input-time" placeholder="" autocomplete="off" name="time-end" id="layui-date-end" x-out-name="end"  x-input-name="end">
+			</div>
+
+			<div class="x-inlineblock" style="">
+				名称：
+			</div>
+			<div class="x-inlineblock">
+				<input type="text" class="layui-input" placeholder="" autocomplete="off" name="param"  x-out-name="param">
+			</div>
+			<div class="x-inlineblock" style="margin-left: 20px;margin-top:-2px;">
+				<button type="button" x-btn-name="button-search" class="layui-btn layui-btn-sm layui-btn-normal">
+					<i class="iconfont glyphicon glyphicon-search"></i>
+					<span>查询</span>
+				</button>
+			</div>
+		</div>
+	</div>
+{{/if}}
+</script>
+<!--工具栏-->
+<script type="text/html" id="TemplateTableCellBarTool">
+<div>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-primary" lay-event="edit">原始按钮</button>
+    <button type="button" class="layui-btn layui-btn-xs" lay-event="delete">默认按钮</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-normal" lay-event="edit">百搭按钮</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-warm" lay-event="edit">暖色按钮</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="edit">警告按钮</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-disabled" lay-event="edit">禁用按钮</button>
+</div>
+</script>
+<script type="text/html" id="TemplateTableCellBarToolTABLE">
+<div>
+    <button type="button" title="修改"  class="layui-btn layui-btn-xs layui-btn-normal" lay-event="update"><i class="iconfont fa fa-edit"></i></button>
+    <button type="button" title="删除"  class="layui-btn layui-btn-xs layui-btn-danger" lay-event="delete"><i class="iconfont fa fa-remove"></i></button>
+</div>
+</script>

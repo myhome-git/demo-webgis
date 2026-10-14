@@ -1,0 +1,151 @@
+<script id="TemplatePanelModelChildrenEdit" type="text/html">
+	<div class="layui-tab layui-tab-card" lay-filter="test1">
+		<ul class="layui-tab-title x-panel-title">
+			<li x-tab-name="nodeInfo" class="layui-this">节点信息</li>
+			<li x-tab-name="nodeLabel" class="panel-hidden">标牌</li>
+			<li x-tab-name="nodeAnimate" class="panel-hidden">动画</li>
+			<div class="btn-close" style="top: 8px;">
+				<i class="iconfont fa fa-close"></i>
+			</div>
+		</ul>
+		<div class="layui-tab-content">
+		    <div class="layui-tab-item layui-show">
+		    	<div id="form-model-children-node-edit" class="layui-form">
+					<div style="padding: 0;">
+						<input type="hidden" x-input-name="action" x-out-name="action" class="layui-input" autocomplete="off" placeholder="action" disabled>
+						<input type="hidden" x-input-name="id" x-out-name="id" class="layui-input" autocomplete="off" placeholder="id" disabled>
+						<input type="hidden" x-input-name="modelIdentifier" x-out-name="modelIdentifier" class="layui-input" autocomplete="off" placeholder="模型标识符" disabled>
+						<input type="hidden" x-input-name="identifier" x-out-name="identifier" class="layui-input" autocomplete="off" placeholder="节点标识符" disabled>
+	                    <div class="layui-form-item">
+							<label class="layui-form-label">节点名称：</label>
+							<div class="layui-input-block">
+								<input type="hidden" x-input-name="identifier" x-out-name="identifier" class="layui-input" autocomplete="off">
+								<input type="text" x-input-name="name" x-out-name="name" class="layui-input" autocomplete="off" placeholder="节点原名称" disabled>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">中文名称：</label>
+							<div class="layui-input-block">
+								<input type="text" x-input-name="chName" x-out-name="chName" class="layui-input" autocomplete="off" placeholder="显示名称">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">节点内码：</label>
+							<div class="layui-input-block">
+								<input type="text" x-input-name="neima" x-out-name="neima" class="layui-input" autocomplete="off" placeholder="节点内码">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">视图参数：</label>
+							<div class="layui-input-block">
+								<font id="input-model-children-view"></font>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">&nbsp;</label>
+							<div class="layui-input-block">
+								<button type="button" class="layui-btn layui-btn-normal layui-btn-sm" x-button-name="httpSaveModelNodeInfo">保存节点信息</button>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+			<div class="layui-tab-item">
+				<div id="form-model-children-node-label-edit" class="layui-form">
+					<div style="padding: 0;">
+						<input type="hidden" x-input-name="action" x-out-name="action" class="layui-input" autocomplete="off" placeholder="action" disabled>
+						<input type="hidden" x-input-name="id" x-out-name="id" class="layui-input" autocomplete="off" placeholder="id" disabled>
+						<input type="hidden" x-input-name="modelNodeIdentifier" x-out-name="modelNodeIdentifier" class="layui-input" autocomplete="off" placeholder="节点标识符" disabled>
+						<div class="layui-form-item">
+							<label class="layui-form-label">标牌名称：</label>
+							<div class="layui-input-block">
+								<input type="text" x-input-name="name" x-out-name="name" class="layui-input" autocomplete="off" placeholder="标牌名称">
+							</div>
+						</div>
+						<div class="layui-form-item" style="margin-bottom: 10px;">
+							<label class="layui-form-label">标牌描述：</label>
+							<div class="layui-input-block">
+								<textarea x-input-name="describe" x-out-name="describe" class="layui-textarea" autocomplete="off" style="height: 80px;"></textarea>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">图标：</label>
+							<div class="layui-input-block">
+								<button id="button-model-children-node-label-image" type="button" class="layui-btn layui-btn-sm">配置</button>
+								<font></font>
+							</div>
+						</div>
+						<!--<div class="layui-form-item">
+							<label class="layui-form-label">多媒体：</label>
+							<div class="layui-input-block">
+								<button id="button-model-children-node-label-media" type="button" class="layui-btn layui-btn-sm">配置</button>
+								<font></font>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">视图参数：</label>
+							<div class="layui-input-block">
+								<font id="input-model-children-node-label-view"></font>
+							</div>
+						</div>-->
+						<div class="layui-form-item">
+							<label class="layui-form-label">&nbsp;</label>
+							<div class="layui-input-block">
+								<button type="button" class="layui-btn layui-btn-normal layui-btn-sm" x-button-name="showModelNodeLabelInfo">预览</button>
+								<button type="button" class="layui-btn layui-btn-normal layui-btn-sm" x-button-name="httpSaveModelNodeLabelInfo">保存标牌</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="layui-tab-item">
+				<div id="form-model-children-node-animate-edit" class="layui-form">
+					<div style="padding: 0;">
+						<input type="hidden" x-input-name="action" x-out-name="action" class="layui-input" autocomplete="off" placeholder="action" disabled>
+						<input type="hidden" x-input-name="id" x-out-name="id" class="layui-input" autocomplete="off" placeholder="id" disabled>
+						<input type="hidden" x-input-name="modelNodeIdentifier" x-out-name="modelNodeIdentifier" class="layui-input" autocomplete="off" disabled>
+	                    <!--<div class="layui-form-item">
+							<label class="layui-form-label">节点名称：</label>
+							<div class="layui-input-block">
+								<input type="text" x-input-name="nodeName" x-out-name="nodeName" class="layui-input" autocomplete="off" placeholder="节点名称" disabled>
+							</div>
+						</div>-->
+						<div class="layui-form-item">
+							<label class="layui-form-label">动画名称：</label>
+							<div class="layui-input-block">
+								<input type="text" x-input-name="name" x-out-name="name" class="layui-input" autocomplete="off" placeholder="动画名称">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">开始时间：</label>
+							<div class="layui-input-block">
+								<input type="text" x-input-name="startTime" x-out-name="startTime" class="layui-input" autocomplete="off" placeholder="开始时间">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">结束时间：</label>
+							<div class="layui-input-block">
+								<input type="text" x-input-name="endTime" x-out-name="endTime" class="layui-input" autocomplete="off" placeholder="结束时间">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">&nbsp;</label>
+							<div class="layui-input-block">
+								<button type="button" class="layui-btn layui-btn-normal layui-btn-sm" x-button-name="showModelNodeAnimateInfo">预览</button>
+								<button type="button" class="layui-btn layui-btn-normal layui-btn-sm" x-button-name="httpSaveModelNodeAnimateInfo">保存动画</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script id="TemplatePanelModelNodeLabel" type="text/html">
+	<div class="x-common-panel">
+		<div class="x-panel-title" title="{{title}}">{{title}}</div>
+		<div class="x-panel-content">
+			{{content}}
+		</div>
+	</div>
+</script>

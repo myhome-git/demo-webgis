@@ -1,0 +1,240 @@
+/**
+ * 修正
+ */
+
+.container-fluid-ex {
+    background-color:transparent;
+}
+
+.navbar-header-ex {
+    background-color:transparent;
+    padding-left: 15px;
+}
+.panel-primary>.panel-heading{
+	background: transparent;
+}
+.panel-heading{
+	border-bottom:1px solid #95B8E7!important;
+}
+.panel{
+	background-color:transparent;
+}
+#hjconfigDiv{
+	border: 1px solid rgba(255,255,255,0);
+}
+#hjconfigDiv .layui-tab{
+	padding: 0;
+	margin: 0;
+}
+.window .window-header .panel-with-icon {
+  font-size:  15px;
+  font-weight: normal;
+}
+.model-transparent .panel.window.panel-htop{
+	border: 1px solid rgba(149,184,231,0.9);
+	border-radius: 3px;
+}
+.panel-header .panel-title {
+  height: auto;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(149,184,231,0.9);
+}
+.model-transparent .panel-header.window-header{
+	background: rgba(35,52,74,0.9);
+}
+.model-transparent .panel-body.window-body{
+	background: rgba(35,52,74,0.75);
+}
+body{
+	background: transparent;
+}
+.model-windows .model-content{
+	padding: 0;
+	top: 0;
+}
+.model-windows .model-content-relative{
+	position: relative;
+	margin-top: 0px;
+	outline:0px solid #FF0000;
+}
+.beyonmap-compass{
+	top: 90px;
+}
+
+.beyonmap-viewer-toolbar{
+	top: 80px;
+	right: 20px;
+}
+
+.beyonmap-toolbar-shrink {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16px;
+    height: 32px;
+    border-radius: 14%;
+    padding: 0;
+    vertical-align: middle;
+    z-index: 0;
+    /* display:none!important; */
+}
+
+#Layer-Panel{
+	z-index: 1;
+}
+
+.window{
+	padding: 0;
+}
+.window, .window-shadow{
+	border-radius: 0;
+}
+.window .window-header{
+	padding: 0;
+}
+.panel-header, .panel-body{
+	border:0;
+}
+.window .window-body{
+	border: 0;
+}
+
+/**
+ * 自定义
+ */
+
+.skin-blue .model-windows .model-header .page-back > .p-button{
+	outline: 0px solid #FF0000;
+	position: relative;
+	background: none;
+	width: 50px;
+	overflow:inherit;
+}
+.skin-blue .model-windows .model-header .page-back>.p-button img{
+	position: absolute;
+	left: 0;
+	top: -7px;
+	outline: 0px solid #0033cc;
+}
+.model-windows .model-header .page-back > div {
+    margin-right: 0;
+    border: 0;
+    overflow: hidden;
+    position: relative;
+}
+.model-windows .model-header .page-back > .p-b {
+    border-radius: 0;
+}
+
+.skin-yellow .model-windows .model-header .page-back > .p-b{
+   border: 1px solid #FFFFFF;
+}
+.model-windows .model-header .page-back > .p-b:nth-of-type(2n+0) {
+   border-right: 0;
+   border-left: 0;
+}
+.skin-yellow  .model-windows .model-header .page-back > .p-b {
+    background: #EE8416;
+    color: #FFFFFF;
+}
+.skin-yellow .model-windows .model-header .page-back > .p-b:hover{
+	background: #FFFFFF;
+	color: #EE8416;
+}
+
+.taishi-window{
+	position: absolute;
+	left: 500px;
+	top: 10px;
+	z-index: 9002;
+	width: 350px;
+	height: 557px;
+	color: #666;
+}
+#taishi-window1{
+	left: 0;
+	width: 100%;
+}
+.taishi-window a{}
+
+.taishi-window .w-titile{
+	line-height: 40px;
+	padding: 0rem 1rem 0rem 1rem;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.taishi-window .w-titile a{
+	color: #666;
+}
+.taishi-window .ts-content{
+	padding: 0;
+}
+.taishi-window .ts-content .settings-group{
+	
+}
+.taishi-window .ts-content .settings-group .set-table{
+	display: table;
+	width: 100%;
+	padding: 3px 0px 3px 0px;
+}
+
+.taishi-window .ts-content .settings-group .set-table .set-table-cell{
+	display: table-cell;
+}
+.taishi-window .ts-content .settings-group .set-table .set-table-cell.tag{
+	width: 70px;
+	text-align: left;
+}
+
+.taishi-window .ts-content .settings-group .set-table .set-table-cell button{
+	padding: 3px 5px 3px 5px;
+	margin-right: 5px;
+}
+.taishi-window .ts-content .settings-group .set-table .set-table-cell .checkbox{
+	font-weight: normal;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.taishi-window .ts-content .settings-group .set-table .set-table-cell input[type='checkbox']{
+	position: relative;
+	margin: 0;
+}
+.taishi-window .ts-content .layui-tab{
+	margin: 0;
+}
+.taishi-window .ts-content .layui-tab-title{
+	margin-bottom: 0;
+}
+.taishi-window .ts-content ul{
+	margin-bottom: 0;
+}
+.taishi-window .ts-content .layui-tab-content{
+	border: 0px solid rgba(255,255,255,0.5);
+}
+
+.model-transparent .taishi-window{
+	color: #fff;
+}
+.model-transparent a{
+	color: #fff;
+}
+.model-transparent .window .window-header .panel-tool{
+	right: 10px;
+}
+.model-transparent .layui-tab .layui-tab-title > li{
+	color: #dedede;
+}
+.model-transparent .layui-tab .layui-tab-title > li.layui-this{
+	color: #FFFFFF;
+	background: rgba(238,132,22,0.5);
+}
+.model-transparent .layui-tab .layui-tab-title .layui-this:after{
+	border: 1px solid rgba(255,255,255,0.5);
+	border-style: solid solid none solid;
+	top: -1px;
+}
+
+.tip.gbox{
+	top:180px;
+	right: 350px;
+	left: auto;
+}

@@ -1,0 +1,20 @@
+{
+	"MXXT": [
+		{
+			"Name": "指挥控制系统",
+			"Node": "a8_jishen"
+		}, {
+			"Name": "侦察预警系统",
+			"Node": "a8_xianshiping"
+		}, {
+			"Name": "打击系统",
+			"Node": "a8_guadanjia"
+		}, {
+			"Name": "动力系统",
+			"Node": "a8_anniu"
+		}, {
+			"Name": "电子对抗系统",
+			"Node": "a8_kongsuguan"
+		}
+	]
+}

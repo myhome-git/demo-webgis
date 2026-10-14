@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>模型树</title>
+		<script>
+			var _name = location.pathname.match(/^\/[\w|-]*/);
+			document.writeln("<script src='"+_name+"/3dmodel/Common.init.js?"+new Date().getTime()+"'><\/script>");
+		</script>
+		<script>
+			Response([
+				{"c" :　"x.ztree"},
+				{"c":"common"},
+				{"c" : window.Common.Config.PROBJECT_PATH+"/css/layui-style.css"},
+				{"j" : "x.ztree"}
+			]);
+		</script>
+		<style>
+			body{
+				background: #FFF;
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- model tree -->
+		<div id="ModelTreeLayer" style="display: block;padding:10px;">
+			<ul id="modelTree" class="ztree"></ul>
+		</div>
+		
+		<script>
+			Response([
+				{"j":"model.tree.js"}
+			]);
+		</script>
+	</body>
+</html>

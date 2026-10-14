@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>模型树</title>
+		<script>
+			var _name = location.pathname.match(/^\/[\w|-]*/);
+			document.writeln("<script src='"+_name+"/3dmodel/Common.init.js?"+new Date().getTime()+"'><\/script>");
+		</script>
+		<script>
+			Response([
+				{"c":"common"},
+				{"c" : window.Common.Config.PROBJECT_PATH+"/css/layui-style.css"},
+				{"j" : "x.util.slider"},
+			]);
+		</script>
+		<style>
+			body{
+				background: #FFF;
+				overflow: auto;
+			}
+			.layui-input-block{
+				margin-left:auto;
+			}
+			.panel-attribute .item-panel .item-right .button{
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 30px;
+				line-height: 30px;
+				padding: 0px 5px 0px 5px;
+				background: rgba(157,214,204,0.5);
+				color: rgba(0,0,0,1);
+				cursor: pointer;
+				border: 1px solid #ddd;
+			}
+			.panel-attribute .item-panel .item-right .button:hover{
+				color: white;
+			}
+			.panel-attribute .item-panel .item-right .button .layui-btn-control-type-color{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+			}
+			.panel-attribute .item-panel .item-right .button .layui-btn-control-type-color > *{
+				width: 100%;	
+			}
+			.x-ui-mouse-drag-slider .drag-slider-box{
+				width:140px;
+				height: 24px;
+			}
+			.x-ui-mouse-drag-slider .drag-slider-input > input{
+				width:50px;
+				height: 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- model setting -->
+		<div id="x-view-window" class="x-view-window">
+    		<div class="x-from panel-attribute">
+    			<div class="x-common-panel">
+					<div class="x-panel-content layui-form">
+						<div class="item-panel">
+							<div class="item-left">
+								<font>开启伽马：</font>
+							</div>
+							<div class="item-right">
+								<div class="">
+									<div class="layui-input-block">
+								      <input type="checkbox" name="open" id="sceneGamma" lay-skin="switch" lay-filter="switchGamma" lay-text="ON|OFF">
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="item-panel">
+							<div class="item-left">
+								<font>曝光值：</font>
+							</div>
+							<div class="item-right">
+								<div class="" style="margin-top: 0;">
+									<div id="sliderToneMappingExposure" class="demo-slider"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item-panel">
+							<div class="item-left">
+								<font>环境强度：</font>
+							</div>
+							<div class="item-right">
+								<div class="" style="margin-top: 0;">
+									<div id="slideAmbientIntensity" class="demo-slider"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item-panel">
+							<div class="item-left">
+								<font>环境颜色：</font>
+							</div>
+							<div class="item-right">
+								<div class="" style="">
+									<div class="button">
+										<a class="layui-btn-fluid">选择</a>
+										<div id="BUTTON-colorpicker-ambientColor" class="layui-btn-control-type-color"></div>
+									</div>
+									<input type="text" id="INPUT-colorpicker-ambientColor"
+										class="layui-input" 
+										placeholder="请选择颜色" 
+										autocomplete="off" 
+										name="colorpicker" 
+										x-input-name="ambientColor" 
+										x-out-name="ambientColor" 
+										value="" 
+										style="padding-right: 38px;"
+										>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+    		</div>
+    	</div>
+		
+		<script>
+			Response([
+				{"j":"model.setting.js"}
+			]);
+		</script>
+	</body>
+</html>

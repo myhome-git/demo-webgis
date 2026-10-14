@@ -1,0 +1,67 @@
+.layui-layer{
+	box-shadow : 0px 0px 15px rgba(0,0,0,.3);
+}
+
+.layui-layer-loading{
+	box-shadow : none!important;
+}
+
+label{
+	margin-bottom: 0;
+}
+.layui-form-label{
+	padding: 5px 15px;
+}
+
+.layui-layer-title{
+    border-radius: 0;
+}
+
+.layui-layer-border{
+    border: 0;
+}
+
+.layui-laydate .layui-this {
+    background-color: #66afe9!important;
+    color: #fff!important;
+}
+.layui-input,.layui-select,.layui-textarea{
+    border-radius: 0;
+}
+
+.layui-input:focus, .layui-textarea:focus{
+	border-color:#66afe9!important;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.layui-form-radio>i:hover, .layui-form-radioed>i{
+	color: #1E9FFF;
+}
+.layui-tab{
+	margin: 0;
+}
+.layui-tab-card{
+	box-shadow: none;
+	border: 0;
+}
+.layui-card{
+	box-shadow: none;
+}
+.layui-input-block .layui-input-right-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 30px;
+}
+.layui-input-block .layui-input-right-btn button{
+	height: 100%;
+}
+.layui-layer-ico.layui-layer-close.layui-layer-close1{
+    background: url("/WebFrame/library/beyon/images/close-1.svg");
+}
+
+.layui-tab-brief>.layui-tab-title .layui-this{
+	color: #1E9FFF;
+}
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after{
+	border-bottom:2px solid #1E9FFF;
+}

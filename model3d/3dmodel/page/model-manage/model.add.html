@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script>
+			var _name = location.pathname.match(/^\/[\w|-]*/);
+			document.writeln("<script src='"+_name+"/3dmodel/Common.init.js?"+new Date().getTime()+"'><\/script>");
+		</script>
+		<script>
+			Response([
+				{"c" :　"x.ztree"},
+				{"c":"common"},
+				{"c" : window.Common.Config.PROBJECT_PATH+"/css/layui-style.css"},
+				{"j" : "x.ztree"}
+			]);
+		</script>
+		<style>
+			body{
+				background: #FFF;
+				overflow: auto;
+			}
+			#blog-add{
+				width: 670px;
+				margin: 10px auto 0px auto;
+			}
+			#blog-add .layui-form-item{
+				outline: 0px solid #FF0000;
+			}
+			#blog-add .layui-form-label {
+			    width: 140px;
+			    outline: 0px solid #FF0000;
+			}
+			#blog-add .layui-input-block {
+			    margin-left: 140px;
+			}
+			#blog-add #submit{
+				position: relative;
+				z-index: 0!important;
+			}
+			#blog-add .layui-card{
+				box-shadow: none;
+			}
+			#blog-add .layui-card-body{
+				position: relative;
+			}
+			#blog-add .layui-card-body:after{
+				display: block;
+				content: "";
+				clear: both;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			#blog-add .layui-form-item{
+				float: left;
+				position: relative;
+				clear: none;
+				width: 100%;
+				margin-bottom: 5px;
+			}
+			#blog-add .layui-form-item:after{
+				content: "";
+				clear: both;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			.layui-anim.layui-anim-upbit{
+				height: 160px;
+				overflow: auto;
+			}
+			.layui-laydate{
+				left: 170px!important;
+				top: 0px!important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="blog-add" class="layui-form">
+			<div style="padding: 0;">
+				<div class="layui-row layui-col-space15">
+					<div class="layui-col-md12" id="form-input">
+						<div class="layui-card">
+							<!--<div class="layui-card-header x-clearfix">
+								<i class="iconfont fa fa-add"></i>
+								<font x-input-name="page_action">新增设备</font>
+							</div>-->
+							<div class="layui-card-body">
+								<div class="layui-form-item">
+									<label class="layui-form-label">模型分类：</label>
+									<div class="layui-input-block">
+										<input type="hidden" id="modelClassId" x-input-name="model.classId" x-out-name="model.classId" class="layui-input" autocomplete="off">
+										<input type="text" id="modelClassName" x-input-name="model.className" x-out-name="model.className" class="layui-input" autocomplete="off" placeholder="单击进行选择">
+									</div>
+								</div>
+                                <div class="layui-form-item">
+									<label class="layui-form-label">模型内码：</label>
+									<div class="layui-input-block">
+										<input type="hidden" x-input-name="model.id" x-out-name="model.id" class="layui-input" autocomplete="off">
+										<input type="text" x-input-name="model.identifier" x-out-name="model.identifier" class="layui-input" autocomplete="off" placeholder="模型唯一标识符">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">模型名称：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="model.name" x-out-name="model.name" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">模型地址：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="model.url" x-out-name="model.url" class="layui-input" autocomplete="off" placeholder="模型加载地址">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">模型类型：</label>
+									<div class="layui-input-block">
+										<select x-input-name="model.type" x-out-name="model.type" autocomplete="off" lay-search>
+											<option value="">请选择</option>
+											<option value="海">海</option>
+											<option value="陆">陆</option>
+											<option value="空">空</option>
+										</select>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">国家地区：</label>
+									<div class="layui-input-block">
+										<select x-input-name="model.country" x-out-name="model.country" autocomplete="off" lay-search></select>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">模型图片：</label>
+									<div class="layui-input-block">
+										<button id="button-model-dmt" type="button" class="layui-btn layui-btn-sm">上传图片</button>
+										<font></font>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">模型参数：</label>
+									<div class="layui-input-block" style="color: #999;">
+										这个配置可以在模型编辑界面直接进行保存
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">模型描述：</label>
+									<div class="layui-input-block">
+										<textarea x-input-name="model.describe" x-out-name="model.describe" class="layui-textarea" autocomplete="off" style="height: 80px;"></textarea>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			Response([
+				{"j":"model.add.js"},
+				{"j":"x.file.upload.main"},
+				{"j" : window.Common.Config.PROBJECT_PATH+"/xUtilBase.ext.js"}
+			]);
+		</script>
+	</body>
+</html>

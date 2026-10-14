@@ -1,0 +1,83 @@
+{
+	"SWMXTree": [
+		{
+			"children": [
+				{
+					"children": [
+						{
+							"isflag": "1",
+							"mxnm": "01",
+							"id": "040100300000002335",
+							"text": "拉森（DDG82）",
+							"iconCls": "",
+							"mxurl": "/web3d/data/model/aliboke/alibok.glb",
+							"zbnm": "040100300000002335"
+						}
+					],
+					"isflag": "0",
+					"id": "03",
+					"text": "伯克级导弹驱逐舰",
+					"state": "closed",
+					"iconCls": ""
+				}
+			],
+			"isflag": "0",
+			"id": "01",
+			"text": "驱逐舰",
+			"state": "closed",
+			"iconCls": ""
+		}, {
+			"children": [
+				{
+					"isflag": "1",
+					"mxnm": "02",
+					"id": "040100300000000539",
+					"text": "F-22A&ldquo;猛禽&rdquo;隐形战斗机",
+					"iconCls": "",
+					"mxurl": "/web3d/data/model/f22-new/f22.glb",
+					"zbnm": "040100300000000539"
+				}, {
+					"isflag": "1",
+					"mxnm": "04",
+					"id": "040100300000000546",
+					"text": "F-35B&ldquo;联合打击&rdquo;战斗机",
+					"iconCls": "",
+					"mxurl": "/web3d/data/model/F-35B/gltf/F-35B_HL_1516562.glb",
+					"zbnm": "040100300000000546"
+				}
+			],
+			"isflag": "0",
+			"id": "02",
+			"text": "歼击机",
+			"state": "closed",
+			"iconCls": ""
+		}, {
+			"children": [
+				{
+					"children": [
+						{
+							"isflag": "1",
+							"mxnm": "03",
+							"id": "040100300000002280",
+							"text": "&ldquo;里根&rdquo;号核动力航母（CVN76）",
+							"iconCls": "",
+							"mxurl": "/web3d/data/model/CVN-76/gltf/CVN-76.glb",
+							"zbnm": "040100300000002280"
+						}
+					],
+					"isflag": "0",
+					"id": "07",
+					"text": "\t&ldquo;尼米兹&rdquo;级核动力航母",
+					"state": "closed",
+					"iconCls": ""
+				}
+			],
+			"isflag": "0",
+			"id": "08",
+			"text": "航母",
+			"state": "closed",
+			"iconCls": ""
+		}
+	],
+	"TreeNAME": "模型树"
+}

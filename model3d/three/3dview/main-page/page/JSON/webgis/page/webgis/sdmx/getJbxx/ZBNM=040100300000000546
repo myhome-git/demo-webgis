@@ -1,0 +1,3223 @@
+{
+	"HOMEPAGE_ROWS": 8,
+	"basePath": "/webgis",
+	"serverIP": "10.17.112.67",
+	"theme": "default",
+	"isSFSJ": "1",
+	"serverPort": "8080",
+	"isQBZLJ": "1",
+	"LOGO_PATH": "zjzx",
+	"entityZB": {
+		"fwCount": 0,
+		"scCount": 0,
+		"hasFJ": 0,
+		"date": "2018-08-29",
+		"time": "15:52:03",
+		"arrLevel": null,
+		"info": {
+			"sjsj": "2018-08-29 15:52:03",
+			"sjly": "",
+			"qbtgdw": "",
+			"sccj": null,
+			"scgj": "美国",
+			"zbgj": "美国",
+			"yzdw": null,
+			"lxsj": null,
+			"yzsj": null,
+			"plscsj": null,
+			"zbbdsj": null,
+			"yt": "隐形、新一代、多军种联合打击飞机",
+			"dxsj": null
+			
+		},
+		"arrMT": [{
+			"zbnm": "040100300000000546",
+			"mtnm": "6141",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 2.jpg",
+			"mtsj": "2017-11-03 14:48:15",
+			"mtcd": "150.65 KB",
+			"mtcdforOrg": "154270",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "6142",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 3.jpg",
+			"mtsj": "2017-11-03 14:48:26",
+			"mtcd": "168.05 KB",
+			"mtcdforOrg": "172079",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "6143",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 5.jpg",
+			"mtsj": "2017-11-03 14:48:34",
+			"mtcd": "89.95 KB",
+			"mtcdforOrg": "92105",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "6144",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 6.jpg",
+			"mtsj": "2017-11-03 14:48:43",
+			"mtcd": "91.15 KB",
+			"mtcdforOrg": "93337",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "6145",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 1.jpg",
+			"mtsj": "2017-11-03 14:48:49",
+			"mtcd": "120.08 KB",
+			"mtcdforOrg": "122959",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "7651",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "图形图像",
+				"nm": "02",
+				"xh": "02",
+				"mcforOrg": "图形图像",
+				"issc": "0"
+			},
+			"wjm": "F_35B从美军LHA_6两栖攻击舰上起飞.jpg",
+			"mtsj": "2017-12-26 11:30:45",
+			"mtcd": "3.59 MB",
+			"mtcdforOrg": "3761343",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "12852",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 3.jpg",
+			"mtsj": "2018-08-29 15:46:36",
+			"mtcd": "1.10 MB",
+			"mtcdforOrg": "1157345",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "12853",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B1.jpg",
+			"mtsj": "2018-08-29 15:46:41",
+			"mtcd": "2.48 MB",
+			"mtcdforOrg": "2605460",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "12854",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B内部结构刨面图",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B内部结构刨面图.jpg",
+			"mtsj": "2018-08-29 15:46:48",
+			"mtcd": "1.35 MB",
+			"mtcdforOrg": "1419726",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}],
+		"arrPic": [{
+			"zbnm": "040100300000000546",
+			"mtnm": "6141",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 2.jpg",
+			"mtsj": "2017-11-03 14:48:15",
+			"mtcd": "150.65 KB",
+			"mtcdforOrg": "154270",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "6142",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 3.jpg",
+			"mtsj": "2017-11-03 14:48:26",
+			"mtcd": "168.05 KB",
+			"mtcdforOrg": "172079",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "6143",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 5.jpg",
+			"mtsj": "2017-11-03 14:48:34",
+			"mtcd": "89.95 KB",
+			"mtcdforOrg": "92105",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "6144",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 6.jpg",
+			"mtsj": "2017-11-03 14:48:43",
+			"mtcd": "91.15 KB",
+			"mtcdforOrg": "93337",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "6145",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 1.jpg",
+			"mtsj": "2017-11-03 14:48:49",
+			"mtcd": "120.08 KB",
+			"mtcdforOrg": "122959",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "7651",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "图形图像",
+				"nm": "02",
+				"xh": "02",
+				"mcforOrg": "图形图像",
+				"issc": "0"
+			},
+			"wjm": "F_35B从美军LHA_6两栖攻击舰上起飞.jpg",
+			"mtsj": "2017-12-26 11:30:45",
+			"mtcd": "3.59 MB",
+			"mtcdforOrg": "3761343",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "12852",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B 3.jpg",
+			"mtsj": "2018-08-29 15:46:36",
+			"mtcd": "1.10 MB",
+			"mtcdforOrg": "1157345",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "12853",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B1.jpg",
+			"mtsj": "2018-08-29 15:46:41",
+			"mtcd": "2.48 MB",
+			"mtcdforOrg": "2605460",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}, {
+			"zbnm": "040100300000000546",
+			"mtnm": "12854",
+			"jg": {
+				"bzbyyzd": null,
+				"bzbm": null,
+				"ycbz": null,
+				"jglx": "0",
+				"jygz": null,
+				"sjxsm": "多媒体信息",
+				"fkbz": null,
+				"cjz": "211K",
+				"fwmc": "DMTXX",
+				"jldw": null,
+				"jdbz": null,
+				"jgxh": "A23",
+				"jgmc": "多媒体信息",
+				"sjlx": "媒体（BLOB）",
+				"jgnm": "21",
+				"bzbcqm": null,
+				"bzbyyzdcqm": null
+			},
+			"bt": "F-35B内部结构刨面图",
+			"mtlx": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": null,
+				"nm": null,
+				"xh": null,
+				"mcforOrg": null,
+				"issc": "0"
+			},
+			"wjm": "F-35B内部结构刨面图.jpg",
+			"mtsj": "2018-08-29 15:46:48",
+			"mtcd": "1.35 MB",
+			"mtcdforOrg": "1419726",
+			"js": null,
+			"mtdx": "AQ==",
+			"mtgs": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"mc": "JPG",
+				"nm": "0104",
+				"xh": "0104",
+				"mcforOrg": "JPG",
+				"issc": "0"
+			}
+		}],
+		"arrNoPic": [],
+		"arrGJDQZBQK": [],
+		"arrZHZYWQ": [{
+			"sl": "1",
+			"zbnm": "040100300000000546",
+			"pbzb": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"info": {
+					"sjsj": null,
+					"sjly": null,
+					"qbtgdw": null,
+					"sccj": null,
+					"scgj": null,
+					"zbgj": null,
+					"yzdw": null,
+					"lxsj": null,
+					"yzsj": null,
+					"plscsj": null,
+					"zbbdsj": null,
+					"yt": null,
+					"dxsj": null,
+					"js": null
+				},
+				"arrMT": null,
+				"arrPic": [],
+				"arrNoPic": [],
+				"arrGJDQZBQK": null,
+				"arrZHZYWQ": null,
+				"arrZHSSWQZB": null,
+				"arrDXPBFA": null,
+				"arrXNCS": null,
+				"arrXNCS_A": null,
+				"arrXNCS_B": null,
+				"arrXNCS_B_10": null,
+				"arrXNCS_B_other": [],
+				"arrGLBD": null,
+				"arrGLDXQB": null,
+				"arrGLMB": null,
+				"arrGLZL": null,
+				"arrGLTXXH": null,
+				"arrGLTXSJ": null,
+				"arrGLLDCS": null,
+				"arrLDGZTZ": null,
+				"arrGLSXSJ": [],
+				"arrGLRW": [],
+				"arrGLSWMX": [],
+				"gjdqnm": null,
+				"zbjc": null,
+				"mj": null,
+				"xsbz": null,
+				"sjsj": null,
+				"ld": null,
+				"jldw": "枚",
+				"jdbz": "0",
+				"gjdq": null,
+				"mc": "AIM-120&ldquo;阿姆拉姆&rdquo;空空导弹",
+				"nm": "040100300000002562",
+				"xh": "040104090705",
+				"mcforOrg": "AIM-120“阿姆拉姆”空空导弹",
+				"issc": "0"
+			},
+			"sxh": "5877"
+		}, {
+			"sl": "1",
+			"zbnm": "040100300000000546",
+			"pbzb": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"info": {
+					"sjsj": null,
+					"sjly": null,
+					"qbtgdw": null,
+					"sccj": null,
+					"scgj": null,
+					"zbgj": null,
+					"yzdw": null,
+					"lxsj": null,
+					"yzsj": null,
+					"plscsj": null,
+					"zbbdsj": null,
+					"yt": null,
+					"dxsj": null,
+					"js": null
+				},
+				"arrMT": null,
+				"arrPic": [],
+				"arrNoPic": [],
+				"arrGJDQZBQK": null,
+				"arrZHZYWQ": null,
+				"arrZHSSWQZB": null,
+				"arrDXPBFA": null,
+				"arrXNCS": null,
+				"arrXNCS_A": null,
+				"arrXNCS_B": null,
+				"arrXNCS_B_10": null,
+				"arrXNCS_B_other": [],
+				"arrGLBD": null,
+				"arrGLDXQB": null,
+				"arrGLMB": null,
+				"arrGLZL": null,
+				"arrGLTXXH": null,
+				"arrGLTXSJ": null,
+				"arrGLLDCS": null,
+				"arrLDGZTZ": null,
+				"arrGLSXSJ": [],
+				"arrGLRW": [],
+				"arrGLSWMX": [],
+				"gjdqnm": null,
+				"zbjc": null,
+				"mj": null,
+				"xsbz": null,
+				"sjsj": null,
+				"ld": null,
+				"jldw": null,
+				"jdbz": "0",
+				"gjdq": null,
+				"mc": "CBU-97/105/115传感器引信武器",
+				"nm": "040100300000001795",
+				"xh": "0401050305",
+				"mcforOrg": "CBU-97/105/115传感器引信武器",
+				"issc": "0"
+			},
+			"sxh": "5878"
+		}, {
+			"sl": "1",
+			"zbnm": "040100300000000546",
+			"pbzb": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"info": {
+					"sjsj": null,
+					"sjly": null,
+					"qbtgdw": null,
+					"sccj": null,
+					"scgj": null,
+					"zbgj": null,
+					"yzdw": null,
+					"lxsj": null,
+					"yzsj": null,
+					"plscsj": null,
+					"zbbdsj": null,
+					"yt": null,
+					"dxsj": null,
+					"js": null
+				},
+				"arrMT": null,
+				"arrPic": [],
+				"arrNoPic": [],
+				"arrGJDQZBQK": null,
+				"arrZHZYWQ": null,
+				"arrZHSSWQZB": null,
+				"arrDXPBFA": null,
+				"arrXNCS": null,
+				"arrXNCS_A": null,
+				"arrXNCS_B": null,
+				"arrXNCS_B_10": null,
+				"arrXNCS_B_other": [],
+				"arrGLBD": null,
+				"arrGLDXQB": null,
+				"arrGLMB": null,
+				"arrGLZL": null,
+				"arrGLTXXH": null,
+				"arrGLTXSJ": null,
+				"arrGLLDCS": null,
+				"arrLDGZTZ": null,
+				"arrGLSXSJ": [],
+				"arrGLRW": [],
+				"arrGLSWMX": [],
+				"gjdqnm": null,
+				"zbjc": null,
+				"mj": null,
+				"xsbz": null,
+				"sjsj": null,
+				"ld": null,
+				"jldw": null,
+				"jdbz": null,
+				"gjdq": null,
+				"mc": "AGM-158A联合空对地防区外发射导弹",
+				"nm": "040100300000001788",
+				"xh": "040104090820",
+				"mcforOrg": "AGM-158A联合空对地防区外发射导弹",
+				"issc": "0"
+			},
+			"sxh": "5879"
+		}, {
+			"sl": "1",
+			"zbnm": "040100300000000546",
+			"pbzb": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"info": {
+					"sjsj": null,
+					"sjly": null,
+					"qbtgdw": null,
+					"sccj": null,
+					"scgj": null,
+					"zbgj": null,
+					"yzdw": null,
+					"lxsj": null,
+					"yzsj": null,
+					"plscsj": null,
+					"zbbdsj": null,
+					"yt": null,
+					"dxsj": null,
+					"js": null
+				},
+				"arrMT": null,
+				"arrPic": [],
+				"arrNoPic": [],
+				"arrGJDQZBQK": null,
+				"arrZHZYWQ": null,
+				"arrZHSSWQZB": null,
+				"arrDXPBFA": null,
+				"arrXNCS": null,
+				"arrXNCS_A": null,
+				"arrXNCS_B": null,
+				"arrXNCS_B_10": null,
+				"arrXNCS_B_other": [],
+				"arrGLBD": null,
+				"arrGLDXQB": null,
+				"arrGLMB": null,
+				"arrGLZL": null,
+				"arrGLTXXH": null,
+				"arrGLTXSJ": null,
+				"arrGLLDCS": null,
+				"arrLDGZTZ": null,
+				"arrGLSXSJ": [],
+				"arrGLRW": [],
+				"arrGLSWMX": [],
+				"gjdqnm": null,
+				"zbjc": null,
+				"mj": null,
+				"xsbz": null,
+				"sjsj": null,
+				"ld": null,
+				"jldw": "枚",
+				"jdbz": "0",
+				"gjdq": null,
+				"mc": "GBU-31/32/38联合直接攻击弹药",
+				"nm": "040100300000001804",
+				"xh": "0401050314",
+				"mcforOrg": "GBU-31/32/38联合直接攻击弹药",
+				"issc": "0"
+			},
+			"sxh": "5880"
+		}, {
+			"sl": "1",
+			"zbnm": "040100300000000546",
+			"pbzb": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"info": {
+					"sjsj": null,
+					"sjly": null,
+					"qbtgdw": null,
+					"sccj": null,
+					"scgj": null,
+					"zbgj": null,
+					"yzdw": null,
+					"lxsj": null,
+					"yzsj": null,
+					"plscsj": null,
+					"zbbdsj": null,
+					"yt": null,
+					"dxsj": null,
+					"js": null
+				},
+				"arrMT": null,
+				"arrPic": [],
+				"arrNoPic": [],
+				"arrGJDQZBQK": null,
+				"arrZHZYWQ": null,
+				"arrZHSSWQZB": null,
+				"arrDXPBFA": null,
+				"arrXNCS": null,
+				"arrXNCS_A": null,
+				"arrXNCS_B": null,
+				"arrXNCS_B_10": null,
+				"arrXNCS_B_other": [],
+				"arrGLBD": null,
+				"arrGLDXQB": null,
+				"arrGLMB": null,
+				"arrGLZL": null,
+				"arrGLTXXH": null,
+				"arrGLTXSJ": null,
+				"arrGLLDCS": null,
+				"arrLDGZTZ": null,
+				"arrGLSXSJ": [],
+				"arrGLRW": [],
+				"arrGLSWMX": [],
+				"gjdqnm": null,
+				"zbjc": null,
+				"mj": null,
+				"xsbz": null,
+				"sjsj": null,
+				"ld": null,
+				"jldw": "枚",
+				"jdbz": "0",
+				"gjdq": null,
+				"mc": "GBU-39&ldquo;小圆径I/II&rdquo;炸弹",
+				"nm": "040100300000001806",
+				"xh": "0401050316",
+				"mcforOrg": "GBU-39“小圆径I/II”炸弹",
+				"issc": "0"
+			},
+			"sxh": "5881"
+		}, {
+			"sl": "1",
+			"zbnm": "040100300000000546",
+			"pbzb": {
+				"fwCount": 0,
+				"scCount": 0,
+				"hasFJ": 0,
+				"date": "",
+				"time": "",
+				"arrLevel": null,
+				"info": {
+					"sjsj": null,
+					"sjly": null,
+					"qbtgdw": null,
+					"sccj": null,
+					"scgj": null,
+					"zbgj": null,
+					"yzdw": null,
+					"lxsj": null,
+					"yzsj": null,
+					"plscsj": null,
+					"zbbdsj": null,
+					"yt": null,
+					"dxsj": null,
+					"js": null
+				},
+				"arrMT": null,
+				"arrPic": [],
+				"arrNoPic": [],
+				"arrGJDQZBQK": null,
+				"arrZHZYWQ": null,
+				"arrZHSSWQZB": null,
+				"arrDXPBFA": null,
+				"arrXNCS": null,
+				"arrXNCS_A": null,
+				"arrXNCS_B": null,
+				"arrXNCS_B_10": null,
+				"arrXNCS_B_other": [],
+				"arrGLBD": null,
+				"arrGLDXQB": null,
+				"arrGLMB": null,
+				"arrGLZL": null,
+				"arrGLTXXH": null,
+				"arrGLTXSJ": null,
+				"arrGLLDCS": null,
+				"arrLDGZTZ": null,
+				"arrGLSXSJ": [],
+				"arrGLRW": [],
+				"arrGLSWMX": [],
+				"gjdqnm": null,
+				"zbjc": null,
+				"mj": null,
+				"xsbz": null,
+				"sjsj": null,
+				"ld": null,
+				"jldw": "枚",
+				"jdbz": "0",
+				"gjdq": null,
+				"mc": "AIM-9&ldquo;响尾蛇&rdquo;空空导弹",
+				"nm": "040100300000000370",
+				"xh": "040104090702",
+				"mcforOrg": "AIM-9“响尾蛇”空空导弹",
+				"issc": "0"
+			},
+			"sxh": "5882"
+		}],
+		"arrZHSSWQZB": [],
+		"arrDXPBFA": [],
+		"arrXNCS": [{
+			
+			"jldw": null,
+			"jdbz": "0",
+			"jgxh": "A",
+			
+			"jgmc": "通用属性",
+			"sjlx": null,
+			"jgnm": "1",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A01",
+			
+			"jgmc": "研制",
+			"sjlx": "名称（40字符）",
+			"jgnm": "15",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "0",
+			"jgxh": "A02",
+			
+			"jgmc": "装备科研情况",
+			"sjlx": null,
+			"jgnm": "5",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A0201",
+			
+			"jgmc": "立项时间",
+			"sjlx": "日期时间（文本）",
+			"jgnm": "6",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A0202",
+			
+			"jgmc": "研制时间",
+			"sjlx": "日期时间（文本）",
+			"jgnm": "7",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A0203",
+			
+			"jgmc": "科研生产时间",
+			"sjlx": "日期时间（文本）",
+			"jgnm": "8",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A0204",
+			
+			"jgmc": "定型时间",
+			"sjlx": "日期时间（文本）",
+			"jgnm": "9",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A0205",
+			
+			"jgmc": "批量生产时间",
+			"sjlx": "日期时间（文本）",
+			"jgnm": "10",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A0206",
+			
+			"jgmc": "装备部队时间",
+			"sjlx": "日期时间（文本）",
+			"jgnm": "11",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A03",
+			
+			"jgmc": "生产厂家",
+			"sjlx": "名称（40字符）",
+			"jgnm": "16",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A04",
+			
+			"jgmc": "维修厂家",
+			"sjlx": "名称（40字符）",
+			"jgnm": "17",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A05",
+			
+			"jgmc": "寿命",
+			"sjlx": "名称（40字符）",
+			"jgnm": "19",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A06",
+			
+			"jgmc": "配备军种",
+			"sjlx": "内码（8字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A07",
+			
+			"jgmc": "配备兵种或专业",
+			"sjlx": "内码（8字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A08",
+			
+			"jgmc": "配备建制",
+			"sjlx": "名称（40字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A09",
+			
+			"jgmc": "用途",
+			"sjlx": "文本（2000字符）",
+			"jgnm": "2",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A10",
+			
+			"jgmc": "主要特点",
+			"sjlx": "文本（2000字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A11",
+			
+			"jgmc": "配置要求",
+			"sjlx": "文本（255字符）",
+			"jgnm": "12",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A12",
+			
+			"jgmc": "装配标准",
+			"sjlx": "文本（255字符）",
+			"jgnm": "13",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A13",
+			
+			"jgmc": "使用条件",
+			"sjlx": "文本（255字符）",
+			"jgnm": "14",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A14",
+			
+			"jgmc": "作战使用条件",
+			"sjlx": "文本（255字符）",
+			"jgnm": "18",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A15",
+			
+			"jgmc": "编配",
+			"sjlx": "名称（255字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A16",
+			
+			"jgmc": "装备种类",
+			"sjlx": "内码（24字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A17",
+			
+			"jgmc": "生产",
+			"sjlx": "文本（255字符）",
+			"jgnm": "3",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A18",
+			
+			"jgmc": "装备",
+			"sjlx": "文本（255字符）",
+			"jgnm": "4",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A19",
+			
+			"jgmc": "数据",
+			"sjlx": "名称（80字符）",
+			"jgnm": "23",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A20",
+			
+			"jgmc": "数据时间",
+			"sjlx": "日期时间",
+			"jgnm": "24",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A21",
+			
+			"jgmc": "",
+			"sjlx": "内码（8字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A22",
+			
+			"jgmc": "报废时间",
+			"sjlx": "日期时间",
+			"jgnm": "20",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": null,
+			"jgxh": "A23",
+			
+			"jgmc": "多媒体信息",
+			"sjlx": "媒体（BLOB）",
+			"jgnm": "21",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A24",
+			
+			"jgmc": "简述",
+			"sjlx": "文本（2000字符）",
+			"jgnm": "22",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A25",
+			
+			"jgmc": "装备别名",
+			"sjlx": "名称（40字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": null,
+			"jgxh": "A26",
+			
+			"jgmc": "作战运用",
+			"sjlx": "文本（2000字符）",
+			"jgnm": "QBNJ0101",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "0",
+			"jgxh": "B57",
+			
+			"jgmc": "外军飞机性能",
+			"sjlx": null,
+			
+			"type": ""
+		}, {
+			
+			"jldw": "人",
+			"jdbz": "1",
+			"jgxh": "B5701",
+			
+			"jgmc": "乘员",
+			"sjlx": "数量（整数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5702",
+			
+			"jgmc": "机长",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5703",
+			
+			"jgmc": "机高",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5704",
+			
+			"jgmc": "翼展",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "平方米",
+			"jdbz": "1",
+			"jgxh": "B5705",
+			
+			"jgmc": "机翼面积",
+			"sjlx": "面积（平方米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米/小时",
+			"jdbz": "1",
+			"jgxh": "B5706",
+			
+			"jgmc": "最大爬升率",
+			"sjlx": "速度（千米/小时）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米",
+			"jdbz": "1",
+			"jgxh": "B5707",
+			
+			"jgmc": "作战半径",
+			"sjlx": "线度（千米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5708",
+			
+			"jgmc": "着陆滑跑距离",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5709",
+			
+			"jgmc": "起飞滑跑距离",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米/小时",
+			"jdbz": "1",
+			"jgxh": "B5710",
+			
+			"jgmc": "最大速度",
+			"sjlx": "速度（千米/小时）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米/小时",
+			"jdbz": "1",
+			"jgxh": "B5711",
+			
+			"jgmc": "巡航速度",
+			"sjlx": "速度（千米/小时）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "马赫",
+			"jdbz": "1",
+			"jgxh": "B5712",
+			
+			"jgmc": "最大平飞马赫数",
+			"sjlx": "速度（马赫）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "马赫",
+			"jdbz": "1",
+			"jgxh": "B5713",
+			
+			"jgmc": "巡航马赫数",
+			"sjlx": "速度（马赫）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "节",
+			"jdbz": "1",
+			"jgxh": "B5714",
+			
+			"jgmc": "最大速度",
+			"sjlx": "速度（节）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "节",
+			"jdbz": "1",
+			"jgxh": "B5715",
+			
+			"jgmc": "巡航速度",
+			"sjlx": "速度（节）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5716",
+			
+			"jgmc": "实用升限",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米",
+			"jdbz": "1",
+			"jgxh": "B5717",
+			
+			"jgmc": "最大航程",
+			"sjlx": "线度（千米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5718",
+			
+			"jgmc": "机重",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5719",
+			
+			"jgmc": "最大起飞重量",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5720",
+			
+			"jgmc": "载重",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5721",
+			
+			"jgmc": "载弹量",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5722",
+			
+			"jgmc": "载油量（机内、外挂）",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5723",
+			
+			"jgmc": "动力装置",
+			"sjlx": "名称（40字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千瓦",
+			"jdbz": "1",
+			"jgxh": "B5724",
+			
+			"jgmc": "发动机功率",
+			"sjlx": "功率（千瓦）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5725",
+			
+			"jgmc": "发动机推力",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千牛",
+			"jdbz": "1",
+			"jgxh": "B5726",
+			
+			"jgmc": "发动机推力",
+			"sjlx": "重量（千牛）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5727",
+			
+			"jgmc": "推重比",
+			"sjlx": "数量（12位，小数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "小时",
+			"jdbz": "1",
+			"jgxh": "B5728",
+			
+			"jgmc": "续航时间",
+			"sjlx": "时间长度（小时）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5729",
+			
+			"jgmc": "最小着陆距离",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "0",
+			"jgxh": "B5730",
+			
+			"jgmc": "武器系统",
+			"sjlx": null,
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573001",
+			
+			"jgmc": "导弹",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573002",
+			
+			"jgmc": "机炮",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573003",
+			
+			"jgmc": "炸弹（火箭弹）",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573004",
+			
+			"jgmc": "外挂点数量：数字表示",
+			"sjlx": "数量（整数8位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573005",
+			
+			"jgmc": "典型挂载方案：文字描述",
+			"sjlx": "文本（2000字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573006",
+			
+			"jgmc": "可挂载弹药",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "人",
+			"jdbz": "1",
+			"jgxh": "B5731",
+			
+			"jgmc": "飞机标准载客量",
+			"sjlx": "数量（整数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "个",
+			"jdbz": "1",
+			"jgxh": "B5732",
+			
+			"jgmc": "伴随火器占座位数量",
+			"sjlx": "数量（整数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米/小时",
+			"jdbz": "1",
+			"jgxh": "B5733",
+			
+			"jgmc": "最大平飞速度",
+			"sjlx": "速度（千米/小时）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5734",
+			
+			"jgmc": "巡航高度",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5735",
+			
+			"jgmc": "能否空中加油",
+			"sjlx": "标志",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米/秒秒",
+			"jdbz": "1",
+			"jgxh": "B5736",
+			
+			"jgmc": "机动能力",
+			"sjlx": "数量（12位，小数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米/秒秒",
+			"jdbz": "1",
+			"jgxh": "B5737",
+			
+			"jgmc": "实用减速度",
+			"sjlx": "数量（12位，小数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米/秒秒",
+			"jdbz": "1",
+			"jgxh": "B5738",
+			
+			"jgmc": "不开加力加速度",
+			"sjlx": "数量（12位，小数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米/秒秒",
+			"jdbz": "1",
+			"jgxh": "B5739",
+			
+			"jgmc": "开加力加速度",
+			"sjlx": "数量（12位，小数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "级",
+			"jdbz": "1",
+			"jgxh": "B5740",
+			
+			"jgmc": "海情",
+			"sjlx": "数量（整数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5741",
+			
+			"jgmc": "主油箱载油量",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5742",
+			
+			"jgmc": "副油箱载油量",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5743",
+			
+			"jgmc": "武备和特种装备",
+			"sjlx": "文本（2000字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5744",
+			
+			"jgmc": "发动机类型",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "个",
+			"jdbz": "1",
+			"jgxh": "B5745",
+			
+			"jgmc": "发动机数量",
+			"sjlx": "数量（整数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5746",
+			
+			"jgmc": "运输机舱门高度",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5747",
+			
+			"jgmc": "运输机舱门宽度",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5748",
+			
+			"jgmc": "运输机机舱长度",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5749",
+			
+			"jgmc": "运输机机舱宽度",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5750",
+			
+			"jgmc": "运输机机舱高度",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5751",
+			
+			"jgmc": "识别特征",
+			"sjlx": "文本（255位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "马赫",
+			"jdbz": "1",
+			"jgxh": "B5752",
+			
+			"jgmc": "最大速度",
+			"sjlx": "速度（马赫）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5753",
+			
+			"jgmc": "起飞重量",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5754",
+			
+			"jgmc": "起飞推力",
+			"sjlx": "数量（整数8位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5755",
+			
+			"jgmc": "机号",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5756",
+			
+			"jgmc": "常用呼号",
+			"sjlx": "文本（2000字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5757",
+			
+			"jgmc": "部署基地",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5758",
+			
+			"jgmc": "部署时间",
+			"sjlx": "日期时间",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5759",
+			
+			"jgmc": "主要活动空域",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5760",
+			
+			"jgmc": "所在地区或驻在国",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5761",
+			
+			"jgmc": "起飞机场",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5762",
+			
+			"jgmc": "起飞机场经度",
+			"sjlx": "地理坐标经度",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5763",
+			
+			"jgmc": "起飞机场纬度",
+			"sjlx": "地理坐标纬度",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5764",
+			
+			"jgmc": "",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5765",
+			
+			"jgmc": "载弹量",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5766",
+			
+			"jgmc": "ICAO地址",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5767",
+			
+			"jgmc": "敌我识别模式",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5768",
+			
+			"jgmc": "航班号/呼号",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5769",
+			
+			"jgmc": "雷达型号",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5770",
+			
+			"jgmc": "最大载油量",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5771",
+			
+			"jgmc": "平均小时耗油量",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "平方米",
+			"jdbz": "1",
+			"jgxh": "B5772",
+			
+			"jgmc": "雷达反射截面积",
+			"sjlx": "面积（平方米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5773",
+			
+			"jgmc": "最小起飞距离",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5774",
+			
+			"jgmc": "最小起飞宽度",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克/分钟",
+			"jdbz": "1",
+			"jgxh": "B5775",
+			
+			"jgmc": "空中受油速度",
+			"sjlx": "数量（整数8位）",
+			
+			"type": "B"
+		}],
+		"arrXNCS_A": [{
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A06",
+			
+			"jgmc": "配备军种",
+			"sjlx": "内码（8字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A09",
+			
+			"jgmc": "用途",
+			"sjlx": "文本（2000字符）",
+			"jgnm": "2",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A10",
+			
+			"jgmc": "主要特点",
+			"sjlx": "文本（2000字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A16",
+			
+			"jgmc": "装备种类",
+			"sjlx": "内码（24字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A17",
+			
+			"jgmc": "生产",
+			"sjlx": "文本（255字符）",
+			"jgnm": "3",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A18",
+			
+			"jgmc": "装备",
+			"sjlx": "文本（255字符）",
+			"jgnm": "4",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A19",
+			
+			"jgmc": "数据",
+			"sjlx": "名称（80字符）",
+			"jgnm": "23",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A20",
+			
+			"jgmc": "数据时间",
+			"sjlx": "日期时间",
+			"jgnm": "24",
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A21",
+			
+			"jgmc": "",
+			"sjlx": "内码（8字符）",
+			
+			"type": "A"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "A24",
+			
+			"jgmc": "简述",
+			"sjlx": "文本（2000字符）",
+			"jgnm": "22",
+			"type": "A"
+		}],
+		"arrXNCS_B": [{
+			
+			"jldw": "人",
+			"jdbz": "1",
+			"jgxh": "B5701",
+			
+			"jgmc": "乘员",
+			"sjlx": "数量（整数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5702",
+			
+			"jgmc": "机长",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5703",
+			
+			"jgmc": "机高",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5704",
+			
+			"jgmc": "翼展",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米",
+			"jdbz": "1",
+			"jgxh": "B5707",
+			
+			"jgmc": "作战半径",
+			"sjlx": "线度（千米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5708",
+			
+			"jgmc": "着陆滑跑距离",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5709",
+			
+			"jgmc": "起飞滑跑距离",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米/小时",
+			"jdbz": "1",
+			"jgxh": "B5710",
+			
+			"jgmc": "最大速度",
+			"sjlx": "速度（千米/小时）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米/小时",
+			"jdbz": "1",
+			"jgxh": "B5711",
+			
+			"jgmc": "巡航速度",
+			"sjlx": "速度（千米/小时）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "马赫",
+			"jdbz": "1",
+			"jgxh": "B5712",
+			
+			"jgmc": "最大平飞马赫数",
+			"sjlx": "速度（马赫）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米",
+			"jdbz": "1",
+			"jgxh": "B5717",
+			
+			"jgmc": "最大航程",
+			"sjlx": "线度（千米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5718",
+			
+			"jgmc": "机重",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5719",
+			
+			"jgmc": "最大起飞重量",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5720",
+			
+			"jgmc": "载重",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5721",
+			
+			"jgmc": "载弹量",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5723",
+			
+			"jgmc": "动力装置",
+			"sjlx": "名称（40字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573001",
+			
+			"jgmc": "导弹",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573006",
+			
+			"jgmc": "可挂载弹药",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5743",
+			
+			"jgmc": "武备和特种装备",
+			"sjlx": "文本（2000字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5751",
+			
+			"jgmc": "识别特征",
+			"sjlx": "文本（255位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5757",
+			
+			"jgmc": "部署基地",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5758",
+			
+			"jgmc": "部署时间",
+			"sjlx": "日期时间",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5764",
+			
+			"jgmc": "",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5769",
+			
+			"jgmc": "雷达型号",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}],
+		"arrXNCS_B_10": [{
+			
+			"jldw": null,
+			"jdbz": null,
+			"jgxh": null,
+			
+			"jgmc": "生产",
+			"sjlx": null,
+			"jgnm": null,
+			"type": null
+		}, {
+			
+			"jldw": null,
+			"jdbz": null,
+			"jgxh": null,
+			
+			"jgmc": "装备",
+			"sjlx": null,
+			"jgnm": null,
+			"type": null
+		}, {
+			
+			"jldw": null,
+			"jdbz": null,
+			"jgxh": null,
+			
+			"jgmc": "用途",
+			"sjlx": null,
+			"jgnm": null,
+			"type": null
+		}, {
+			
+			"jldw": "人",
+			"jdbz": "1",
+			"jgxh": "B5701",
+			
+			"jgmc": "乘员",
+			"sjlx": "数量（整数4位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5702",
+			
+			"jgmc": "机长",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5703",
+			
+			"jgmc": "机高",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5704",
+			
+			"jgmc": "翼展",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米",
+			"jdbz": "1",
+			"jgxh": "B5707",
+			
+			"jgmc": "作战半径",
+			"sjlx": "线度（千米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5708",
+			
+			"jgmc": "着陆滑跑距离",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "米",
+			"jdbz": "1",
+			"jgxh": "B5709",
+			
+			"jgmc": "起飞滑跑距离",
+			"sjlx": "线度（米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米/小时",
+			"jdbz": "1",
+			"jgxh": "B5710",
+			
+			"jgmc": "最大速度",
+			"sjlx": "速度（千米/小时）",
+			
+			"type": "B"
+		}],
+		"arrXNCS_B_other": [{
+			
+			"jldw": "千米/小时",
+			"jdbz": "1",
+			"jgxh": "B5711",
+			
+			"jgmc": "巡航速度",
+			"sjlx": "速度（千米/小时）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "马赫",
+			"jdbz": "1",
+			"jgxh": "B5712",
+			
+			"jgmc": "最大平飞马赫数",
+			"sjlx": "速度（马赫）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千米",
+			"jdbz": "1",
+			"jgxh": "B5717",
+			
+			"jgmc": "最大航程",
+			"sjlx": "线度（千米）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5718",
+			
+			"jgmc": "机重",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5719",
+			
+			"jgmc": "最大起飞重量",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "吨",
+			"jdbz": "1",
+			"jgxh": "B5720",
+			
+			"jgmc": "载重",
+			"sjlx": "重量（吨）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": "千克",
+			"jdbz": "1",
+			"jgxh": "B5721",
+			
+			"jgmc": "载弹量",
+			"sjlx": "重量（千克）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5723",
+			
+			"jgmc": "动力装置",
+			"sjlx": "名称（40字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573001",
+			
+			"jgmc": "导弹",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B573006",
+			
+			"jgmc": "可挂载弹药",
+			"sjlx": "文本（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5743",
+			
+			"jgmc": "武备和特种装备",
+			"sjlx": "文本（2000字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5751",
+			
+			"jgmc": "识别特征",
+			"sjlx": "文本（255位）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5757",
+			
+			"jgmc": "部署基地",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5758",
+			
+			"jgmc": "部署时间",
+			"sjlx": "日期时间",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5764",
+			
+			"jgmc": "",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}, {
+			
+			"jldw": null,
+			"jdbz": "1",
+			"jgxh": "B5769",
+			
+			"jgmc": "雷达型号",
+			"sjlx": "名称（255字符）",
+			
+			"type": "B"
+		}],
+		"arrGLBD": [],
+		"arrGLDXQB": [],
+		"arrGLMB": null,
+		"arrGLZL": [],
+		"arrGLTXXH": [],
+		"arrGLTXSJ": [],
+		"arrGLLDCS": [],
+		"arrLDGZTZ": [],
+		"arrGLSXSJ": [],
+		"arrGLRW": [],
+		"arrGLSWMX": [],
+		"gjdqnm": "0401",
+		"zbjc": null,
+		"mj": {
+			"fwCount": 0,
+			"scCount": 0,
+			"hasFJ": 0,
+			"date": "",
+			"time": "",
+			"arrLevel": null,
+			"mc": "",
+			"nm": "03",
+			"xh": "03",
+			"mcforOrg": "",
+			"issc": "0"
+		},
+		"xsbz": "1",
+		"sjsj": "2018-08-29 15:52:03",
+		"ld": null,
+		"jldw": "架",
+		"jdbz": "0",
+		"gjdq": "美国",
+		"mc": "F-35B&ldquo;联合打击&rdquo;战斗机",
+		"nm": "040100300000000546",
+		"xh": "04010301010102",
+		"mcforOrg": "F-35B“联合打击”战斗机",
+		"issc": "0"
+	}
+}

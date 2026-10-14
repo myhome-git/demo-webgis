@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script>
+			var _name = location.pathname.match(/^\/[\w|-]*/);
+			document.writeln("<script src='"+_name+"/3dmodel/Common.init.js?"+new Date().getTime()+"'><\/script>");
+		</script>
+		<script>
+			Response([
+				{"c" :　"x.ztree"},
+				{"c":"common"},
+				{"c" : window.Common.Config.PROBJECT_PATH+"/css/layui-style.css"},
+				{"j" : "x.ztree"}
+			]);
+		</script>
+		<style>
+			body{
+				background: #FFF;
+				overflow: auto;
+			}
+			#blog-add{
+				margin: 0 auto 0px auto;
+			}
+			#blog-add .layui-form-item{
+				outline: 0px solid #FF0000;
+			}
+			#blog-add .layui-form-label {
+			    width: 100px;
+			    outline: 0px solid #FF0000;
+			}
+			#blog-add .layui-input-block {
+			    margin-left: 100px;
+			}
+			#blog-add #submit{
+				position: relative;
+				z-index: 0!important;
+			}
+			#blog-add .layui-card{
+				box-shadow: none;
+			}
+			#blog-add .layui-card-body{
+				position: relative;
+			}
+			#blog-add .layui-card-body:after{
+				display: block;
+				content: "";
+				clear: both;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			#blog-add .layui-form-item{
+				position: relative;
+				clear: none;
+			}
+			#blog-add .layui-form-item:after{
+				content: "";
+				clear: both;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			.layui-anim.layui-anim-upbit{
+				height: 160px;
+				overflow: auto;
+			}
+			.layui-laydate{
+				left: 340px!important;
+				top: 0px!important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="blog-add" class="layui-form">
+			<div style="padding: 0;">
+				<div class="layui-row layui-col-space15" style="margin: 0;">
+					<div class="layui-col-md12" id="form-input">
+						<div class="layui-card">
+							<!--<div class="layui-card-header x-clearfix">
+								<i class="iconfont fa fa-add"></i>
+								<font x-input-name="page_action">新增设备</font>
+							</div>-->
+							<div class="layui-card-body">
+								<input type="hidden" x-input-name="id" x-out-name="id" class="layui-input" autocomplete="off" disabled>
+								<input type="hidden" x-input-name="modelIdentifier" x-out-name="modelIdentifier" class="layui-input" autocomplete="off" disabled>
+								<div class="layui-form-item">
+									<label class="layui-form-label">分类名称：</label>
+									<div class="layui-input-block">
+										<input type="hidden" x-input-name="type" x-out-name="type" class="layui-input" autocomplete="off" disabled>
+										<input type="text" x-input-name="typeName" x-out-name="typeName" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">模型节点：</label>
+									<div class="layui-input-block">
+										<select x-input-name="modelNodeIdentifier" x-out-name="modelNodeIdentifier"></select>
+									</div>
+								</div>
+								<!--<div class="layui-form-item">
+									<div class="layui-input-block" style="position: relative;">
+										<button id="submit" lay-filter="formSubmit" lay-submit="" class="layui-btn" style="position: relative;z-index: auto;">保存</button>
+									</div>
+								</div>-->
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!-- 选择部门 -->
+		<div id="deptLayer" style="display: none;padding:10px;">
+			<ul id="deptTree" class="ztree"></ul>
+		</div>
+		
+		<script>
+			Response([
+				{"j":"dict.add.js"}
+			]);
+		</script>
+	</body>
+</html>

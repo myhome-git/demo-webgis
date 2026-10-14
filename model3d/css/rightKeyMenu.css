@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.menu {
+	z-index: 990;
+	visibility: hidden;
+	background: #F0F0F0;
+	position: absolute;
+	font-size: 12px;
+	margin: 10px 0px 0px;
+	font-family: "宋体";
+}
+.menuitemsImg{
+	border-right:1px solid #ccc;
+}
