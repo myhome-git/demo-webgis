@@ -17,7 +17,7 @@ window.Common = {
 		//cdn模式，用来分解服务器静态资源压力
 		PROBJECT_IP : "",
 		PROBJECT_NAME : "静态资源调用系统",
-		PROBJECT_PATH : "/WebFrame"
+		PROBJECT_PATH : "//cdn1.myhome.top/WebFrame"
 	},
 	//这个配置决定了静态资源模式，CDN和Config
 	ServerModel : "CDN"
