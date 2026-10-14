@@ -1,0 +1,65 @@
+.x-view-content{
+	font-size: 14px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#x-view-content > .item-layout{
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 40px);
+	border-top:1px solid rgba(149,184,231,.3);
+}
+#x-view-content .item-layout > div{
+	float: left;
+	height: 100%;
+	position: relative;
+}
+#x-view-content .item-layout > .item-layout-left{
+	width: calc(100% - 300px);
+	border-right:1px solid rgba(149,184,231,.3);
+}
+#x-view-content .item-layout > .item-layout-right{
+	width: 300px;
+}
+#x-view-content #svg-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#x-view-content .item-title{
+	background-color: rgba(142,171,215,.9);
+	line-height: 30px;
+	padding: 0px 15px 0px 15px;
+}
+#x-view-content .item-content{
+	padding: 5px;
+	height: calc(100% - 30px);
+	overflow: auto;
+}
+
+.layui-text{
+	color: inherit;
+}
+.layui-text h1, .layui-text h2, .layui-text h3{
+	color: inherit;
+}
+.layui-text h3{
+	font-size: 14px;
+}
+.action-user{
+	color: #ff5722;
+}
+.action-message{
+	color: inherit;
+	background-color: rgba(9,148,223,.5);
+}

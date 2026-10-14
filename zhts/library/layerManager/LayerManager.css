@@ -1,0 +1,28 @@
+﻿
+
+.Layer-Tree {
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* background-color:rgba(0, 60, 136, .3); */
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid #95b8e7; */
+    /* font-family: sans-serif; */
+}
+
+.ztree li {
+    padding: 2px !important;
+}
+
+.ztree *  {
+    padding: 0;
+    margin: 0;
+    color:#ffffffc7;
+    font-family: "微软雅黑";
+    font-size: 11pt;
+}  
+
+.ztree li a.curSelectedNode{
+    background-color:#e5e5e580;
+}

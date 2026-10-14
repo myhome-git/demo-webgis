@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>态势系统设置</title>
+        <script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"taishi.system.set.window.js"
+            ]);
+        </script>
+        <style>
+			body{
+				background-color:transparent;
+				color: #fff;
+			}
+			.gjsz-title{
+				line-height: 30px;
+				background: rgba(255,255,255,0.2);
+				color: #fff;
+				padding: 0px 20px 0px 20px;
+				border-radius: 5px 5px 0px 0px;
+				margin-left: 10px;
+				cursor: pointer;
+				transition: all .3s ease 0s;
+				position: relative;
+			}
+			.gjsz-title.this-show{
+				background: rgba(95,184,120,1);
+			}
+			.gjsz-title + .gjsz-content{
+				border-top: 1px solid rgba(95,184,120,0.9);
+				margin-left: 10px;
+				margin-right: 10px;
+				transition: all .3s ease 0s;
+			}
+			.gjsz-title + .gjsz-content.this-show{
+				background: rgba(35, 119, 227, 0.1);
+			}
+			.gjsz-title + .gjsz-content + .gjsz-content.wofang{
+				border-top: 1px solid rgba(95,184,120,0.9);
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			.gjsz-title + .gjsz-content + .gjsz-content.this-show{
+				background: rgba(35, 119, 227, 0.1);
+			}
+			
+			.gjsz-title + .gjsz-content .settings-panel{
+				margin: 0;
+				border: 0;
+			}
+			.gjsz-title + .gjsz-content + .gjsz-content.wofang .settings-panel{
+				margin: 0;
+				border: 0;
+			}
+			.gjsz-title + .gjsz-content .settings-panel:first-child{
+				margin-top: 0;
+			}
+			.gjsz-title + .gjsz-content + .gjsz-content.wofang .settings-panel:first-child{
+				margin-top: 0;
+			}
+        </style>
+    </head>
+    <body class="body-transparent skin-black" user-check="zhts">
+        <div class="x-view-window" id="x-view-window">
+        	<div id="window-tstc-tabs" class="window-x-tabs">
+				<div class="layui-tab layui-form" lay-filter="tssettingform">
+					<ul class="layui-tab-title">
+						<li class="">接收设置</li>
+						<li class="layui-this">显隐设置</li>
+						<li class="">轨迹设置</li>
+						<li class="">消失设置</li>
+						<!--<li class="">显示与消失</li>-->
+					</ul>
+					<div class="layui-tab-content">
+						<div class="layui-tab-item">
+							<style>
+								/*
+									[x-class-name='jieshoushezhi'] .layui-form-checkbox{
+										
+									}
+									[x-class-name='jieshoushezhi'] .layui-form-checkbox span{
+										width: 120px;
+										text-align: center;
+									}
+									*/
+		
+								[x-class-name='jieshoushezhi'] .layui-form-checkbox {
+									margin-bottom: 10px;
+		
+								}
+		
+								[x-class-name='jieshoushezhi'] .layui-form-checkbox span {
+									width: 160px;
+									text-align: center;
+								}
+							</style>
+							<div class="settings-panel x-clearfix" x-class-name="jieshoushezhi" style="">
+								<!--<div class="settings-right">
+										<div style="">
+											<div class="">
+												<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqrhjg" title="融合结果" checked>
+												<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqlhhq" title="联合海情">
+												<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqlhkq" title="联合空情">
+											</div>
+											<div>
+												
+											</div>
+											<div style="height: 15px;"></div>
+											<div class="">
+												<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqjzts" title="技侦态势">
+												<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqdzts" title="电侦态势">
+												<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqhzts" title="航侦态势">
+											</div>
+										</div>
+									</div>-->
+								<div class="settings-right">
+									<input type="checkbox" x-input-name="zhts_jslx" lay-filter="zhts_jslx" autocomplete="off" name="zhts_jslx" title="融合结果" value="SSTS_ZHTSRHJG" checked="">
+									<!--<input type="checkbox" x-input-name="zhts_jslx" lay-filter="zhts_jslx" autocomplete="off" name="zhts_jslx" title="技侦态势">-->
+									
+									<!--<div>
+										<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqrhjg" title="融合结果" data-ckvalue="SSTS_RHJG_4" checked>
+										<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqlhhq" title="联合海情" data-ckvalue="SSTS_LHHQ_1">
+										<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqlhkq" title="联合空情" data-ckvalue="SSTS_LHKQ_3">
+										<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqtskb" title="态势快报" data-ckvalue="SSTS_TSKB_11">
+									</div>
+									<div>
+										<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqjzts" title="技侦态势" data-ckvalue="SSTS_JZTS_2">
+										<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqdzts" title="电侦态势" data-ckvalue="SSTS_DZTS_5">
+										<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqhzts" title="航侦态势" data-ckvalue="SSTS_HZTS_10">
+										<input type="checkbox" autocomplete="off" lay-filter="rhjgck" name="mqlhkq_nbzq" title="联合空情_南部战区" data-ckvalue="SSTS_LHKQ_NBZQ_7">
+									</div>-->
+								</div>
+							</div>
+						</div>
+						<div class="layui-tab-item layui-show">
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>敌我属性：</font>
+								</div>
+								<div class="settings-right">
+									<div class="">
+										<input type="checkbox" autocomplete="off" lay-filter="mubiaoshow-diwoshuxing" name="tsjs_dwsx1" title="敌方" value="difang">
+										<input type="checkbox" autocomplete="off" lay-filter="mubiaoshow-diwoshuxing" name="tsjs_dwsx1" title="我方" value="wofang">
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>目标类别：</font>
+								</div>
+								<div class="settings-right">
+									<div class="">
+										<input type="checkbox" autocomplete="off" lay-filter="mubiaoleibie" name="mubiaoleibie" title="海情" value="haiqing">
+										<input type="checkbox" autocomplete="off" lay-filter="mubiaoleibie" name="mubiaoleibie" title="空情" value="kongqing">
+										<input type="checkbox" autocomplete="off" lay-filter="mubiaoleibie" name="mubiaoleibie" title="陆情" value="luqing">
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>军民属性：</font>
+								</div>
+								<div class="settings-right">
+									<div class="">
+										<input type="checkbox" autocomplete="off" lay-filter="junminshuxing" name="junminshuxing" title="军用" value="junyong">
+										<input type="checkbox" autocomplete="off" lay-filter="junminshuxing" name="junminshuxing" title="民用" value="minyong">
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>标牌设置：</font>
+								</div>
+								<div class="settings-right">
+									<div class="">
+										<input type="radio" x-input-name="zhts-bpsz" lay-filter="zhts-bpsz" autocomplete="off" name="zhts-bpsz" value="true" title="显示">
+										<input type="radio" x-input-name="zhts-bpsz" lay-filter="zhts-bpsz" autocomplete="off" name="zhts-bpsz" value="false" title="隐藏">
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>目标大小：</font>
+								</div>
+								<div class="settings-right">
+									<div class="">
+										<input type="radio" x-input-name="zhts_mbdx" lay-filter="zhts_mbdx" autocomplete="off" name="radio_mbsize" value="1" title="大号">
+										<input type="radio" x-input-name="zhts_mbdx" lay-filter="zhts_mbdx" autocomplete="off" name="radio_mbsize" value="0.7" title="中号">
+										<input type="radio" x-input-name="zhts_mbdx" lay-filter="zhts_mbdx" autocomplete="off" name="radio_mbsize" value="0.5" title="小号">
+									</div>
+								</div>
+							</div>
+		
+						</div>
+						<div class="layui-tab-item">
+							<ul>
+								<li class="temp444444444444" style="">
+									<div class="gjsz-title x-inlineblock difang this-show" x-button-group="gjsz_tab_button" value="0">敌方</div>
+									<div class="gjsz-title x-inlineblock wofang" x-button-group="gjsz_tab_button" value="1">我方</div>
+									<div class="gjsz-content difang">
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>航迹类别：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input type="radio" x-input-name="difang_zhts_hjleibie" lay-filter="difang_zhts_hjleibie" autocomplete="off" name="df_hjlb" value="line" title="线类别">
+													<input type="radio" x-input-name="difang_zhts_hjleibie" lay-filter="difang_zhts_hjleibie" autocomplete="off" name="df_hjlb" value="point" title="点类别">
+													<input type="radio" x-input-name="difang_zhts_hjleibie" lay-filter="difang_zhts_hjleibie" autocomplete="off" name="df_hjlb" value="line_point" title="点线混合">
+												</div>
+											</div>
+										</div>
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>航迹类型：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input type="radio" x-input-name="difang_zhts_hjleixing" lay-filter="difang_zhts_hjleixing" autocomplete="off" name="df_hjtype" value="all" title="全航迹">
+													<input type="radio" x-input-name="difang_zhts_hjleixing" lay-filter="difang_zhts_hjleixing" autocomplete="off" name="df_hjtype" value="200" title="中航迹">
+													<input type="radio" x-input-name="difang_zhts_hjleixing" lay-filter="difang_zhts_hjleixing" autocomplete="off" name="df_hjtype" value="100" title="短航迹">
+													<input type="radio" x-input-name="difang_zhts_hjleixing" lay-filter="difang_zhts_hjleixing" autocomplete="off" name="df_hjtype" value="1" title="无航迹">
+												</div>
+											</div>
+										</div>
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>航迹粗细：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<div id="slide_difang" style="width: 150px;"></div>
+												</div>
+											</div>
+											<div class="settings-left" style="width: 110px;">
+												<font>航迹点数：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input autocomplete="off" class="layui-input" id="point_df_countInpt" type="text" value="显示全部" style="width: 100px;" disabled="disabled">
+												</div>
+											</div>
+										</div>
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>航迹颜色：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input type="radio" x-input-name="difang_zhts_hjyanse" lay-filter="difang_zhts_hjyanse" autocomplete="off" name="df_hjcolor" value="orange" title="黄色">
+													<input type="radio" x-input-name="difang_zhts_hjyanse" lay-filter="difang_zhts_hjyanse" autocomplete="off" name="df_hjcolor" value="blue" title="蓝色">
+													<input type="radio" x-input-name="difang_zhts_hjyanse" lay-filter="difang_zhts_hjyanse" autocomplete="off" name="df_hjcolor" value="green" title="绿色">
+													<input type="radio" x-input-name="difang_zhts_hjyanse" lay-filter="difang_zhts_hjyanse" autocomplete="off" name="df_hjcolor" value="red" title="红色">
+													<!-- <input type="radio" autocomplete="off" lay-filter="df_hjcolor" name="df_hjcolor" value="black" title="黑色"> -->
+													<input type="radio" x-input-name="difang_zhts_hjyanse" lay-filter="difang_zhts_hjyanse" autocomplete="off" name="df_hjcolor" value="purple" title="紫色">
+												</div>
+											</div>
+										</div>
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>字号大小：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input type="radio" autocomplete="off" lay-filter="difang_zhts_mbzihaodaxiao" name="df_zhtype" value="14px" title="默认">
+													<input type="radio" autocomplete="off" lay-filter="difang_zhts_mbzihaodaxiao" name="df_zhtype" value="18px" title="大号">
+													<input type="radio" autocomplete="off" lay-filter="difang_zhts_mbzihaodaxiao" name="df_zhtype" value="15px" title="中号">
+													<input type="radio" autocomplete="off" lay-filter="difang_zhts_mbzihaodaxiao" name="df_zhtype" value="12px" title="小号">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="gjsz-content wofang" style="display: none;">
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>航迹类别：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input type="radio" x-input-name="wofang_zhts_hjleibie" lay-filter="wofang_zhts_hjleibie" autocomplete="off" name="wf_hjlb" value="line" title="线类别">
+													<input type="radio" x-input-name="wofang_zhts_hjleibie" lay-filter="wofang_zhts_hjleibie" autocomplete="off" name="wf_hjlb" value="point" title="点类别">
+													<input type="radio" x-input-name="wofang_zhts_hjleibie" lay-filter="wofang_zhts_hjleibie" autocomplete="off" name="wf_hjlb" value="line_point" title="点线混合">
+												</div>
+											</div>
+										</div>
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>航迹类型：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input type="radio" x-input-name="wofang_zhts_hjleixing" lay-filter="wofang_zhts_hjleixing" autocomplete="off" name="wf_hjtype" value="all" title="全航迹">
+													<input type="radio" x-input-name="wofang_zhts_hjleixing" lay-filter="wofang_zhts_hjleixing" autocomplete="off" name="wf_hjtype" value="200" title="中航迹">
+													<input type="radio" x-input-name="wofang_zhts_hjleixing" lay-filter="wofang_zhts_hjleixing" autocomplete="off" name="wf_hjtype" value="100" title="短航迹">
+													<input type="radio" x-input-name="wofang_zhts_hjleixing" lay-filter="wofang_zhts_hjleixing" autocomplete="off" name="wf_hjtype" value="1" title="无航迹">
+												</div>
+											</div>
+										</div>
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>航迹粗细：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<div id="slide_wofang" style="width: 150px;"></div>
+												</div>
+											</div>
+											<div class="settings-left" style="width: 110px;">
+												<font>航迹点数：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input autocomplete="off" class="layui-input" id="point_wf_countInpt" type="text" value="显示全部" style="width: 100px;" disabled="disabled">
+												</div>
+											</div>
+										</div>
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>航迹颜色：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input type="radio" x-input-name="wofang_zhts_hjyanse" lay-filter="wofang_zhts_hjyanse" autocomplete="off" name="wf_hjcolor" value="orange" title="黄色">
+													<input type="radio" x-input-name="wofang_zhts_hjyanse" lay-filter="wofang_zhts_hjyanse" autocomplete="off" name="wf_hjcolor" value="blue" title="蓝色">
+													<input type="radio" x-input-name="wofang_zhts_hjyanse" lay-filter="wofang_zhts_hjyanse" autocomplete="off" name="wf_hjcolor" value="green" title="绿色">
+													<input type="radio" x-input-name="wofang_zhts_hjyanse" lay-filter="wofang_zhts_hjyanse" autocomplete="off" name="wf_hjcolor" value="red" title="红色">
+													<!-- <input type="radio" lay-filter="wf_hjcolor" autocomplete="off" name="wf_hjcolor" value="black" title="黑色"> -->
+													<input type="radio" x-input-name="wofang_zhts_hjyanse" lay-filter="wofang_zhts_hjyanse" autocomplete="off" name="wf_hjcolor" value="purple" title="紫色">
+												</div>
+											</div>
+										</div>
+										<div class="settings-panel x-clearfix" style="">
+											<div class="settings-left">
+												<font>字号大小：</font>
+											</div>
+											<div class="settings-right">
+												<div class="">
+													<input type="radio" autocomplete="off" lay-filter="wofang_zhts_mbzihaodaxiao" name="wf_zhtype" value="14px" title="默认">
+													<input type="radio" autocomplete="off" lay-filter="wofang_zhts_mbzihaodaxiao" name="wf_zhtype" value="18px" title="大号">
+													<input type="radio" autocomplete="off" lay-filter="wofang_zhts_mbzihaodaxiao" name="wf_zhtype" value="15px" title="中号">
+													<input type="radio" autocomplete="off" lay-filter="wofang_zhts_mbzihaodaxiao" name="wf_zhtype" value="12px" title="小号">
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="layui-tab-item">
+							<div class="settings-panel x-clearfix">
+								<div class="settings-left">
+									<font>空中目标：</font>
+								</div>
+								<div class="settings-right" style="width: 300px;">
+									<div class="">
+										<div class="layui-inline">
+											<input type="text" class="layui-input" autocomplete="off" x-input-name="xiaoshi_kongzhong" value="480" style="width: 120px;">
+										</div>
+										<div class="layui-inline">
+											<font>分钟后消失</font>
+										</div>
+										<div class="layui-inline">
+											<button type="button" class="layui-btn" x-btn-name="xiaoshi_kongzhong">应用</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix">
+								<div class="settings-left">
+									<font>水面目标：</font>
+								</div>
+								<div class="settings-right" style="width: 300px;">
+									<div class="">
+										<div class="layui-inline">
+											<input type="text" class="layui-input" autocomplete="off" x-input-name="xiaoshi_shuimian" value="480" style="width: 120px;">
+										</div>
+										<div class="layui-inline">
+											<font>分钟后消失</font>
+										</div>
+										<div class="layui-inline">
+											<button type="button" class="layui-btn"  x-btn-name="xiaoshi_shuimian">应用</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix">
+								<div class="settings-left">
+									<font>陆地目标：</font>
+								</div>
+								<div class="settings-right" style="width: 300px;">
+									<div class="">
+										<div class="layui-inline">
+											<input type="text" class="layui-input" autocomplete="off" x-input-name="xiaoshi_ludi" value="480" style="width: 120px;">
+										</div>
+										<div class="layui-inline">
+											<font>分钟后消失</font>
+										</div>
+										<div class="layui-inline">
+											<button type="button" class="layui-btn" x-btn-name="xiaoshi_ludi">应用</button>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+						</div>
+						<!--
+						<div class="layui-tab-item" id="mbxscl">
+							<style>
+								#mbxscl input[type='text'] {
+									color: rgba(255, 255, 255, 1);
+									border-radius: 3px;
+									border: 1px solid rgba(95, 184, 120, 0.9);
+									padding: 0px 5px 0px 5px;
+									background: transparent;
+								}
+							</style>
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>飞机：</font>
+								</div>
+								<div class="settings-right">
+									<div class="">
+										<input type="text" autocomplete="off" id="plaingrayInpt" title="1" value="1" style="width: 80px;">
+										<font>分钟变灰</font>
+										<div class="x-inlineblock" style="width: 20px;"></div>
+										<input type="text" autocomplete="off" id="plainfadeInpt" title="3" value="3" style="width: 80px;">
+										<font>分钟消失</font>
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>舰船：</font>
+								</div>
+								<div class="settings-right">
+									<div class="">
+										<input type="text" autocomplete="off" id="boatgrayInpt" title="10" value="10" style="width: 80px;">
+										<font>分钟变灰</font>
+										<div class="x-inlineblock" style="width: 20px;"></div>
+										<input type="text" autocomplete="off" id="boatfadeInpt" title="30" value="30" style="width: 80px;">
+										<font>分钟消失</font>
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>预加载：</font>
+								</div>
+								<div class="settings-right">
+									<div class="">
+										<input type="text" autocomplete="off" id="plainPreInpt" title="10" value="10" style="width: 80px;">
+										<font>分钟飞机</font>
+										<div class="x-inlineblock" style="width: 20px;"></div>
+										<input type="text" autocomplete="off" id="boatPreInpt" title="10" value="10" style="width: 80px;">
+										<font>分钟舰船</font>
+									</div>
+								</div>
+							</div>
+							<div class="settings-panel x-clearfix" style="">
+								<div class="settings-left">
+									<font>&nbsp;</font>
+								</div>
+								<div class="settings-right">
+									<div style="clear: both">
+										<div style="display:inline;float:right;margin-top: 20px;">
+											<button id="mbxsclBtn" class="layui-btn" style="background-color:rgb(95,184,120);">应用</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						-->
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>

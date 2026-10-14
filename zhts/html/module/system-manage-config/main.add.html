@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"main.add.js"
+            ]);
+        </script>
+		<style>
+			body{
+				overflow: hidden;
+			}
+			select[x-input-name='mapType']+.layui-form-select .layui-anim-upbit,
+			select[x-input-name='baselayer']+.layui-form-select .layui-anim-upbit{
+				top: auto;
+				bottom: 0;
+			}
+			.layui-row::before{
+				display: none;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div id="form-add" class="layui-form">
+			<div style="padding: 0;">
+				<div class="layui-row layui-col-space15">
+					<div class="layui-col-md12" id="form-input">
+						<div class="layui-card">
+							<div class="layui-card-body">
+								<input type="hidden" x-input-name="id" x-out-name="id" class="layui-input" autocomplete="off">
+                                <div class="layui-form-item">
+									<label class="layui-form-label">图层类型：</label>
+									<div class="layui-input-block">
+										<select x-input-name="layerType" x-out-name="layerType" autocomplete="off" lay-search>
+											<option value="">无</option>
+											<option value="XYZ">XYZ</option>
+											<option value="WMTS">WMTS</option>
+											<option value="TMS">TMS</option>
+										</select>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">图层名称：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="layerName" x-out-name="layerName" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">图层地址：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="layerUrl" x-out-name="layerUrl" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">地图类型：</label>
+									<div class="layui-input-block">
+										<select autocomplete="off" x-input-name="baselayer" x-out-name="baselayer" lay-search>
+											<option value="0">基础图层</option>
+											<option value="1">叠加图层</option>
+										</select>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">地图来源：</label>
+									<div class="layui-input-block">
+										<select autocomplete="off" x-input-name="mapType" x-out-name="mapType" lay-search>
+											<option value="">无</option>
+											<option value="军用">军用</option>
+											<option value="民用">民用</option>
+										</select>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">&nbsp;</label>
+									<div class="layui-input-block">
+										<div class="layui-row">
+											<div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+												<label class="layui-form-label">是否启用：</label>
+												<div class="layui-input-block">
+													<input type="checkbox" autocomplete="off" x-input-name="enabled" x-out-name="enabled" lay-skin="switch" lay-text="是|否" lay-filter="enableSwitch">
+													<label class="layui-form-label" style="float: none;display: inline-block;margin-left: 20px;">是否默认：</label>
+													<input type="checkbox" autocomplete="off" x-input-name="defaultlayer" x-out-name="defaultlayer" lay-skin="switch" lay-text="是|否" lay-filter="defaultlayerSwitch">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title></title>
+		<script type="text/javascript" src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"ol","ol.4.olext",
+            	"beyon-xzqh/css/xzqh.css",
+            	"beyon-xzqh/js/xzq_data.js",
+            	"beyon-xzqh/js/xzqh.js"
+            ]);
+        </script>
+		<style>
+			#map{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 0;
+				height: 0;
+			}
+			body{
+				outline: 0px solid #FF0000;
+				overflow: hidden;
+			}
+			#temp-city-box{
+				outline: 0px solid #FF0000;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body user-check="zhts">
+		<div id="map"></div>
+		<script type="text/javascript">
+			var _FunctionObject = _FunctionObject || {};
+			
+			(function ($,xUtilBase,XZQH) {
+				$(document).ready(documentReady);
+			
+				function documentReady() {
+					function loadMap(){
+						if(top._pageObject.MAP.getMap()){
+							var xzqh = new XZQH({
+								map : top._pageObject.MAP.getMap(),
+								callback:function(cityInfo){
+									top.$(".general-group-button dd.diming .title font").html(cityInfo.N || "未知");
+									var _obj = top._ClassMapObject;
+								},
+								onClose:function(event){
+									top.$(".general-group-button dd.diming").removeClass("open");
+								}
+							});
+						
+							xzqh.show();
+							// xzqh.setDefault('中国');
+
+							_FunctionObject.xzqh = xzqh;
+						}else{
+							setTimeout(loadMap,1000);
+						}
+					}
+					loadMap();
+				}
+			})(jQuery,xUtilBase,XZQH);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"x.file.upload",
+            	"main.wuqi.add.css",
+            	"main.wuqi.add.js"
+            ]);
+        </script>
+		<style>
+			body{
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window">
+			<div class="x-view-content">
+				<div id="form-add" class="layui-form">
+					<div class="layui-tab">
+						<div class="layui-tab-body x-clearfix layui-tab-body-layout">
+							<!--图像区域-->
+							<div id="wuqi-data-image" class="wuqi-data-image">
+								<div class="layui-tab" style="height: 100%;">
+									<ul class="layui-tab-title">
+										<li class="layui-this" style="width: 0;min-width: 0;padding: 0;overflow: hidden;">&nbsp;</li>
+										<button class="layui-btn layui-btn-normal" id="wuqi-file-upload" style="float: right;margin-right: 5px;margin-top: 3px;padding: 0px 5px;">上传文件</button>
+										<div class="image-control-menu">
+											<button class="layui-btn layui-btn-normal" x-btn-name="delete-multiple" style="margin-left: 5px;margin-top: 3px;padding: 0px 5px;">删除</button>
+										</div>
+									</ul>
+									<div class="layui-tab-body" style="height: calc(100% - 35px);overflow: auto;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电子围栏</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"fence.main.json.js","fence.main.js"
+            ]);
+        </script>
+		<style>
+			#input-search-from > div{
+				float: left;
+				height: 28px;
+				line-height: 28px;
+				overflow: hidden;
+			}
+			#input-search-from > div > .layui-btn{
+				margin-top: -3px;
+				margin-left: -1px;
+			}
+            #input-search-from .layui-btn{
+				border-width: 1px;
+				border-style: solid;
+                border-radius: 0;
+				font-size: 16px;
+            }
+            .skin-black #input-search-from .layui-btn{
+            	background-color: rgba(35, 119, 227, .3);
+            	border-color: rgba(255,255,255, .3);
+            	color: white;
+            }
+            
+            #input-search-from .btn-guize-group .layui-btn{
+				font-size: 13px;
+			}
+			#input-search-from .btn-guize-group .layui-btn.action{
+				background-color: rgba(35, 119, 227, 1);
+				border: 1px solid rgba(35, 119, 227, 0.9);
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window" id="x-view-window">
+		<!--<div class="x-common-panel" style="margin-left: 2px;margin-right: 2px;margin-bottom: 1px;padding: 10px;">-->
+			<div class="window-x-tabs">
+				<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+				  <ul class="layui-tab-title">
+				  	<li module-tab-title-name="gaojingshezhi">告警设置</li>
+				    <li module-tab-title-name="quyuguanli">区域管理</li>
+				    <li module-tab-title-name="guizeguanli">规则管理</li>
+				    <li module-tab-title-name="xiaoxiguanli">消息管理</li>
+				  </ul>
+				  <div class="layui-tab-content" style="height: 100px;">
+				  	<div class="layui-form layui-tab-item temp-gaojing-win" style="padding: 10px 15px;" module-tab-item-name="gaojingshezhi">
+				    	<style>.temp-gaojing-win .layui-elem-field legend{font-size: 14px;}</style>
+				    	<fieldset class="layui-elem-field">
+							<legend>提醒方式</legend>
+							<div class="layui-field-box">
+								<input type="hidden" x-input-name="id"/>
+						    	<!--<input type="checkbox" x-input-name="tixingfangshi" lay-filter="tixingfangshi" name="tixingfangshi" title="目标国旗" value="flag">-->
+								<input type="checkbox" x-input-name="tixingfangshi" lay-filter="tixingfangshi" name="tixingfangshi" title="消息提醒" value="message"> 
+								<input type="checkbox" x-input-name="tixingfangshi" lay-filter="tixingfangshi" name="tixingfangshi" title="目标闪烁" value="pause">
+							</div>
+						</fieldset>
+				    </div>
+				    <div class="layui-tab-item" module-tab-item-name="quyuguanli">
+				    	<div class="x-common-panel">
+							<div id="ElementTemplateMainDataSearchINPUT"></div>
+						</div>
+						<div class="x-common-panel">
+							<div id="layui-table-scrollbar-1">
+								<div id="layui-table-search-data-QUYUGUANLI"></div>
+							</div>
+						</div>
+				    </div>
+				    <div class="layui-tab-item" module-tab-item-name="guizeguanli">
+				    	<div class="x-common-panel">
+							<div id="ElementTemplateMainDataSearchINPUT"></div>
+						</div>
+						<div class="x-common-panel">
+							<div id="layui-table-search-data-GUIZEGUANLI"></div>
+						</div>
+				    </div>
+				    <div class="layui-tab-item" module-tab-item-name="xiaoxiguanli">
+				    	<div class="x-common-panel">
+							<div id="ElementTemplateMainDataSearchINPUT"></div>
+						</div>
+						<div class="x-common-panel">
+							<div id="layui-table-scrollbar-3">
+								<div id="layui-table-search-data-XIAOXIGUANLI"></div>
+							</div>
+						</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!--表格搜索项-区域管理-->
+<script type="text/html" id="TemplateTableToolbar">
+<div>
+	<div class="x-panel-title layui-table-tool-title x-clearfix" id="layui-table-top-toolbar">
+		<i class="iconfont glyphicon glyphicon-th-list"></i>
+		<font>数据列表</font>
+		<font style="margin-left: 30px;"></font>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-refresh">刷新数据</button>
+		<button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="table-delete-multiple">批量删除</button>
+	</div>
+</div>
+</script>
+<script type="text/html" id="TemplateTableSearchTABLEQUYUGUANLI">
+{{if isRun==true}}
+	<div class="x-common-panel layui-form" style="padding: 0;border: 0;">
+		<div class="x-panel-content layui-form x-clearfix" style="padding: 10px 0px;" id="input-search-from">
+			<div class="layui-inline" style="margin-left: 0;">
+				<input type="text" class="layui-input" placeholder="区域名称" autocomplete="off" name="searchText"  x-out-name="searchText" style="">
+			</div>
+			<div class="layui-inline">
+				<button type="button" x-btn-name="button-search" class="layui-btn layui-btn-sm layui-btn-normal" style="height: 28px;line-height: 28px;">
+					<i class="iconfont glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+			<div style="float: right;">
+				<font>添加区域类型：</font>
+				<button type="button" x-btn-name="button-add-circle" class="layui-btn layui-btn-sm layui-btn-normal" title="圆形">
+					<i class="iconfont fa fa-circle-o"></i>
+				</button>
+				<button type="button" x-btn-name="button-add-polygon" class="layui-btn layui-btn-sm layui-btn-normal" title="多边形" style="margin-left: 3px;">
+					<i class="iconfont fa fa-connectdevelop"></i>
+				</button>
+				<button type="button" x-btn-name="button-add-polygon-hole" class="layui-btn layui-btn-sm layui-btn-normal" title="穿透" style="margin-left: 3px;">
+					<i class="iconfont fa fa-cut"></i>
+				</button>
+				<button type="button" x-btn-name="button-clear" class="layui-btn layui-btn-sm layui-btn-normal" title="清除" style="margin-left: 3px;">
+					<i class="iconfont fa fa-trash"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+{{/if}}
+</script>
+<!--表格搜索项-规则管理-->
+<script type="text/html" id="TemplateTableToolbar1">
+<div>
+	<div class="x-panel-title layui-table-tool-title x-clearfix" id="layui-table-top-toolbar">
+		<i class="iconfont glyphicon glyphicon-th-list"></i>
+		<font>数据列表</font>
+		<font style="margin-left: 30px;"></font>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-refresh">刷新数据</button>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-add">新增</button>
+		<button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="table-delete-multiple">批量删除</button>
+	</div>
+</div>
+</script>
+<script type="text/html" id="TemplateTableSearchTABLEGUIZEGUANLI">
+{{if isRun==true}}
+	<div class="x-common-panel layui-form" style="padding: 0;border: 0;">
+		<div class="x-panel-content layui-form x-clearfix" style="padding: 10px 0px;" id="input-search-from">
+			<div class="layui-inline">
+				<input type="text" class="layui-input" placeholder="规则名称" autocomplete="off" name="searchText"  x-out-name="searchText" style="">
+			</div>
+			<div class="layui-inline">
+				<button type="button" x-btn-name="button-search" class="layui-btn layui-btn-sm layui-btn-normal" style="height: 28px;line-height: 28px;">
+					<i class="iconfont glyphicon glyphicon-search"></i>
+				</button> 	
+			</div>
+			<div class="btn-guize-group" style="float: right;">
+				<div style="display: none;">
+					<input type="radio" name="search-rule-type" autocomplete="off" x-input-name="type"  x-out-name="type" value="" checked>
+					<input type="radio" name="search-rule-type" autocomplete="off" x-input-name="type"  x-out-name="type" value="lbs_fence_rules_type_jinru">
+					<input type="radio" name="search-rule-type" autocomplete="off" x-input-name="type"  x-out-name="type" value="lbs_fence_rules_type_jinchu">
+				</div>
+				<button type="button" x-btn-name="button-guize-all" x-out-text="" class="layui-btn layui-btn-sm layui-btn-normal action" title="所有规则">
+					<i class="iconfont fa fa-th-list"></i>
+					<font>所有规则</font>
+				</button>
+				<button type="button" x-btn-name="button-guize-input" x-out-text="lbs_fence_rules_type_jinru" class="layui-btn layui-btn-sm layui-btn-normal" title="禁入规则" style="margin-left: 3px;">
+					<i class="iconfont fa fa-sign-in"></i>
+					<font>禁入规则</font>
+				</button>
+				<!--<button type="button" x-btn-name="button-guize-out" x-out-text="lbs_fence_rules_type_jinchu" class="layui-btn layui-btn-sm layui-btn-normal" title="禁出规则" style="margin-left: 3px;">
+					<i class="iconfont fa fa-sign-out"></i>
+					<font>禁出规则</font>
+				</button>-->
+			</div>
+		</div>
+	</div>
+{{/if}}
+</script>
+
+<!--表格搜索项-消息管理-->
+<script type="text/html" id="TemplateTableToolbar2">
+<div>
+	<div class="x-panel-title layui-table-tool-title x-clearfix" id="layui-table-top-toolbar">
+		<i class="iconfont glyphicon glyphicon-th-list"></i>
+		<font>数据列表</font>
+		<font style="margin-left: 30px;"></font>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-refresh">刷新数据</button>
+	</div>
+</div>
+</script>
+<script type="text/html" id="TemplateTableToolbar2">
+<div>
+	<div class="x-panel-title layui-table-tool-title x-clearfix" id="layui-table-top-toolbar">
+		<i class="iconfont glyphicon glyphicon-th-list"></i>
+		<font>数据列表</font>
+		<font style="margin-left: 30px;"></font>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-refresh">刷新数据</button>
+	</div>
+</div>
+</script>
+<script type="text/html" id="TemplateTableSearchTABLEXIAOXIGUANLI">
+{{if isRun==true}}
+	<div class="x-common-panel layui-form" style="padding: 0;border: 0;">
+		<div class="x-panel-content layui-form x-clearfix" style="padding: 10px 0px;" id="input-search-from">
+			<input type="hidden" x-out-name="sortOrder" value="asc" />
+			<!--<div class="x-inlineblock">
+				起始时间：
+			</div>
+			<div class="x-inlineblock input-date-icon">
+				<input type="text" class="layui-input input-time" placeholder="" autocomplete="off" name="time-start" id="layui-date-start" x-out-name="start" x-input-name="start">
+			</div>
+			<div class="x-inlineblock" style="">
+				结束时间：
+			</div>
+            <div class="x-inlineblock input-date-icon">
+				<input type="text" class="layui-input input-time" placeholder="" autocomplete="off" name="time-end" id="layui-date-end" x-out-name="end"  x-input-name="end">
+			</div>-->
+			<div class="layui-inline">
+				<input type="text" class="layui-input" placeholder="消息名称" autocomplete="off" name="searchText"  x-out-name="searchText" style="">
+			</div>
+			<div class="layui-inline">
+				<button type="button" x-btn-name="button-search" class="layui-btn layui-btn-sm layui-btn-normal" style="height: 28px;line-height: 28px;">
+					<i class="iconfont glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+{{/if}}
+</script>
+<!--工具栏-->
+<script type="text/html" id="TemplateTableCellBarToolTABLE">
+<div>
+	<button type="button" class="layui-btn layui-btn-xs" lay-event="select">查看</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-normal" lay-event="update">修改</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="delete">删除</button>
+</div>
+</script>
+<script type="text/html" id="switchTpl">
+  <!-- 这里的 checked 的状态只是演示 -->
+  <input type="checkbox" name="enableSwitch" x-bind-id="{{d.id}}" value="{{d.enable}}" lay-skin="switch" lay-text="是|否" lay-filter="enableSwitch" {{ d.enable == true ? 'checked' : '' }}>
+</script>
+<script type="text/html" id="TemplateTableCellBarToolTABLEXIAOXIGUANLI">
+<div>
+	<button type="button" class="layui-btn layui-btn-xs" lay-event="select">查看</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="delete">删除</button>
+</div>
+</script>
+
+<!--消息查看-->
+<script id="TemplateModuleXIAOXICHAKAN" type="text/html">
+<div style="padding: 20px; background-color: rgba(142,171,215,.3);">
+	<style>
+		#layer-open-xiaoxi-add .layui-col-space15>*{
+			border-bottom: 1px solid rgba(255,255,255,.2);
+		}
+		#layer-open-xiaoxi-add .layui-col-space15>*:last-child{
+			border-bottom: 0;
+		}
+		#layer-open-xiaoxi-add .layui-card-body{
+			padding: 0px 10px;
+		}
+	</style>
+	<div class="layui-row layui-col-space15" style="padding: 0;">
+		<div class="layui-col-md12">
+			<div class="layui-card">
+				<div class="layui-card-body">
+					时间：{{data.positionTime}}
+				</div>
+			</div>
+		</div>
+		{{if data.typeName}}
+		<div class="layui-col-md12">
+			<div class="layui-card">
+				<div class="layui-card-body">
+					类型：{{data.typeName}}
+				</div>
+			</div>
+		</div>
+		{{/if}}
+		<div class="layui-col-md12">
+			<div class="layui-card">
+				<div class="layui-card-body">
+					标题：{{#data.title}}
+				</div>
+			</div>
+		</div>
+		<div class="layui-col-md12">
+			<div class="layui-card">
+				<div class="layui-card-body">
+					内容：{{#data.content}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</script>

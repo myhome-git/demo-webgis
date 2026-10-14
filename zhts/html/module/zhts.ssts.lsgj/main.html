@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>事件添加</title>
+		<script src="../../../web.loader.init.js"></script>
+		<script>
+			Response([
+				"main.js"
+			]);
+		</script>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window">
+			<div class="x-view-content">
+				<div class="layui-tab" lay-filter="tab-zhts-ssts-lsgj-add" style="height:100%">
+					<div class="layui-tab-content" style="height:100%">
+						<div class="layui-tab-item layui-show layui-form" id="form-add" style="height: 100%; position: relative;">
+							<input type="hidden" class="layui-input" autocomplete="off" x-input-name="id" disabled/>
+							<input type="hidden" class="layui-input" autocomplete="off" x-input-name="mbbm" disabled/>
+							<input type="hidden" class="layui-input" autocomplete="off" x-input-name="mblb" disabled/>
+							<input type="hidden" class="layui-input" autocomplete="off" x-input-name="mbzl" disabled/>
+							<input type="hidden" class="layui-input" autocomplete="off" x-input-name="gjdqbm" disabled/>
+							<input type="hidden" class="layui-input" autocomplete="off" x-input-name="jxh" disabled/>
+							<div class="layui-row">
+								<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+									<div class="layui-form-item">
+										<label class="layui-form-label">目标名称</label>
+										<div class="layui-input-block">
+											<input class="layui-input" autocomplete="off" x-input-name="mbmc" disabled/>
+										</div>
+									</div>
+								</div>
+								<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+									<div class="layui-form-item">
+										<label class="layui-form-label">目标编号</label>
+										<div class="layui-input-block">
+											<input class="layui-input" autocomplete="off" x-input-name="mbbh" disabled/>
+										</div>
+									</div>
+								</div>
+								<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+									<div class="layui-form-item">
+										<label class="layui-form-label">国家地区</label>
+										<div class="layui-input-block">
+											<input class="layui-input" autocomplete="off" x-input-name="gjdq" type="hidden" disabled />
+											<input class="layui-input" autocomplete="off" x-input-name="gjdqbm" type="hidden" disabled/>
+											<input class="layui-input" autocomplete="off" x-input-name="gjdqmc" disabled/>
+										</div>
+									</div>
+								</div>
+								<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+									<div class="layui-form-item">
+										<label class="layui-form-label">位置时间</label>
+										<div class="layui-input-block">
+											<input class="layui-input" autocomplete="off" x-input-name="wzsj" disabled/>
+										</div>
+									</div>
+								</div>
+								<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+									<div class="layui-form-item">
+										<label class="layui-form-label">目标经度</label>
+										<div class="layui-input-block">
+											<input class="layui-input" autocomplete="off" x-input-name="jd" disabled/>
+										</div>
+									</div>
+								</div>
+								<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+									<div class="layui-form-item">
+										<label class="layui-form-label">目标纬度</label>
+										<div class="layui-input-block">
+											<input class="layui-input" autocomplete="off" x-input-name="wd" disabled/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="layui-row">
+								<div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+									<div class="layui-form-item">
+										<label class="layui-form-label">事件标题</label>
+										<div class="layui-input-block">
+											<input class="layui-input" autocomplete="off"
+												 placeholder="请输入事件标题..." x-input-name="title" />
+										</div>
+									</div>
+								</div>
+								<div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+									<div class="layui-form-item">
+										<label class="layui-form-label">事件内容</label>
+										<div class="layui-input-block">
+											<textarea class="layui-textarea" autocomplete="off" 
+												 placeholder="请输入事件内容..." x-input-name="sjnr"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

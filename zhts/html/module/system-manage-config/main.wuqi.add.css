@@ -1,0 +1,100 @@
+select[x-input-name='mapType']+.layui-form-select .layui-anim-upbit{
+	top: auto;
+	bottom: 0;
+}
+.x-view-content{
+	height: 100%;
+	background-color: rgba(35,52,74,.75);
+}
+.layui-tab-body-layout{
+	padding: 10px;
+}
+.layui-tab-body-layout > div{
+	float: left;
+}
+#wuqi-data-input{
+	width: 500px;
+}
+.layui-tab-body-layout .wuqi-data-image{
+	float: right;
+	width: calc(100% - 510px);
+	height: 400px;
+	overflow: hidden;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(149,184,231,.3);
+	border-radius: 3px;
+	display: none;
+}
+.action-update .wuqi-data-image{
+	display: block;
+}
+.wuqi-data-image .image-control-menu{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(149,184,231,1);
+	display: none;
+}
+.wuqi-data-image .image-control-menu.x-show{
+	display: block;
+}
+.wuqi-data-image .wuqi-image-ul{
+	padding: 10px;
+}
+.wuqi-data-image .wuqi-image-li{
+	position: relative;
+	float: left;
+	margin: 5px 10px 0px 0px;
+	width: 74px;
+	height: 80px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(149,184,231,.3);
+	cursor: pointer;
+	transition: all 0.3s ease-in-out 0s;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.wuqi-data-image .wuqi-image-li:after{
+	display: block;
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	background-color: rgba(0,0,0,.5);
+	opacity: 0;
+}
+.wuqi-data-image .wuqi-image-li:hover{
+	border-color: rgba(55,214,245,.9);
+	box-shadow: 0px 0px 5px rgba(55,214,245,.9);
+}
+.wuqi-data-image .wuqi-image-li:last-child{
+	margin: 5px 0px 0px 0px;
+}
+.wuqi-data-image .wuqi-image-li > img{
+	width: 100%;
+	height: 100%;
+}
+.wuqi-data-image .wuqi-image-li > input[type='checkbox']{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	width: 15px;
+	height: 15px;
+	background-color: rgba(55,214,245,.9);
+}
+.wuqi-data-image .layui-unselect.layui-form-checkbox{
+	position: absolute;
+	right: 2px;
+	top: 0;
+	padding: 0;
+}
+/*.skin-black .wuqi-data-image .layui-form-checkbox[lay-skin=primary] i{
+	background-color: transparent;
+}*/

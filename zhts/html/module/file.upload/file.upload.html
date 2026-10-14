@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>文件上传</title>
+        <script src="../../../web.loader.init.js"></script>
+        <script>
+            Response(["x.file.upload","file.upload.css","file.upload.js"]);
+        </script>
+    </head>
+    <body class="body-transparent skin-green skin-black" user-check="zhts">
+    	<div class="x-view-window">
+    		<div class="x-view-content">
+    			<div id="x-view-file-upload">
+    				<div class="layui-tab" lay-filter="test1">
+						<ul class="layui-tab-title" style="display: none;">
+					    	<li class="layui-this">本地上传</li>
+					    <!--<li>在线插入</li>-->
+						</ul>
+						<div class="layui-tab-content" style="height: 384px;">
+						    <div class="layui-tab-item layui-show">
+						    	<div class="layou-upload" id="file-upload-box">
+						    		<div class="panel-button-control">
+							    		<font class="selected-font">您还未打开过任何文件</font>
+							    		<div class="button-group">
+							    			<div class="" id="upload-group-1">
+								    			<div id="upload-container-1" style="display: none;"></div>
+												<div class="x-clearfix">
+													<button id="button-open-1" type="button" class="layui-btn layui-btn-sm">打开文件</button>
+													<button id="button-upload-1" type="button" class="layui-btn layui-btn-sm">开始上传</button>
+												</div>
+											</div>
+								    	</div>
+							    	</div>
+							    	<div class="panel-update-list">
+							    		<div class="upload-home"></div>
+							    		<ul class="upload-list" id="file-list">
+							    			
+							    		</ul>
+							    	</div>
+							    	<div class="panel-upload-progress">
+							    		<div class="prog-background"></div>
+							    		<font></font>
+							    	</div>
+						    	</div>
+						    </div>
+						    <!--<div class="layui-tab-item">2</div>-->
+						</div>
+					</div>
+    			</div>
+    		</div>
+    	</div>
+    </body>
+</html>

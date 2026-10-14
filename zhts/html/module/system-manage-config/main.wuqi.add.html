@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"x.file.upload",
+            	"main.wuqi.add.css",
+            	"main.wuqi.add.js"
+            ]);
+        </script>
+		<style>
+			body{
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window">
+			<div class="x-view-content">
+				<div id="form-add" class="layui-form">
+					<div class="layui-tab">
+						<div class="layui-tab-body x-clearfix layui-tab-body-layout">
+							<div id="wuqi-data-input">
+								<input type="hidden" x-input-name="id" x-out-name="id" class="layui-input" autocomplete="off">
+								<div class="layui-form-item layui-row">
+									<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+										<label class="layui-form-label">名称：</label>
+										<div class="layui-input-block">
+											<input type="text" x-input-name="mc" x-out-name="mc" class="layui-input" autocomplete="off">
+										</div>
+									</div>
+									<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+										<label class="layui-form-label">国家地区：</label>
+										<div class="layui-input-block">
+											<input type="text" x-input-name="gjdq" x-out-name="gjdq" class="layui-input" autocomplete="off">
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">作战类型：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="zzlx" x-out-name="zzlx" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">武器描述：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="ms" x-out-name="ms" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">武器分类：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="fl" x-out-name="fl" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">攻击方式：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="gjfs" x-out-name="gjfs" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">覆盖半径：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="fgbj" x-out-name="fgbj" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item layui-row">
+									<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+										<label class="layui-form-label">经度：</label>
+										<div class="layui-input-block">
+											<input type="text" x-input-name="jd" x-out-name="jd" class="layui-input" autocomplete="off">
+										</div>
+									</div>
+									<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+										<label class="layui-form-label">纬度：</label>
+										<div class="layui-input-block">
+											<input type="text" x-input-name="wd" x-out-name="wd" class="layui-input" autocomplete="off">
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">部署位置：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="bswz" x-out-name="bswz" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">部署时间：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="bssj" x-out-name="bssj" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								
+								<div class="layui-form-item">
+									<label class="layui-form-label">性能参数：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="xncs" x-out-name="xncs" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item layui-row">
+									<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+										<label class="layui-form-label">军标库号：</label>
+										<div class="layui-input-block">
+											<input type="text" x-input-name="jbkh" x-out-name="jbkh" class="layui-input" autocomplete="off">
+										</div>
+									</div>
+									<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+										<label class="layui-form-label">军标代号：</label>
+										<div class="layui-input-block">
+											<input type="text" x-input-name="jbdh" x-out-name="jbdh" class="layui-input" autocomplete="off">
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!--图像区域-->
+							<div id="wuqi-data-image" class="wuqi-data-image">
+								<div class="layui-tab" style="height: 100%;">
+									<ul class="layui-tab-title">
+										<li class="layui-this"><font>武器图像</font></li>
+										<button class="layui-btn layui-btn-normal" id="wuqi-file-upload" style="float: right;margin-right: 5px;margin-top: 3px;padding: 0px 5px;">上传文件</button>
+										<div class="image-control-menu">
+											<button class="layui-btn layui-btn-normal" x-btn-name="delete-multiple" style="margin-left: 5px;margin-top: 3px;padding: 0px 5px;">删除</button>
+										</div>
+									</ul>
+									<div class="layui-tab-body" style="height: calc(100% - 35px);overflow: auto;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

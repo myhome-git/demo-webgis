@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>综合态势可视化系统</title>
+        <script type="text/javascript" src="../web.loader.init.js"></script>
+        <style>
+        	html,body{
+        		width: 100%;
+        		height: 100%;
+        	}
+        	body{overflow: hidden;}
+        	
+        	#x-view-content,
+        	#map,
+        	.ol-viewport{
+        		background-image: url(map-background.jpg);
+        	}
+        </style>
+        <script>
+        	Response(["main.css"]);
+        </script>
+    </head>
+    <body class="skin-black" user-check="zhts1">
+        <div class="x-view-window layui-form" id="x-view-window">
+        	
+        	<!--view header-->
+            <div class="x-view-header x-clearfix" id="x-view-header">
+                <div class="logo x-position-center x-clearfix">
+                    <div class="logo-background"></div>
+                    <!--<i class="iconfont fa fa-globe"></i>-->
+                    <ul class="logo-span">
+                    	<li>
+                    		<span x-input-name="PROBJECT_NAME"></span>
+                    	</li>
+                    	<li>
+                    		<span x-input-name="PROBJECT_NAME_EN"></span>
+                    	</li>
+                    </ul>
+                </div>
+                <div class="x-header-right-menu" id="x-header-right-menu">
+                	<ul class="menu-bean x-clearfix">
+                		<li>
+                			<div class="system-times" id="system-times"></div>
+                		</li>
+                		<li>
+                			<div class="menu-title x-clearfix">
+                				<div class="img">
+                					<img src="data:image/png;base64,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"/>
+                				</div>
+                				<div class="span" x-input-name="nickname"></div>
+                				<div class="xiala-icon">▲</div>
+                				<div class="xiala-content">
+                					<ul class="menu-ul">
+                						<li class="menu-li" x-btn-name="logout">退出登录</li>
+                					</ul>
+	                			</div>
+                			</div>
+                		</li>
+                	</ul>
+                </div>
+            </div>
+            
+            <!--view content-->
+            <div class="x-view-content" id="x-view-content">
+            	
+                <!--map容器-->
+                <div class="x-map-canvas" id="map"></div>
+                
+                <!--综合手风琴-->
+				<div class="panel-shrink" id="window-accordion-panel">
+					<div class="x-button-shrink">
+						<i class="iconfont fa fa-angle-double-left"></i>
+					</div>
+				</div>
+				
+				<!--顶部搜索-->
+				<div id="window-search" class="search-window-box" style="">
+					<div class="layui-form-item">
+						<div class="search-box x-inlineblock x-clearfix">
+							<div class="search-input-box" id="SearchInputBox">
+								<input autocomplete="off" type="text" x-input-name="searchValue" class="form-control x-search-input" placeholder="请输入目标名称..." />
+							</div>
+							<div class="search-button btn btn-primary" id="ButtonSearchAll" title="">
+								<i class="iconfont fa fa-search"></i>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<!--<label class="layui-form-label"></label>-->
+						<div class="layui-input-block">
+							<div class="search-list-box layui-hide">
+							<!--<div class="search-list-box">-->
+								<div id="search-count" class="search-count">请在上方输入目标名称进行检索！</div>
+								<ul id="search-list" class="search-list">
+									<li>111</li>
+									<li>222</li>
+									<li>333</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--view-iframe-->
+			<div class="x-view-iframe x-common-panel" id="x-view-iframe">
+                <div class="x-panel-title">
+                    <!--<i class="iconfont glyphicon glyphicon-leaf"></i>-->
+                    <font></font>
+                    <div class="btn-close">
+                        <i class="iconfont fa fa-close"></i>
+                    </div>
+                </div>
+                <iframe frameborder="0" name="main-manage" width='100%' height='100%' src="about:blank"></iframe>
+            </div>
+            
+            <!--view-foot-->
+            <div class="x-view-foot" id="x-view-foot">
+                <div class="COMPANY_NAME">技术支持：北京博阳世通信息技术有限公司</div>
+                <div class="longitude-details" id="longitude-details">
+                    <span class="location_mars_lon">经度：<i x-input-name="JD">114.082031</i></span>
+                    <span class="location_mars_lat">纬度：<i x-input-name="WD">32.509761</i></span>
+                </div>
+            </div>
+        </div>
+      
+      	<script type="text/javascript">
+        	
+            Response([
+//            	 "ol.6","ol.6.olext",
+				"../library/zkmap-v1.0/zkmap.js",
+//				"../library/zkmap-v1.0/dist/zkmap.js",
+				
+				"x.accordion.menu","x.util.dragDiv","x.util.HTML5Fullscreen","x.file.upload",
+				"x.util.html2canvas","x.webSocket.stomp",
+            	"../library/zkmap-v1.0/elm-pep.js",
+            	"../library/map/config.js",
+            	"../library/map/gpsutil.js",
+				// "../library/map/map.js",
+				"module/satellite/satellite.js",
+				"main.css",
+				"main.js",
+				"main.open.window.js",
+				"ol.6.plot",
+				"module/satellite/orbits.js",
+				
+				"module/system-manage-fence/fence.draw.js",
+				"module/system-manage-fence/fence.draw.show.js",
+            	"module/plot/main.plot.transform.js",
+				"main.map.event.js",
+				"main.module.load.js",
+				"main.module.dict.js",
+				"main.map.js",
+				"main.module.menu.accordion.js",
+				"main.module.search.js",
+				"main.module.taishi.system.set.js",
+            	"main.module.satellite.js",
+            	"main.module.zhts.ssts.js",
+            	"main.module.zhts.ssts.message.js","main.module.zhts.ssts.wsynchro.js",
+            	"main.module.zhts.gjwq.tree.js",
+            	"main.module.shouduan.draw.js",
+            	"main.module.weixing.draw.js",
+            	
+            	"module/wuqi.xiaoneng/draw.show.js",
+            	
+            	//工具栏需要后期初始化js
+            	"module/window.toolbar/index.css","module/window.toolbar/index.js",
+            	
+            	// "module/zhts/tagmanager.js",
+            	// "module/zhts/zhtsmanager.js",
+            	// "module/zhts/zhtsAnalyse.js",
+            	// "module/zhts/linktag.js",
+            	// "module/zhts/tracker.js",
+            	// "module/zhts/hjconfig_new.js",
+            	// "module/zhts/stomp.js",
+            	// "module/zhts/dynawebsocket.js",
+            	
+            	"../library/layerManager/LayerManager.css",
+            	"../library/layerManager/LayerManager.js",
+            	"../library/layerManager/managerLayers.js",
+            ]);
+        </script>
+    </body>
+</html>
+
+<!--日期时间-->
+<script id="TemplateWindowFootRightTimes" type="text/html">
+	<div class="date1">{{week}}</div>
+	<div class="date2">{{date}}</div>
+</script>
+
+<!--复盘态势-->
+ <script id="TemplateWindowFPTSTAB" type="text/html">
+ 	<div id="window-fpts-tabs" class="window-x-tabs" style="">
+		<div class="layui-tab">
+			<ul class="layui-tab-title" style="display:none;">
+				<li class="layui-this">
+					态势回放
+				</li>
+			</ul>
+			<div class="layui-tab-content" style="padding: 0;">
+				<div class="layui-tab-item layui-show">
+					<style>
+						#fpts-tshf .settings-panel.panel-fpts-tshf-tree>div {
+							display: block;
+						}
+
+						#fpts-tshf .layui-input {
+							height: 26px;
+							width: 220px;
+							line-height: 26px;
+						}
+					</style>
+					<div id="diy-scrollbar-box-fpts-tshf" class="">
+						<div id="fpts-tshf">
+							<div class="form-horizontal">
+								<fieldset>
+									<div class="settings-panel x-clearfix" style="">
+										<div class="settings-left">
+											<font>目标类别：</font>
+										</div>
+										<div class="settings-right">
+											<div class="">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfsettingck" title="水面" lay-skin="primary" checked data-ckvalue="水面目标">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfsettingck" title="陆地" lay-skin="primary"  checked data-ckvalue="陆地目标">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfsettingck" title="空中" lay-skin="primary" checked data-ckvalue="空中目标">
+											</div>
+										</div>
+									</div>
+									<div class="settings-panel x-clearfix" style="">
+										<div class="settings-left">
+											<font>开始时间：</font>
+										</div>
+										<div class="settings-right">
+											<div class="">
+												<div class="input-group" data-link-field="tshf_start_time" style="color: black;">
+													<input type="text" autocomplete="off" size="34" class="layui-input" id="tshf_start_time" placeholder="开始时间">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="settings-panel x-clearfix" style="">
+										<div class="settings-left">
+											<font>结束时间：</font>
+										</div>
+										<div class="settings-right">
+											<div class="">
+												<div class="input-group" data-link-field="tshf_end_time" style="color: black;">
+													<input type="text" autocomplete="off" size="34" class="layui-input" id="tshf_end_time" placeholder="结束时间">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="settings-panel x-clearfix" style="">
+										<div class="settings-left">
+											<font>国家地区：</font>
+										</div>
+										<div class="settings-right">
+											<div class="">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="美国" lay-skin="primary"  checked data-ckvalue="美国">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="日本" lay-skin="primary"  checked data-ckvalue="日本">							
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="韩国" lay-skin="primary"  checked data-ckvalue="韩国">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="台湾" lay-skin="primary"  checked data-ckvalue="台湾">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="朝鲜" lay-skin="primary"  data-ckvalue="朝鲜">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="越南" lay-skin="primary"  data-ckvalue="越南">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="印度" lay-skin="primary"  data-ckvalue="印度">
+												
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="英国" lay-skin="primary"  data-ckvalue="英国">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="法国" lay-skin="primary"  data-ckvalue="法国">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="俄罗斯" lay-skin="primary"  data-ckvalue="俄罗斯">
+												<input type="checkbox" autocomplete="off" lay-filter="tshfgjck" title="澳大利亚" lay-skin="primary"  data-ckvalue="澳大利亚">
+																							
+											</div>
+										</div>
+									</div>
+
+									<div class="panel-fpts-tshf-tree settings-panel x-clearfix" style="">
+										<div id="diy-scrollbar-fpts-tshf-tree" style="border: 1px solid rgba(255,255,255,0.5);width: 100%;margin-top: 5px;">
+											<ul id="fpts-tshf-tree" class="ztree"></ul>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<div class="settings-panel x-clearfix" style="margin:auto;">
+											<div class="settings-left">
+												<font>回放速度：</font>
+											</div>
+
+											<div class="settings-right">
+												<div class="" style="display: inline-flex;">
+													<input id='speed' type='range' min=1 max=20 value=10 style='width: 190px; margin-left: 1px; margin-top: 5px;  position: relative;'>
+													<label id='speedlabel' class="control-label" for="input01" style="padding-top: 3px;">10 X</label>
+												</div>
+											</div>
+
+											<!-- Button -->
+											<div class="controls" style='float: right; margin-top: 5px;'>
+												<input id="showHJ" lay-skin="primary" lay-filter="tshfhj" checked type="checkbox" title="航迹">
+												<button id='savetshf' class="btn btn-primary" disabled="disabled">保存</button>
+												<button id='stop' class="btn btn-danger" disabled="disabled">暂停</button>
+												<button id='start' class="btn btn-success" disabled="disabled">开始</button>
+												<button id='loadtshf' class="btn btn-info">加载</button>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script id="TemplateWindowZHTS" type="text/html">
+	<div id="accordion-zhts-box" class="accordion-zhts-box">
+		<div id="accordion-zhts-message" class="accordion-zhts-message"></div>
+		<div id="tree2d-zhts-scrollbar-box">
+			<ul class="ztree" id="accordion-ztree-zhts"></ul>
+			<ul class="ztree accordion-ztree-zhts-group" id="accordion-ztree-zhts-group"></ul>
+		</div>
+	</div>
+</script>
+<script id="TemplateWindowGJWQ" type="text/html">
+	<div id="accordion-gjwq-box" class="accordion-zhts-box">
+		<div id="tree2d-gjwq-scrollbar-box">
+			<ul class="ztree" id="accordion-ztree-gjwq"></ul>
+		</div>
+	</div>
+</script>
+<script id="TemplateWindowTQTS" type="text/html">
+	<div id="tqts">
+		<div id="tree2d_tqts_scrollbar_box">
+			<ul class="ztree" id="satelliteTree" ></ul>
+		</div>
+	</div>
+</script>
+
+<script id="TemplateWindowTCKZ" type="text/html">
+	<div id="base-map-manager">
+		<div id="tree2d_baseMap_scrollbar_box" style="">
+			<ul class="ztree" id="tree2d_baseMap" style=""></ul>
+		</div>
+	</div>
+</script>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>目标详情</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"jquery.viewer",
+            	"index.css","index.js"
+            ]);
+        </script>
+		<style>
+			
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window" id="x-view-window">
+			<div class="x-view-content" id="x-view-content"></div>
+		</div>
+	</body>
+</html>
+<!--模板-->
+<script type="text/html" id="TemplateTableSearchTABLEQUYUGUANLI">
+{{if isRun==true}}
+<div class="x-padding-20">
+	<div class="panel-group" id="baseInfoHas">
+		<div class="x-panel-title">基本信息</div>
+		<div style="height: 10px;"></div>
+		<div class="x-layout-panel base-info x-clearfix" style="">
+			<div class="x-layout-left base-info-list x-clearfix">
+				{{each datalist as value}}
+				{{if value.type=="baseInfo"}}
+					{{each value.data as v}}
+					<div class="item-bean x-clearfix">
+						<div class="item-key" title="{{v.itemName}}">{{v.itemName}}：</div>
+						<div class="item-value" title="{{v.itemValue}}">{{v.itemValue}}</div>
+					</div>
+					{{/each}}
+				{{/if}}
+				{{/each}}
+			</div>
+			<div class="x-layout-right media-info">
+				<div class="window-x-tabs" style="height: 100%;">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="height: 100%;">
+						<div class="layui-hide" id="layui-tab-media">
+							<input type="hidden" x-input-name="mblb" value="{{mbinfo.mblb}}" />
+							<input type="hidden" x-input-name="mbid" value="{{mbinfo.mbid}}" />
+						</div>
+					  <ul class="layui-tab-title">
+					  	<li class="layui-this">
+					  		<font>图像</font>
+					  	</li>
+					  	<button class="layui-btn layui-btn-normal" id="wuqi-file-upload" style="float: right;margin-right: 5px;margin-top: 3px;padding: 0px 5px;">图像管理</button>
+					    <!--<li>视频</li>-->
+					  </ul>
+					  <div class="layui-tab-content" style="height: calc(100% - 34px);">
+					  	<div class="layui-tab-item layui-show" style="height: 100%;position: relative;">
+					  		<div id="mb-image" class="mb-image"></div>
+					  		<!--<div class="image-view" id="image-view">
+					  			<style>
+					  				.mCSB_scrollTools.mCSB_scrollTools_horizontal{
+					  					bottom: -6px;
+					  				}
+					  				.mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+					  					background-color: rgba(91,157,234,1);
+					  				}
+					  				.mCS-light-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+					  					background-color: rgba(91,157,234,1);
+					  				}
+					  				.mCS-light-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ 
+					  					background-color: rgba(91,157,234,0.9); 
+					  				}
+					  			</style>
+					  			<div class="image-show" id="image-show">
+					  				<img src="about:blank" />
+					  			</div>
+					  			<div id="image-thumbnail-scrollbar">
+					  				<ul class="image-thumbnail" id="image-thumbnail">
+					  					<table>
+					  						<tbody>
+					  							<tr>
+					  								{{each mediaImage as value}}
+									  					{{if value.type=="image"}}
+									  					<td>
+									  					<div class="td-image">
+									  						<img src="{{value.src}}" />
+									  						<div class="th-shade" title="{{value.src}}"></div>
+									  					</div>
+									  					</td>
+									  					{{/if}}
+									  				{{/each}}
+					  							</tr>
+					  						</tbody>
+					  					</table>
+						  				
+						  			</ul>
+					  			</div>
+					  			<ul class="image-hidden" id="image-hidden">
+					  				{{each mediaImage as value}}
+					  					{{if value.type=="image"}}
+					  					<li><img src="{{value.src}}" /></li>
+					  					{{/if}}
+					  				{{/each}}
+					  			</ul>
+					  		</div>-->
+					    </div>
+					    <!--<div class="layui-tab-item" style="height: 100%;">
+					    	视频
+					    </div>-->
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{{each datalist as value}}
+		{{if value.type=="baseTabs"}}
+			{{each value.data as v}}
+			<div class="panel-group" id="{{v.hash}}">
+				<div class="x-panel-title">{{v.title}}</div>
+				<div style="height: 10px;"></div>
+				<fieldset class="layui-elem-field">
+					<div class="layui-field-box">
+						{{if (
+							v.title=="作战运用" || v.title=="活动规律"
+							 || v.title=="功能使命" || v.title=="典型阵位"
+							 || v.title=="编制序列" || v.title=="航母编队编组"
+							 || v.title=="舰长履历" ||  v.title=="武器载荷"
+							 || v.title=="雷达装备"
+							)}}
+						
+							<!--长文本模式-->
+							<div class="x-layout-left base-tabs-list x-clearfix">
+								{{each v.data as d}}
+								<div class="item-bean x-clearfix">
+									<!--<div class="item-key" title="{{d.itemName}}">{{d.itemName}}：</div>-->
+									<div class="item-value text-indent">{{#d.itemValue}}</div>
+								</div>
+								{{/each}}
+							</div>
+						{{else}}
+							<div class="base-tabs-list layui-row layui-col-space5">
+								{{each v.data as d}}
+									<div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+										<div class="item-bean x-clearfix">
+											<label class="layui-form-label
+											{{if v.title=="JTLS参数"}}
+												 background-color-no
+											{{/if}}
+											" title="{{d.itemName}}">{{d.itemName}}：</label>
+											<div class="layui-form-value" title="{{d.itemValue}}">{{#d.itemValue}}</div>
+										</div>
+									</div>
+								{{/each}}
+							</div>
+						{{/if}}
+					</div>
+				</fieldset>
+			</div>
+			{{/each}}
+			
+			<div class="panel-bottom-tabs">
+				<ul class="layui-tab-title">
+				  	<li class="layui-this"><a href="#baseInfoHas">基本信息</a></li>
+					{{each value.data as v}}
+					<li class="layui-this"><a href="#{{v.hash}}">{{v.title}}</a></li>
+					{{/each}}
+				</ul>
+			</div>
+		{{/if}}
+	{{/each}}
+</div>
+{{/if}}
+</script>

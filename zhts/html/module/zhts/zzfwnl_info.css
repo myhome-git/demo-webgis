@@ -1,0 +1,103 @@
+.xzy-action-scope .ztree li{
+    color: #fff;
+     line-height: 26px;
+}
+
+
+.xzy-action-scope .ztree .node_name {
+    color: #fff;
+    font-size: 13px;
+}
+
+.xzy-action-scope .ztree li a.curSelectedNode {
+    padding-top: 0px;
+    background-color: #323d51;
+    height: 26px;
+    border: 1px;
+    opacity: 1;
+}
+
+.xzy-action-scope .ztree li span.button.chk{
+    margin-right: 0px;
+}
+
+.xzy-action-scope .ztree li span.button{
+    margin-right: 5px;
+}
+
+.xzy-action-scope .ztree li span{
+    margin-left: 2px;
+}
+
+.xzy-action-scope .ztree li span.button.ico_docu{
+    display: none;
+}
+
+.xzy-action-scope .ztree li ul{
+    padding-left: 12px;
+}
+
+
+.xzy-action-scope {display:none;position: absolute; top:80px; right: 30px; background-color: rgba(35,52,74,0.9); width: 340px;border-radius:3px; box-shadow: 1px 1px 10px 2px #e4e2e2fa;z-index: 999;}
+.xzy-action-scope .layui-tab{margin: 0px}
+.xzy-action-scope .icon-close {z-index: 999; position: absolute;right: 5px;top: 8px; display: block; float: right;margin-top: 3px;  width: 16px; height: 16px;  border-radius: 50%; background: url(img/+.png) 4px 4px/8px 8px no-repeat #ffffff; transform: rotate(45deg); -ms-transform: rotate(45deg);                                                -webkit-transform: rotate(45deg); -o-transform: rotate(45deg); -moz-transform: rotate(45deg); }
+.xzy-action-scope .layui-tab-brief>.layui-tab-title .layui-this{ color: #ffffff; background-color: #369;}
+.xzy-action-scope .layui-tab-brief>.layui-tab-title li{color:#ffffff;font-size:14px; }
+
+
+.xzy-action-scope .layui-collapse{
+    border-style: none;
+}
+
+.xzy-action-scope .layui-colla-item,.xzy-action-scope .layui-colla-content{
+    border-style: none;
+}
+
+.xzy-action-scope .layui-colla-content{
+    padding: 0px 0px;
+}
+
+
+.xzy-action-scope .layui-colla-title{
+    color: #fff;
+    /*background-color: #346592;*/
+    background-color: rgba(36, 43, 56, 0.43);
+}
+
+
+.mb-color-marker{
+    display: inline-block;
+    margin: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.xzy-action-scope .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical, .xzy-action-scope  .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical{
+    right:-13px;
+}
+
+.xzy-action-scope .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{
+    bottom: -13px;
+}
+
+/* 复选框 样式*/
+.xzy-action-scope .title{
+    float: left;
+    margin-right: 8px;
+}
+.xzy-action-scope .check-box-warp{
+    float: left;
+}
+
+.xzy-action-scope .check-box-warp span{
+    vertical-align: top;
+    margin: 2px 5px;
+}
+
+
+.xzy-action-scope #action-scope-check-box{
+    overflow: hidden;
+    padding: 5px;
+    line-height: 25px;
+}

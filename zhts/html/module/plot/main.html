@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>标绘面板</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"jquery.ztreev3","main.css","main.draw.image.js","main.js"
+            ]);
+        </script>
+		<style>
+			.x-view-content{height: 100%;}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window" id="x-view-window">
+			<div class="x-view-content">
+				<div id="demo" class="drag-window-ul">
+			        <!--标绘树形-->
+			        <div class="drag-li drag-top">
+			            <div id="treeDiv" style="opacity: 0.8;">
+			                <ul id="treeDemo" class="ztree"></ul>
+			            </div>
+			        </div>
+			        <div class="drag-line">
+			            <div class="center">|||</div>
+			        </div>
+			        <div class="drag-li drag-foot">
+			            <!--标绘面板-->
+			            <div id="imgDiv" style="">
+			                <div id="x-window-draw-graph">
+			                    <div class="x-open-window-panel">
+			
+			                        <div class="x-panel-content">
+			                            <ul class="x-clearfix" id="templateImgDiv"></ul>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>

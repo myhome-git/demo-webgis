@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网络分析</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"d3-v3",
+            	"index.css","index.js"
+            ]);
+        </script>
+		<style>
+			
+		</style>
+	</head>
+	<body class="skin-black skin-transparent-not" user-check="zhts">
+		<div class="x-view-window skin-transparent-not" id="x-view-window">
+			<div class="x-view-content" id="x-view-content">
+				<div class="x-common-panel">
+					<div id="ElementTemplateTableSearchInput-0"></div>
+				</div>
+				<div class="item-layout">
+					<div class="item-layout-left" id="svg-panel">
+						<div id="svg-box"></div>
+					</div>
+					<div class="item-layout-right">
+						<div class="item-title x-clearfix"> 
+							<font>时间线</font> 
+						</div>
+						<div class="item-content" id="shijianxian-content"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!--搜索项-网络分析-->
+<script type="text/html" id="TemplateTableSearchTableInput-0">
+{{if isRun==true}}
+	<div class="x-common-panel layui-form" style="padding: 0;border: 0;">
+		<div class="x-panel-content layui-form x-clearfix" style="padding: 5px 10px;" id="input-search-from">
+			<div class="layui-inline">
+				<label class="layui-form-label" style="width: 70px;">数据类别</label>
+			</div>
+			<div class="layui-inline">
+				<select x-input-name="table" lay-filter="table"></select>
+			</div>
+			<div class="layui-inline">
+				<label class="layui-form-label" style="width: 70px;">数据类型</label>
+			</div>
+			<div class="layui-inline">
+				<select x-input-name="keytype"></select>
+			</div>
+			<div class="layui-inline">
+				<button type="button" x-btn-name="button-search" class="layui-btn layui-btn-sm layui-btn-normal" style="height: 28px;line-height: 28px;">
+					<i class="iconfont glyphicon glyphicon-search"></i>
+					<span>查询</span>
+				</button>
+			</div>
+		</div>
+	</div>
+{{/if}}
+</script>
+
+<!--时间线-->
+<script type="text/html" id="TemplateTableSHIJIANXIAN-0">
+{{if isRun==true}}
+<ul class="layui-timeline">
+	{{each datalist as value}}
+	  <li class="layui-timeline-item">
+	    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+	    <div class="layui-timeline-content layui-text">
+	      <h3 class="layui-timeline-title">{{value.datetime}}</h3>
+	      <p>
+	      	<font class="action-user">{{value.source}} →→→ {{value.destination}}</font>
+	        <br>
+	        <font class="action-message">{{value.relate_name}}</font>
+	      </p>
+	    </div>
+	  </li>
+  	{{/each}}
+</ul>
+{{/if}}
+</script>
+

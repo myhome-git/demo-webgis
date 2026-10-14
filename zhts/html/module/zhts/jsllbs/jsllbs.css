@@ -1,0 +1,10 @@
+.yourclass {background-color:rgba(248, 248, 248, 0.5);padding:10px;position: absolute;}
+#nopage{padding: 0 10px} 
+#hzm_closebtn{ position: absolute;right: 15px;top: 16px;width: 20px;height: 20px;text-align: center;line-height: 20px;border-radius: 50%;font-weight: bold;cursor: pointer;font-style: initial;color:#000}
+.yourclass ul {border:1px solid #000;}
+.yourclass ul li{background: #fff;padding:0 10px;background: #e0c9d3;white-space:nowrap;color:#000}
+.yourclass ul li span{font-weight: bold;display: inline-block;}
+.yourclass ul li:not(:last-child){border-bottom:1px solid #000}
+.hzm_tip{padding: 5px 0 5px 10px !important;background:#fff !important;font-weight: bold}
+.top_tip{font-weight: bold}
+.hzm_cs_child li i {font-style: initial;color: red;}

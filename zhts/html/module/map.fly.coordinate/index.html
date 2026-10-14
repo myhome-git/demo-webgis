@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"index.js"
+            ]);
+        </script>
+		<style>
+			body{
+				overflow: auto;
+			}
+			#blog-add{
+				margin: 10px 10px 0px 10px;
+			}
+			#blog-add .layui-form-item{
+				outline: 0px solid #FF0000;
+			}
+			#blog-add .layui-form-label {
+			    width: 80px;
+			    outline: 0px solid #FF0000;
+			    padding: 3px 5px;
+			}
+			#blog-add .layui-input-block {
+			    margin-left: 80px;
+			}
+			#blog-add #submit{
+				position: relative;
+				z-index: 0!important;
+			}
+			#blog-add .layui-card{
+				box-shadow: none;
+			}
+			#blog-add .layui-card-body{
+				position: relative;
+				padding: 0px 10px;
+			}
+			#blog-add .layui-card-body:after{
+				display: block;
+				content: "";
+				clear: both;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			#blog-add .layui-form-item{
+				float: left;
+				position: relative;
+				clear: none;
+				width: 100%;
+				margin-bottom: 5px;
+			}
+			#blog-add .layui-form-item:after{
+				content: "";
+				clear: both;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div id="blog-add" class="layui-form">
+			<div style="padding: 10px 0px 0px 0px;">
+				<div class="layui-row">
+					<div class="layui-col-md12" id="form-input">
+						<div class="layui-card">
+							<!--<div class="layui-card-header x-clearfix">
+								<i class="iconfont fa fa-add"></i>
+								<font x-input-name="page_action">新增设备</font>
+							</div>-->
+							<div class="layui-card-body">
+                                <div class="layui-form-item">
+									<label class="layui-form-label">经度(X)：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="x" x-out-name="x" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">维度(Y)：</label>
+									<div class="layui-input-block">
+										<input type="text" x-input-name="y" x-out-name="y" class="layui-input" autocomplete="off">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

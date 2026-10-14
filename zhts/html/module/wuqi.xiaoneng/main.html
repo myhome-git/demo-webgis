@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>攻击效能</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"main.json.js","main.js"
+            ]);
+        </script>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window" id="x-view-window">
+			<div class="x-view-content" id="x-view-content" style="overflow: hidden;">
+				<!--攻击效能-->
+				<div class="search-wuqi-xiaoneng" id="search-wuqi-xiaoneng">
+					<div id="search-wuqi-xiaoneng-table"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/html" id="TemplateTableToolbar">
+<div>
+	<div class="x-panel-title layui-table-tool-title x-clearfix">
+		<div class="layui-inline">
+			<i class="iconfont glyphicon glyphicon-th-list"></i>
+			<font>目标列表</font>
+		</div>
+		<div class="layui-inline" style="width: 10px;"></div>
+		<div class="layui-inline" style="vertical-align：inherit;">
+			<button type="button" class="layui-btn layui-btn-xs layui-btn-normal" lay-event="table-websocket">访问远程资源</button>
+		</div>
+	</div>
+</div>
+</script>

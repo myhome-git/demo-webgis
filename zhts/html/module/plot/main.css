@@ -1,0 +1,139 @@
+.drag-window-ul{
+    /* width: 350px; */
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+    background-color: rgb(255, 255, 255);
+    color: inherit;
+    /* position: absolute;z-index: 99;top: 85px;left: 10px; */
+}
+.skin-black .drag-window-ul{
+	background-color: transparent;
+	border-width: 0;
+}
+.drag-window-ul .drag-line{
+    cursor: ns-resize;
+    height: 0;
+    outline: 0px solid #ff0000;
+    position: relative;
+}
+.drag-window-ul .drag-line:before{
+    display: block;
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    z-index: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+}
+.skin-black .drag-window-ul .drag-line:before{
+	background: rgba(149,184,231,.5);
+}
+.drag-window-ul .drag-line .center{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 20px;
+    line-height: 14px;
+    margin-left: -25px;
+    margin-top: -10px;
+    background: rgba(0,60,136,0.9);
+    border-radius: 5px;
+    border: 2px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+.drag-window-ul .drag-li{
+    height: 50%;
+}
+.drag-window-ul .drag-li.drag-top{
+    background-color: rgba(255,255,255,1);
+    border-bottom: 1px solid #333;
+}
+.skin-black .drag-window-ul .drag-li.drag-top{
+	background-color: transparent;
+}
+.drag-window-ul .drag-li.drag-foot{
+    background-color: rgba(255,255,255,1);
+}
+.skin-black .drag-li.drag-foot{
+	background-color: transparent;
+}
+
+#x-window-draw-graph{
+    position: relative;
+    height: auto;
+    margin-bottom: 0;
+    transition: all 0.2s ease 0s;
+}
+#x-window-draw-graph ul li{
+    float: left;
+    width: 99px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    /* padding: 13px; */
+    margin: 3px;
+    cursor: pointer;
+    position: relative;
+}
+.skin-black #x-window-draw-graph ul li{
+	border-color: rgba(149,184,231,.9);
+}
+#x-window-draw-graph ul li.selected,
+#x-window-draw-graph ul li:hover{
+    border: 1px solid rgba(255,255,255,0.95);
+    box-shadow: 0 1px 1px rgba(245,130,47,0.5) inset, 0 0 8px rgba(245,130,47,0.5);
+    transition: all .3s ease 0s;
+}
+
+#x-window-draw-graph ul li .draw-iconfont{
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+#x-window-draw-graph ul li .draw-iconfont img{
+    width: 100%;
+    height: 100%;
+}
+#x-window-draw-graph ul li .draw-font{
+    text-align: center;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    color: #333;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    transition: all .3s ease 0s;
+}
+.skin-black #x-window-draw-graph ul li .draw-font{
+	color: inherit;
+}
+#x-window-draw-graph ul li .draw-btn{
+	display: none;
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 22px;
+	height: 22px;
+	text-align: center;
+	background-color: rgba(59,173,153,1);
+	color: #fff;
+}
+#x-window-draw-graph ul li.selected .draw-font,
+#x-window-draw-graph ul li:hover .draw-font{
+    transition: all .3s ease 0s;
+    color: rgba(255,255,255,1);
+    text-shadow:0px 0px 10px rgba(245,130,47,1),0px 0px 10px rgba(245,130,47,1),0px 0px 10px rgba(245,130,47,1),0px 0px 10px rgba(245,130,47,1);
+}
+#x-window-draw-graph ul li.selected .draw-btn,
+#x-window-draw-graph ul li:hover .draw-btn{
+	display: block;
+}

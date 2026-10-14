@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>日期选择器</title>
+		<script src="../../web.loader.init.js"></script>
+		<script>
+			Response(["layuiColorpicker.js"]);
+		</script>
+		<style>
+			body{
+				background-color: transparent;
+				overflow: auto;
+				width: 280px;
+				overflow: hidden;
+			}
+			.x-view-window{
+				
+			}
+			.layui-anim{
+				animation: none!important;
+			}
+			.layui-anim.layui-anim-upbit.layui-colorpicker-main{
+				top: 0!important;
+				left: 0!important;
+				border: 0!important;
+				box-shadow: none;
+				border-radius: 0;
+			}
+			.layui-anim.layui-anim-upbit{
+				height: 160px;
+				overflow: auto;
+			}
+			.layui-laydate{
+				left: 170px!important;
+				top: 0px!important;
+			}			
+			.layui-anim.layui-anim-upbit{
+				height: auto;
+				overflow: hidden;
+			}
+			.layui-btn-container .layui-btn{
+				margin-left: 5px;
+			}
+			.layui-btn-container .layui-btn:first-child{
+				margin: 0;
+			}
+			.x-layui-colorpicker-box > div >.layui-inline{
+				margin: 0;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			.layui-unselect.layui-colorpicker{
+				margin: 0;
+			}
+			.layui-colorpicker-trigger-bgcolor{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.layui-btn-container{
+				margin-left: 160px;
+				width: auto;
+			}
+			.x-layui-colorpicker-box{
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window">
+			<div class="x-view-content">
+				<div class="x-layui-colorpicker-box">
+					<div>
+					  <input type="hidden" name="color" value="" id="test-all-input">
+					  <div id="test-all"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var _FunctionObject = _FunctionObject|| {};
+			var _pageObject = _FunctionObject;
+			(function($){
+				$(document).ready(documentReady);
+				function documentReady(){
+					
+					//颜色选择器移除
+//					  Class.prototype.removePicker = function(index){
+//					    var that = this
+//					    ,options = that.config;
+//					    $('#layui-colorpicker'+ (index || that.index)).remove();
+//					    return that;
+//					  };
+					  
+					//颜色选择器表单
+					layui.use('colorpicker', function(){
+						_FunctionObject.layuiColorpicker = layui.colorpicker.render({
+							elem: '#test-all',
+							color: 'rgba(0,0,0,1)',
+							format: 'rgb',
+							predefine: true,
+							alpha: true,
+							shadeClose: false,
+                			isOutAnim : false,
+							done: function(color){
+							},
+							change: function(color){
+						    }
+						});
+						$("#test-all .layui-unselect.layui-colorpicker").trigger("click");
+					});
+					
+					_FunctionObject.layuiColorpickerEvent = function(_name,_func){
+						var _layuiColorpickerObject = this.layuiColorpicker;
+						if(_func){
+							_layuiColorpickerObject.config[_name] = _func;
+						}
+					}
+					
+				}
+			})(jQuery);
+		</script>
+	</body>
+</html>

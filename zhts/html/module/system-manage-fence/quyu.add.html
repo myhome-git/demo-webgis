@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据查询</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"x.file.upload","quyu.add.js"
+            ]);
+        </script>
+		<style>
+			body{
+				overflow: hidden;
+			}
+			#blog-add{
+				margin: 10px 10px 0px 10px;
+			}
+			#blog-add .layui-form-item{
+				outline: 0px solid #FF0000;
+			}
+			#blog-add .layui-form-label {
+			    width: 80px;
+			    outline: 0px solid #FF0000;
+			    padding: 3px 5px;
+			}
+			#blog-add .layui-input-block {
+			    margin-left: 80px;
+			}
+			#blog-add #submit{
+				position: relative;
+				z-index: 0!important;
+			}
+			#blog-add .layui-card{
+				box-shadow: none;
+			}
+			#blog-add .layui-card-body{
+				position: relative;
+				padding: 0px 10px;
+			}
+			#blog-add .layui-card-body:after{
+				display: block;
+				content: "";
+				clear: both;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			#blog-add .layui-form-item{
+				float: left;
+				position: relative;
+				clear: none;
+				width: 100%;
+				margin-bottom: 5px;
+			}
+			#blog-add .layui-form-item:after{
+				content: "";
+				clear: both;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			.layui-anim.layui-anim-upbit{
+				height: 160px;
+				overflow: auto;
+			}
+			.layui-laydate{
+				left: 170px!important;
+				top: 0px!important;
+			}
+			#ImageView-company{
+				display: block;
+				width: 110px;
+				height: 130px;
+				border: 1px dotted #ddd;
+			}
+		
+			.x-layui-colorpicker-box{
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				cursor: pointer;
+			}
+			.x-layui-colorpicker-box > a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				line-height: 30px;
+				background-color: #1E9FFF;
+				color: white;
+				padding: 0px 5px 0px 5px;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window">
+			<div class="x-view-content">
+				<div id="blog-add" class="layui-form">
+					<div style="padding: 0;">
+						<div class="layui-row layui-col-space15">
+							<div class="layui-col-md12" id="form-input">
+								<div class="layui-card">
+									<!--<div class="layui-card-header x-clearfix">
+										<i class="iconfont fa fa-add"></i>
+										<font x-input-name="page_action">新增设备</font>
+									</div>-->
+									<div class="layui-card-body">
+		                                <div class="layui-form-item">
+											<input type="hidden" x-input-name="id" x-out-name="id" class="layui-input" autocomplete="off">
+											<label class="layui-form-label">区域名称：</label>
+											<div class="layui-input-block">
+												<input type="text" x-input-name="name" x-out-name="name" class="layui-input" autocomplete="off">
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label">颜色：</label>
+											<div class="layui-input-block item-right">
+												<input type="text" x-input-name="color" x-out-name="color" class="layui-input" autocomplete="off">
+												<div class="x-layui-colorpicker-box">
+													<a x-btn-name="button-open-layui-colorpicker">选择</a>
+												</div>
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label">类型：</label>
+											<div class="layui-input-block">
+												<select x-input-name="type" x-out-name="type" lay-search=""></select>
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label">重要等级：</label>
+											<div class="layui-input-block">
+												<select x-input-name="implevel" x-out-name="implevel">
+													<option value="">请选择</option>
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+												</select>
+											</div>
+										</div>
+										<div class="layui-form-item" style="display: none;">
+											<label class="layui-form-label">图片：</label>
+											<div class="layui-input-block">
+												<div id="upload-container"></div>
+												<div class="x-clearfix">
+													<div class="x-inlineblock" id="blogCover-box" style="float: left;width: 110px;height: 130px;border: 1px dotted #ddd;">
+														<img id="ImageView-company" x-input-name="imageViewURL" alt="" src=""/>
+														<input type="hidden" x-input-name="filePath" x-out-name="filePath" autocomplete="off" style="display: none;">
+													</div>
+													<div class="x-inlineblock" style="float: left;margin-left: 5px;">
+														<div class="bind-upload-group" id="upload-group-1" style="opacity: 0;">
+															<div id="upload-container-1" class="bind-node-box" style="display: none;"></div>
+															<div class="x-clearfix">
+																<button id="ButtonUpload-1" type="button" x-btn-name="ButtonFileUpload" class="layui-btn layui-btn-sm layui-btn-normal" style="z-index: auto;">开始上传</button>
+																<button type="button" x-btn-name="ButtonFileDelete" class="layui-btn layui-btn-danger layui-btn-sm" style="display: none;">删除</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="layui-form-item" style="width: 100%;">
+											<label class="layui-form-label">备注：</label>
+											<div class="layui-input-block">
+												<input type="text" x-input-name="remark" x-out-name="remark" class="layui-input" autocomplete="off">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电子围栏</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"main.json.js","main.js"
+            ]);
+        </script>
+		<style>
+			#input-search-from > div{
+				float: left;
+				height: 28px;
+				line-height: 28px;
+				overflow: hidden;
+			}
+			#input-search-from > div > .layui-btn{
+				margin-top: -3px;
+				margin-left: -1px;
+			}
+            #input-search-from .layui-btn{
+				border-width: 1px;
+				border-style: solid;
+                border-radius: 0;
+				font-size: 16px;
+            }
+            .skin-black #input-search-from .layui-btn{
+            	background-color: rgba(35, 119, 227, .3);
+            	border-color: rgba(255,255,255, .3);
+            	color: white;
+            }
+            
+			#input-search-from .btn-guize-group .layui-btn.action{
+				background-color: rgba(35, 119, 227, 1);
+				border: 1px solid rgba(35, 119, 227, 0.9);
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window" id="x-view-window">
+			<div class="x-view-content" id="x-view-content">
+				<div class="window-x-tabs">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+					  <ul class="layui-tab-title">
+					  	<li module-tab-title-name="tucengguanli">图层配置</li>
+					    <li module-tab-title-name="gongjiwuqi">攻击武器</li>
+					  </ul>
+					  <div class="layui-tab-content" style="height: 465px;">
+					  	<div class="layui-tab-item" style="padding: 0;" module-tab-item-name="tucengguanli">
+					    	<div class="x-common-panel">
+								<div id="ElementTemplateMainDataSearchINPUT"></div>
+							</div>
+							<div class="x-common-panel">
+								<div id="layui-table-scrollbar-1">
+									<div id="layui-table-search-data-TUCENGPEIZHI"></div>
+								</div>
+							</div>
+					    </div>
+					    <div class="layui-tab-item" module-tab-item-name="gongjiwuqi">
+					    	<div class="x-common-panel">
+								<div id="ElementTemplateMainDataSearchINPUT"></div>
+							</div>
+							<div class="x-common-panel">
+								<div id="layui-table-scrollbar-1">
+									<div id="layui-table-search-data-GONGJIWUQI"></div>
+								</div>
+							</div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!--表格搜索项-图层配置-->
+<script type="text/html" id="TemplateTableSearchTABLETUCENGPEIZHI">
+{{if isRun==true}}
+	<div class="x-common-panel layui-form" style="padding: 0;border: 0;">
+		<div class="x-panel-content layui-form x-clearfix" style="padding: 10px 0px;" id="input-search-from">
+			<div class="layui-inline">
+				<input type="text" class="layui-input" placeholder="内容" autocomplete="off" name="searchText"  x-out-name="searchText" style="">
+			</div>
+			<div class="layui-inline">
+				<button type="button" x-btn-name="button-search" class="layui-btn layui-btn-sm layui-btn-normal" style="height: 28px;line-height: 28px;">
+					<i class="iconfont glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+{{/if}}
+</script>
+<!--表格搜索项-攻击武器-->
+<script type="text/html" id="TemplateTableSearchTABLEGONGJIWUQI">
+{{if isRun==true}}
+	<div class="x-common-panel layui-form" style="padding: 0;border: 0;">
+		<div class="x-panel-content layui-form x-clearfix" style="padding: 10px 0px;" id="input-search-from">
+			<div class="layui-inline">
+				<input type="text" class="layui-input" placeholder="内容" autocomplete="off" name="searchText"  x-out-name="searchText" style="">
+			</div>
+			<div class="layui-inline">
+				<button type="button" x-btn-name="button-search" class="layui-btn layui-btn-sm layui-btn-normal" style="height: 28px;line-height: 28px;">
+					<i class="iconfont glyphicon glyphicon-search"></i>
+				</button> 	
+			</div>
+		</div>
+	</div>
+{{/if}}
+</script>
+<script type="text/html" id="TemplateTableToolbar">
+<div>
+	<div class="x-panel-title layui-table-tool-title x-clearfix" id="layui-table-top-toolbar">
+		<i class="iconfont glyphicon glyphicon-th-list"></i>
+		<font>数据列表</font>
+		<font style="margin-left: 30px;"></font>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-refresh">刷新数据</button>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-add">新增</button>
+	</div>
+</div>
+</script>
+<script type="text/html" id="TemplateTableCellBarToolTABLE">
+<div>
+	<button type="button" class="layui-btn layui-btn-xs" lay-event="select">查看</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-normal" lay-event="update">修改</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="delete">删除</button>
+</div>
+</script>
+<script type="text/html" id="switchTpl">
+  <!-- 这里的 checked 的状态只是演示 -->
+  <input type="checkbox" name="enableSwitch" x-data-id="{{d.id}}" value="{{d.enabled}}" lay-skin="switch" lay-text="是|否" lay-filter="enableSwitch" {{ d.enabled == true ? 'checked' : '' }}>
+</script>
+<script type="text/html" id="switchTplDefaultlayer">
+  <span>{{ d.defaultlayer == true ? '是' : '否' }}</span>
+  <!--<input type="checkbox" name="defaultlayerSwitch" x-data-id="{{d.id}}" value="{{d.defaultlayer}}" lay-skin="switch" lay-text="是|否" lay-filter="defaultlayerSwitch" {{ d.defaultlayer == true ? 'checked' : '' }}>-->
+</script>
+<script type="text/html" id="TemplateTableCellBarToolTABLEXIAOXIGUANLI">
+<div>
+	<button type="button" class="layui-btn layui-btn-xs" lay-event="select">查看</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="delete">删除</button>
+</div>
+</script>
+
+
+<script type="text/html" id="TemplateTableToolbar1">
+<div>
+	<div class="x-panel-title layui-table-tool-title x-clearfix" id="layui-table-top-toolbar">
+		<i class="iconfont glyphicon glyphicon-th-list"></i>
+		<font>数据列表</font>
+		<font style="margin-left: 30px;"></font>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-refresh">刷新数据</button>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-add">新增</button>
+		<button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="table-delete-multiple">批量删除</button>
+		<!--<button type="button" class="layui-btn layui-btn-xs layui-btn-normal" lay-event="data-import">数据导入</button>-->
+	</div>
+</div>
+</script>

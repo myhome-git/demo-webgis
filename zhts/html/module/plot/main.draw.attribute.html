@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>标绘面板</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"_ClassDrawAttributeOBJECT.js",
+            	"_ClassDrawAttributeSTATIC_ICON.js","_ClassDrawAttributeSTATIC_FONT.js","_ClassDrawAttributeSTATIC_MIAOSHU.js",
+            	"_ClassDrawAttributeDRAW_ICON.js","_ClassDrawAttributeDRAW_FONT.js","_ClassDrawAttributeDRAW_MIAOSHU.js",
+            	"_ClassDrawAttributeMain.js",
+            	"main.draw.attribute.css","main.draw.attribute.js"
+            ]);
+        </script>
+		<style>
+			body{
+				overflow: hidden;
+			}
+			.x-view-content{
+				height: 100%;
+				display: none;
+			}
+			.x-view-content.open{
+				display: block;
+			}
+			.item-panel .item-left{
+				width: 80px;
+				padding-right : 5px
+			}
+			.item-panel .item-right{
+				width: calc(100% - 80px);
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window" id="x-view-window">
+			<div class="x-view-content" id="x-view-content"></div>
+		</div>
+	</body>
+</html>
+<!--通用-->
+<script id="TemplatePanelDrawAttributeOBJECT" type="text/html">
+{{if isRun==true}}
+	<div class="panel-attribute">
+		<div class="x-common-panel">
+			<div class="x-panel-title">
+				<i class="iconfont x-icon-zhuce"></i>
+				<font>{{name}}</font>
+			</div>
+			<div class="x-panel-content layui-form">
+				{{each data as value index}}
+				<div class="item-panel">
+					<div class="item-left">
+						<font>{{value.name}}：</font>
+					</div>
+					<div class="item-right">
+						<div class="">
+							{{if value['control-type']=="color"}}
+								<div class="button" x-control-type={{value['control-type']}}>
+									<a class="layui-btn-fluid">选择</a>
+									<div id="BUTTON-{{type}}-{{value.id}}" class="layui-btn-control-type-color"></div>
+								</div>
+								<input type="text" id="INPUT-{{type}}-{{value.id}}"
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}" 
+									style="padding-right: 38px;"
+									>
+							{{else if value['control-type']=="select"}}
+								<select name="modules" lay-verify="required" lay-search="">
+									{{each value.value as v i}}
+										<option value="{{v.id}}">{{v.name}}</option>
+									{{/each}}
+								</select>
+							{{else}}
+								<input type="text" id="INPUT-{{type}}-{{value.id}}" 
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}">
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+{{else}}
+	
+{{/if}}
+</script>
+
+<!--STATIC_ICON-->
+<script id="TemplatePanelDrawAttributeSTATIC_ICON" type="text/html">
+{{if isRun==true}}
+	<div class="panel-attribute">
+		<div class="x-common-panel">
+			<div class="x-panel-title">
+				<i class="iconfont x-icon-zhuce"></i>
+				<font>{{name}}</font>
+			</div>
+			<div class="x-panel-content layui-form">
+				{{each data as value index}}
+				<div class="item-panel">
+					<div class="item-left">
+						<font>{{value.name}}：</font>
+					</div>
+					<div class="item-right">
+						<div class="">
+							{{if value['control-type']=="color"}}
+								<div class="button" x-control-type={{value['control-type']}}>
+									<a class="layui-btn-fluid">选择</a>
+									<div id="BUTTON-{{type}}-{{value.id}}" class="layui-btn-control-type-color"></div>
+								</div>
+								<input type="text" id="INPUT-{{type}}-{{value.id}}"
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}" 
+									style="padding-right: 38px;"
+									>
+							{{else if value['control-type']=="select-color"}}
+								<select name="{{type}}-select-{{value.id}}" 
+									 x-input-name="{{value.id}}" 
+									 x-out-name="{{value.id}}" 
+									 lay-filter="{{type}}-{{value.id}}"
+									>
+									<option value="R" {{if value.value=="R"}}selected{{/if}}>红色</option>
+									<option value="B" {{if value.value=="B"}}selected{{/if}}>蓝色</option>
+									<option value="G" {{if value.value=="G"}}selected{{/if}}>绿色</option>
+									<option value="P" {{if value.value=="P"}}selected{{/if}}>粉色</option>
+									<option value="H" {{if value.value=="H"}}selected{{/if}}>灰色</option>
+								</select>
+							{{else}}
+								<input type="text" id="INPUT-{{type}}-{{value.id}}" 
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}">
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+{{else}}
+	
+{{/if}}
+</script>
+<!--STATIC_FONT-->
+<script id="TemplatePanelDrawAttributeSTATIC_FONT" type="text/html">
+{{if isRun==true}}
+	<div class="panel-attribute">
+		<div class="x-common-panel">
+			<div class="x-panel-title">
+				<i class="iconfont x-icon-zhuce"></i>
+				<font>{{name}}</font>
+			</div>
+			<div class="x-panel-content layui-form">
+				{{each data as value index}}
+				<div class="item-panel">
+					<div class="item-left">
+						<font>{{value.name}}：</font>
+					</div>
+					<div class="item-right">
+						<div class="">
+							{{if value['control-type']=="color"}}
+								<div class="button" x-control-type={{value['control-type']}}>
+									<a class="layui-btn-fluid">选择</a>
+									<div id="BUTTON-{{type}}-{{value.id}}" class="layui-btn-control-type-color"></div>
+								</div>
+								<input type="text" id="INPUT-{{type}}-{{value.id}}"
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}" 
+									style="padding-right: 38px;"
+									>
+							{{else}}
+								<input type="text" id="INPUT-{{type}}-{{value.id}}" 
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}">
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+{{else}}
+	
+{{/if}}
+</script>
+<!--STATIC_MIAOSHU-->
+<script id="TemplatePanelDrawAttributeSTATIC_MIAOSHU" type="text/html">
+{{if isRun==true}}
+	<div class="panel-attribute">
+		<div class="x-common-panel">
+			<div class="x-panel-title">
+				<i class="iconfont x-icon-zhuce"></i>
+				<font>{{name}}</font>
+			</div>
+			<div class="x-panel-content layui-form">
+				{{each data as value index}}
+				<div class="item-panel">
+					<div class="item-left">
+						<font>{{value.name}}：</font>
+					</div>
+					<div class="item-right">
+						<div class="">
+							{{if value['control-type']=="color"}}
+								<div class="button" x-control-type={{value['control-type']}}>
+									<a class="layui-btn-fluid">选择</a>
+									<div id="BUTTON-{{type}}-{{value.id}}" class="layui-btn-control-type-color"></div>
+								</div>
+								<input type="text" id="INPUT-{{type}}-{{value.id}}"
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}" 
+									style="padding-right: 38px;"
+									>
+							{{else if value['control-type']=="select-color"}}
+								<select name="{{type}}-select-{{value.id}}">
+									<option value="red" {{if value.value=="red"}}selected{{/if}}>红色</option>
+									<option value="bule" {{if value.value=="bule"}}selected{{/if}}>蓝色</option>
+									<option value="green" {{if value.value=="green"}}selected{{/if}}>绿色</option>
+									<option value="pink" {{if value.value=="pink"}}selected{{/if}}>粉色</option>
+									<option value="gray" {{if value.value=="gray"}}selected{{/if}}>灰色</option>
+								</select>
+							{{else if value['control-type']=="select"}}
+								<select name="{{type}}-select-{{value.id}}">
+									<option value="false" {{if value.value=="false"}}selected{{/if}}>NO</option>
+									<option value="true" {{if value.value=="true"}}selected{{/if}}>YES</option>
+								</select>	
+							{{else}}
+								<input type="text" id="INPUT-{{type}}-{{value.id}}" 
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}">
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+{{else}}
+	
+{{/if}}
+</script>
+
+
+
+<!--DRAW_ICON-->
+<script id="TemplatePanelDrawAttributeDRAW_ICON" type="text/html">
+{{if isRun==true}}
+	<div class="panel-attribute">
+		<div class="x-common-panel">
+			<div class="x-panel-title">
+				<i class="iconfont x-icon-zhuce"></i>
+				<font>{{name}}</font>
+			</div>
+			<div class="x-panel-content layui-form">
+				{{each data as value index}}
+				<div class="item-panel">
+					<div class="item-left">
+						<font>{{value.name}}：</font>
+					</div>
+					<div class="item-right">
+						<div class="">
+							{{if value['control-type']=="color"}}
+								<div class="button" x-control-type={{value['control-type']}}>
+									<a class="layui-btn-fluid">选择</a>
+									<div id="BUTTON-{{type}}-{{value.id}}" class="layui-btn-control-type-color"></div>
+								</div>
+								<input type="text" id="INPUT-{{type}}-{{value.id}}"
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}" 
+									style="padding-right: 38px;"
+									>
+							{{else if value['control-type']=="select-color"}}
+								<select name="{{type}}-select-{{value.id}}" 
+									 x-input-name="{{value.id}}" 
+									 x-out-name="{{value.id}}" 
+									 lay-filter="{{type}}-{{value.id}}"
+									>
+									<option value="R" {{if value.value=="R"}}selected{{/if}}>红色</option>
+									<option value="B" {{if value.value=="B"}}selected{{/if}}>蓝色</option>
+									<option value="G" {{if value.value=="G"}}selected{{/if}}>绿色</option>
+									<option value="P" {{if value.value=="P"}}selected{{/if}}>粉色</option>
+									<option value="H" {{if value.value=="H"}}selected{{/if}}>灰色</option>
+								</select>
+							{{else}}
+								<input type="text" id="INPUT-{{type}}-{{value.id}}" 
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}">
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+{{else}}
+	
+{{/if}}
+</script>
+<!--DRAW_FONT-->
+<script id="TemplatePanelDrawAttributeDRAW_FONT" type="text/html">
+{{if isRun==true}}
+	<div class="panel-attribute">
+		<div class="x-common-panel">
+			<div class="x-panel-title">
+				<i class="iconfont x-icon-zhuce"></i>
+				<font>{{name}}</font>
+			</div>
+			<div class="x-panel-content layui-form">
+				{{each data as value index}}
+				<div class="item-panel">
+					<div class="item-left">
+						<font>{{value.name}}：</font>
+					</div>
+					<div class="item-right">
+						<div class="">
+							{{if value['control-type']=="color"}}
+								<div class="button" x-control-type={{value['control-type']}}>
+									<a class="layui-btn-fluid">选择</a>
+									<div id="BUTTON-{{type}}-{{value.id}}" class="layui-btn-control-type-color"></div>
+								</div>
+								<input type="text" id="INPUT-{{type}}-{{value.id}}"
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}" 
+									style="padding-right: 38px;"
+									>
+							{{else}}
+								<input type="text" id="INPUT-{{type}}-{{value.id}}" 
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}">
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+{{else}}
+	
+{{/if}}
+</script>
+<!--DRAW_MIAOSHU-->
+<script id="TemplatePanelDrawAttributeDRAW_MIAOSHU" type="text/html">
+{{if isRun==true}}
+	<div class="panel-attribute">
+		<div class="x-common-panel">
+			<div class="x-panel-title">
+				<i class="iconfont x-icon-zhuce"></i>
+				<font>{{name}}</font>
+			</div>
+			<div class="x-panel-content layui-form">
+				{{each data as value index}}
+				<div class="item-panel">
+					<div class="item-left">
+						<font>{{value.name}}：</font>
+					</div>
+					<div class="item-right">
+						<div class="">
+							{{if value['control-type']=="color"}}
+								<div class="button" x-control-type={{value['control-type']}}>
+									<a class="layui-btn-fluid">选择</a>
+									<div id="BUTTON-{{type}}-{{value.id}}" class="layui-btn-control-type-color"></div>
+								</div>
+								<input type="text" id="INPUT-{{type}}-{{value.id}}"
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}" 
+									style="padding-right: 38px;"
+									>
+							{{else if value['control-type']=="select-color"}}
+								<select name="{{type}}-select-{{value.id}}">
+									<option value="red" {{if value.value=="red"}}selected{{/if}}>红色</option>
+									<option value="bule" {{if value.value=="bule"}}selected{{/if}}>蓝色</option>
+									<option value="green" {{if value.value=="green"}}selected{{/if}}>绿色</option>
+									<option value="pink" {{if value.value=="pink"}}selected{{/if}}>粉色</option>
+									<option value="gray" {{if value.value=="gray"}}selected{{/if}}>灰色</option>
+								</select>
+							{{else if value['control-type']=="select"}}
+								<select name="{{type}}-select-{{value.id}}">
+									<option value="false" {{if value.value=="false"}}selected{{/if}}>NO</option>
+									<option value="true" {{if value.value=="true"}}selected{{/if}}>YES</option>
+								</select>	
+							{{else}}
+								<input type="text" id="INPUT-{{type}}-{{value.id}}" 
+									class="layui-input" 
+									placeholder="{{value.placeholder}}" 
+									autocomplete="off" 
+									name="{{value.id}}" 
+									x-input-name="{{value.id}}" 
+									x-out-name="{{value.id}}" 
+									value="{{value.value}}">
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+{{else}}
+	
+{{/if}}
+</script>
+

@@ -1,0 +1,207 @@
+.x-view-window{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.x-view-window .x-view-window-background{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(image/body-background.png);
+	background-size: 100% 100%;
+}
+.x-view-window  .x-view-content{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.x-view-window .x-view-login-window{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 620px;
+	height: 353px;
+	margin: auto;
+}
+.x-view-window .x-view-login-window .login-background{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(image/login-background.png);
+	background-size: 100% 100%;
+}
+.x-view-window .x-view-login-window .login-input{
+	position: absolute;
+	right: 14px;
+	top: 14px;
+	width: 333px;
+	height: 321px;
+	padding: 20px;
+}
+.x-view-window .x-view-login-window .login-input.x-common-panel{
+	
+}
+.x-view-window .x-view-login-window input:-moz-placeholder,
+.x-view-window .x-view-login-window input::-moz-placeholder{
+	color: #fff;
+}
+
+.x-view-window .x-view-login-window input:-ms-input-placeholder{
+	color: #fff;
+}
+
+.x-view-window .x-view-login-window ::-webkit-input-placeholder,
+.x-view-window .x-view-login-window ::-webkit-textarea-placeholder{
+	color: #fff;
+}
+.x-view-window .x-view-login-window .x-common-panel .x-panel-content{
+	padding:26px 14px;
+	/*margin-left: 23px;*/
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel{
+	border: 1px solid rgba(1,117,240,1);
+	border-radius: 5px;
+	padding: 0;
+	margin-bottom: 22px;
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel:last-child{
+	margin-bottom: 0;
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-left{
+	width: 44px;
+	height: 40px;
+	background-color: #0175f0;
+	color: #44f8f9;
+	text-align: center;
+	line-height: 40px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-left .iconfont{
+	font-size: 22px;
+	position: absolute;
+	left: 12px;
+	top: 9px;
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-left,
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-right,
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-right > div{
+	height: 40px;
+/*	line-height: 40px;**/
+	position: relative;
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-right .layui-input{
+	height: inherit;
+	line-height: inherit;
+	background: transparent;
+	border: 0;
+	color: #fff;
+
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-right.verification-input .layui-input{
+	padding-right: 100px;
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-right .verification-code{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 80px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-right .verification-code img{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+}
+.x-view-window .x-view-login-window .x-common-panel .item-panel .item-right .layui-btn{
+	float: left;
+	height: inherit;
+	line-height: inherit;
+	width: 100%;
+	background-color:#2eb06b;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.x-view-window .x-view-login-window .system-logo{
+	position: absolute;
+	left: 0;
+	top: -110px;
+	width: 100%;
+	color: #fff;
+	padding: 20px;
+	outline: 0px solid #FF0000;
+}
+.x-view-window .x-view-login-window .system-logo .x-common-panel .x-panel-content{
+	padding: 20px 60px;
+}
+.x-view-window .x-view-login-window .system-logo .x-common-panel .item-panel{
+	border: 0;
+}
+.x-view-window .x-view-login-window .system-logo .x-common-panel .item-panel .item-left{
+	width: 96px;
+	height: auto;
+	background-color: transparent;
+}
+.x-view-window .x-view-login-window .system-logo .item-left img{
+	width: 100%;
+}
+@keyframes textAnimateDisplay {
+	0% {
+		text-shadow:2px 2px 8px rgba(255, 0, 0, 0);
+	}
+    50% {
+    	text-shadow:2px 2px 8px rgba(255, 0, 0, 1);
+    }
+    100% {
+    	text-shadow:2px 2px 8px rgba(115, 255, 255, 0);
+    }
+}
+.x-view-window .x-view-login-window .system-logo .item-right font{
+	animation: 10s infinite linear textAnimateDisplay1;
+}
+.x-view-window .x-view-login-window .system-logo .item-right .name-Chinese{
+	line-height: inherit;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.x-view-window .x-view-login-window .system-logo .item-right .name-English{
+	line-height: inherit;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.x-view-window .x-view-content .x-view-login-window-test{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 960px;
+	margin: auto;
+	display: none;
+}
+.x-view-window  .x-view-content .x-view-login-window-test img{
+	width: 100%;
+}

@@ -1,0 +1,73 @@
+.x-view-content{
+	font-size: 14px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+}
+#x-view-content .panel-layout{
+	padding: 0;
+}
+#shixutu-echarts{
+	border: 1px solid rgba(149,184,231,.15);
+}
+#shixutu-echarts li{
+	border-width: 1px;
+	border-style: none none solid none;
+	border-color: inherit;
+	/*border-bottom: 1px solid rgba(149,184,231,.5);*/
+}
+#shixutu-echarts li:last-child{
+	border-style: none;
+}
+#shixutu-echarts li > *{
+	
+}
+#shixutu-echarts li .li-x{
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	width: 140px;
+	text-align: right;
+	padding: 0px 10px;
+}
+#shixutu-echarts li .li-y{
+	float: left;
+	width: calc(100% - 150px);
+	height: 24px;
+	position: relative;
+}
+#shixutu-echarts li canvas{
+	background-color: #F2F2F2;
+}
+
+#shixutu-echarts li .slide-test{
+	margin-top: 3px;	
+}
+#shixutu-echarts li .layui-slider{
+	height: 16px;
+}
+#shixutu-echarts li .layui-slider .layui-slider-tips-date{
+	position: absolute;
+	left: calc(50% - 132px);
+	top: 0;
+	width: 264px;
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	text-align: center;
+	color: #333;
+	text-shadow:-1px 0 white,
+                0 1px white,
+                1px 0 white,
+                0 -1px white;
+}
+.template-echarts-tips{
+	color: black;
+	font-size: 12px;
+	text-shadow:-1px 0 white,
+                0 1px white,
+                1px 0 white,
+                0 -1px white;
+}

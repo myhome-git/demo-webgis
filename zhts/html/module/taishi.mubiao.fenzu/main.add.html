@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>目标分组</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"main.add.json.js","main.add.js"
+            ]);
+        </script>
+		<style>
+			#input-search-from > div{
+				float: left;
+				height: 28px;
+				line-height: 28px;
+				overflow: hidden;
+			}
+			#input-search-from > div > .layui-btn{
+				margin-top: -3px;
+				margin-left: -1px;
+			}
+            #input-search-from .layui-btn{
+				border-width: 1px;
+				border-style: solid;
+                border-radius: 0;
+				font-size: 16px;
+            }
+            .skin-black #input-search-from .layui-btn{
+            	background-color: rgba(35, 119, 227, .3);
+            	border-color: rgba(255,255,255, .3);
+            	color: white;
+            }
+            
+            #input-search-from .btn-guize-group .layui-btn{
+				font-size: 13px;
+			}
+			#input-search-from .btn-guize-group .layui-btn.action{
+				background-color: rgba(35, 119, 227, 1);
+				border: 1px solid rgba(35, 119, 227, 0.9);
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window" id="x-view-window">
+		<!--<div class="x-common-panel" style="margin-left: 2px;margin-right: 2px;margin-bottom: 1px;padding: 10px;">-->
+			<div class="window-x-tabs">
+				<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+				  <ul class="layui-tab-title layui-hide">
+				  	<li module-tab-title-name="fenzuguanli">态势分组</li>
+				  </ul>
+				  <div class="layui-tab-content" style="height: 100px;">
+				    <div class="layui-tab-item layui-form" module-tab-item-name="fenzuguanli" id="form">
+				    	<div class="layui-form" id="form">
+				    		<input type="hidden" x-input-name="pId" class="layui-input" autocomplete="off">
+							<div class="x-common-panel">
+								<div id="layui-table-scrollbar-1">
+									<div id="layui-table-search-data-QUYUGUANLI"></div>
+								</div>
+							</div>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!--表格搜索项-区域管理-->
+<script type="text/html" id="TemplateTableToolbar">
+<div>
+	<div class="x-panel-title layui-table-tool-title x-clearfix" id="layui-table-top-toolbar">
+		<i class="iconfont glyphicon glyphicon-th-list"></i>
+		<font>数据列表</font>
+		<font style="margin-left: 30px;"></font>
+		<button type="button" class="layui-btn layui-btn-xs" lay-event="table-refresh">刷新数据</button>
+		<button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="table-delete-multiple">批量删除</button>
+	</div>
+</div>
+</script>
+
+<!--工具栏-->
+<script type="text/html" id="TemplateTableCellBarToolTABLE">
+<div>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="delete">删除</button>
+</div>
+</script>
+<script type="text/html" id="switchTpl">
+  <!-- 这里的 checked 的状态只是演示 -->
+  <input type="checkbox" name="enableSwitch" x-bind-id="{{d.id}}" value="{{d.enable}}" lay-skin="switch" lay-text="是|否" lay-filter="enableSwitch" {{ d.enable == true ? 'checked' : '' }}>
+</script>
+<script type="text/html" id="TemplateTableCellBarToolTABLEXIAOXIGUANLI">
+<div>
+	<button type="button" class="layui-btn layui-btn-xs" lay-event="select">查看</button>
+    <button type="button" class="layui-btn layui-btn-xs layui-btn-danger" lay-event="delete">删除</button>
+</div>
+</script>

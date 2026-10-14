@@ -1,0 +1,203 @@
+.layui-tab{
+	margin: 0;
+	border: 0;
+}
+#x-view-file-upload{
+	width: 100%;
+	height: 378px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#x-view-file-upload .layou-upload{
+	width: auto;
+	margin: 0 auto;
+}
+#x-view-file-upload .layou-upload > div{
+	margin-bottom: 10px;
+}
+#x-view-file-upload .panel-button-control{
+	*zoom: 1;
+}
+#x-view-file-upload .panel-button-control:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+}
+#x-view-file-upload .panel-button-control .button-group{
+	float: right;
+}
+#x-view-file-upload .panel-update-list{
+	height: 280px;
+	overflow: auto;
+	border: 1px solid #ccc;
+}
+#x-view-file-upload .panel-update-list .upload-home{
+	
+}
+#x-view-file-upload .panel-update-list .upload-list{
+	*zoom: 1;
+}
+#x-view-file-upload .panel-update-list .upload-list:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean{
+	position:relative;
+	width:100px;
+	height:120px;
+	float:left;
+	padding-bottom:0px;
+	border:1px solid #eee;
+	margin:10px 10px;
+	cursor:pointer;
+	background:#fff;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean .bean-top-bar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	text-align: right;
+	padding: 0px 5px;
+	transition: all 0.3s ease-in-out 0s;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean .bean-top-bar.panel-show{
+	height: 30px;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean.is-lock .bean-top-bar.panel-show{
+	height: 0;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean .bean-top-bar .iconfont{
+	font-size: 20px;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean .bean-top-bar .iconfont:hover{
+	color: red;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean .bean-state{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .view-box{
+	display: block;
+	width: 100%;
+	height: 96px;
+	line-height: 96px;
+	position: relative;
+	 text-align: center;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .view-box > .iconfont{
+    color: rgb(153, 153, 153);
+    font-size: 4em;
+    padding-top: 23px;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .view-box > img{
+	width: 100%;
+	height: 100%;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .file-name{
+	height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    outline: 0px solid #f00;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding:0px 3px;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-uploading{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	display: none;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-uploading.panel-show{
+	display: block;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-uploading .uploading-font{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-uploading .uploading-font .iconfont{
+	font-size: 30px;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-state{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-state > div{
+	position: absolute;
+	left: -40px;
+	top: -101px;
+	display: none;
+	color: #fff;
+	border-left: 40px solid transparent;
+    border-top: 40px solid transparent;
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-state .success.panel-show{
+	display: block;
+	border-bottom: 40px solid rgba(0,150,136,0.75);
+}
+
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-state .error.panel-show{
+	display: block;
+	border-bottom: 40px solid rgba(255,0,0,0.75);
+}
+#x-view-file-upload .panel-update-list .upload-list .file-bean > .bean-state .panel-show > .iconfont{
+	position: absolute;
+	left: -19px;
+	top: 16px;
+	font-size: 16px;
+}
+#x-view-file-upload .panel-upload-progress{
+	background: #f2f2f2;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	text-align:center;
+}
+.skin-black #x-view-file-upload .panel-upload-progress{
+	background-color: transparent;
+}
+#x-view-file-upload .panel-upload-progress > font{
+	position: relative;
+	z-index: 2;
+	padding: 0px 5px;
+}
+#x-view-file-upload .panel-upload-progress .prog-background{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background-color:rgba(0,150,136,0.5);
+}
+#x-view-file-upload .panel-upload-progress .prog-background.progress-complete{
+	width: 100%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>自定义分组tree</title>
+		<script src="../../../web.loader.init.js"></script>
+        <script>
+            Response([
+            	"main.tree.js"
+            ]);
+        </script>
+		<style>
+			#input-search-from > div{
+				float: left;
+				height: 28px;
+				line-height: 28px;
+				overflow: hidden;
+			}
+			#input-search-from > div > .layui-btn{
+				margin-top: -3px;
+				margin-left: -1px;
+			}
+            #input-search-from .layui-btn{
+				border-width: 1px;
+				border-style: solid;
+                border-radius: 0;
+				font-size: 16px;
+            }
+            .skin-black #input-search-from .layui-btn{
+            	background-color: rgba(35, 119, 227, .3);
+            	border-color: rgba(255,255,255, .3);
+            	color: white;
+            }
+            
+            #input-search-from .btn-guize-group .layui-btn{
+				font-size: 13px;
+			}
+			#input-search-from .btn-guize-group .layui-btn.action{
+				background-color: rgba(35, 119, 227, 1);
+				border: 1px solid rgba(35, 119, 227, 0.9);
+				color: #fff;
+			}
+			.tree-menu{
+				border-bottom: 1px solid rgba(142,171,215,.5);
+				padding: 5px 5px 5px 5px;
+			}
+			.fenzu-item{
+				height: 100%;
+			}
+			.fenzu-item > div{
+				float: left;
+				height: 100%;
+			}
+			.fenzu-item .item-left{
+				width: 190px;
+				border-right: 1px solid rgba(142,171,215,.5);
+			}
+			.fenzu-item .item-right{
+				margin-left: 5px;
+				width: calc(100% - 200px);
+			}
+			.ztree li a.curSelectedNode{
+				background-color: rgba(229,229,229,.25);
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window" id="x-view-window">
+		<!--<div class="x-common-panel" style="margin-left: 2px;margin-right: 2px;margin-bottom: 1px;padding: 10px;">-->
+			<div class="window-x-tabs" style="height: 100%;">
+				<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="height: 100%;">
+				  <ul class="layui-tab-title layui-hide">
+				  	<li module-tab-title-name="fenzuguanli">态势分组</li>
+				  </ul>
+				  <div class="layui-tab-content" style="height: 100%;padding: 0;">
+				    <div class="layui-tab-item clearfix" module-tab-item-name="fenzuguanli" style="height: 100%;">
+				    	<div class="fenzu-item">
+				    		<div class="item-left" id="tree-box" style="width: 100%;">
+					    		<div id="ssts-group-tree" style="margin: 10px;"></div>
+					    	</div>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

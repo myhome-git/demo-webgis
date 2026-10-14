@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>穿梭框</title>
+		<script src="../../web.loader.init.js"></script>
+        <script>
+            Response([""]);
+        </script>
+		<style>
+			body{
+				background: transparent;
+				overflow: auto;
+			}
+			.x-transfer{
+				margin: 0 auto;
+			}
+			.layui-transfer-data{
+				height: 267px!important;
+			}
+		</style>
+	</head>
+	<body class="skin-black" user-check="zhts">
+		<div class="x-view-window">
+			<div class="x-view-content">
+				<div class="x-common-panel layui-form" style="width: 500px;" id="x-tab-transfer">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+					  <ul class="layui-tab-title"></ul>
+					  <div class="layui-tab-content" style="height: 380px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var _FunctionObject = _FunctionObject|| {};
+			var _pageObject = _FunctionObject;
+			(function($,_FunctionObject){
+				$(document).ready(documentReady);
+				function documentReady(){
+					
+					_FunctionObject.layui = layui;
+					
+					//默认配置，公用接口，如果接口有变动，只需要改变这个option
+					_FunctionObject.SetTransferDefault =  function(_option){
+						var _this = this;
+						_this._default = {
+						    showSearch: true,
+						    parseData: function(res){
+						       return {
+						        "value": res.id,
+						        "title": res.name,
+						        "disabled": res.disabled,
+						        "checked": res.checked,
+						        _value : res.value
+						      }
+						    }
+						};
+						$.extend(true, _this._default, _option);
+					}
+					
+					//渲染表单
+					_FunctionObject.SetTransfer = function(_option){
+						//_rightData: ["1", "3", "5", "7", "9", "11"]
+						var _this = this;
+  
+						//缓存数据
+						_this._data = [];
+						for(var i in _option.data){
+							_this._data[i] = _option.data[i];
+						}
+						
+						var $tab = $("#x-tab-transfer"),
+							$tabTitle = $tab.find(".layui-tab-title"),
+							$tabContent = $tab.find(".layui-tab-content"),
+							_int = 0;
+							
+//						console.info(_this._data);
+						layui.use(['transfer',"form"], function(){
+							_this.transfer = layui.transfer;
+							for(var i in _this._data){
+								var _d = _this._data[i];
+								var _name = i;
+								
+								//创建table title
+								var $li = $("<li></li>");
+							
+								switch (_name){
+									case "person":
+										$li.html("人员");
+										break;
+									case "ship":
+										$li.html("船舶");
+										break;
+									case "vehicle":
+										$li.html("车辆");
+										break;
+									default:
+										$li.html("未知");
+										break;
+								}
+								
+								if(_int==0){
+									$li.addClass("layui-this");
+								}
+								$tabTitle.append($li);
+								
+								var $tabItem = $("<div></div>");
+								$tabItem.addClass("layui-tab-item");
+								if(_int==0){
+									$tabItem.addClass("layui-show");
+								}
+								$tabContent.append($tabItem);
+								
+								var $div = $("<div></div>");
+								$div.attr("id",_name).addClass("x-transfer");
+								$tabItem.append($div);
+								
+								var _default = {
+									elem: '#'+_name,
+								    id : _name,
+								    title: ["可选列表", '已选列表'],
+								    data: _d,
+								    value: []
+								};
+								_this.SetTransferDefault(_default);
+								layui.transfer.render(_this._default);
+								
+								layui.form.render();
+								_int += 1;
+							}
+							
+							_this.isTransferInit = true;
+						});
+					}
+					
+					//取出表单
+					_FunctionObject.GetTransferData = function(){
+						var _this = this;
+						var _NewData = {};
+						for(var i in _this._data){
+							var _name = i;
+							_NewData[_name] = _this.transfer.getData(_name);
+						}
+						return _NewData;
+					}
+					
+					//获取规则列表
+					_FunctionObject.GetPageGuiZeList = function(_func){
+						xUtilBase.ajax({
+							url : GetPROBJECT_PATH()+"/api/common/getTargetIdName",
+							type : "post",
+							success : function(result){
+								if(result["code"]=="0"){
+									if(!result.data){
+										layui.layer.msg("数据格式不正确");
+										return false;
+									}
+									if(_func){
+										_func(result.data);
+									}
+								}else{
+									layui.layer.msg(result["message"],{time:5000});
+								}
+							}
+						});
+					}
+		
+					_FunctionObject.init = function(){
+						var _this = this;
+						_this.GetPageGuiZeList(function(result){
+							//data 格式 {"a":[],"b":[]}，selectedData格式["1","2"]
+							_this.SetTransfer({
+								data : result,
+								selectedData : []
+							});
+						});
+						layui.use(['form'], function(){
+							layui.form.render();
+						});
+					}
+					
+					_FunctionObject.init();
+				}
+			})(jQuery,_FunctionObject);
+		</script>
+	</body>
+</html>
