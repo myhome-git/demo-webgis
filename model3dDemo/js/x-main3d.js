@@ -391,7 +391,7 @@ function onClickTreeNode(event, treeId, treeNode, clickFlag) {
         } else if (model.locate()) {
 
             //创建tip对象
-            //basePath="http://10.55.188.185:8080/webgis";
+            //basePath="http://[IP已脱敏]/webgis";
             SWMX.createMx(option);
             SWMX.prepare = model._code;
             treeNode.checked = true;
@@ -593,7 +593,7 @@ function loadOSGB() {
 // function loadTSHF() {
 //     var maxiSize = 1500;
 //     $.ajax({
-//         url: "http://192.168.1.25:9090/flight24/czml/getCzmlFileByTime?time=2018-10-20%2010:00:00",
+//         url: "http://[IP已脱敏]/flight24/czml/getCzmlFileByTime?time=2018-10-20%2010:00:00",
 //         dataType: "Json",
 //         // dataFilter: function (dat) {
 //         //     // alert(123);

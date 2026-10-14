@@ -264,7 +264,7 @@ function callSZBB(obj) {
 	//var drawinfo = swmx_data.drawInfo;
 	var zbnm = $(obj).attr("zbnm");
      var wsurl ="ws://" + serverIP + ":" + serverPort + "/webgis/websocket/call";
-    // wsurl ="ws://10.17.181.206:8080/webgis/websocket";
+    // wsurl ="ws://[IP已脱敏]/webgis/websocket";
      
     //判断当前浏览器是否支持WebSocket
     if('websocket_callSZBB' in window){

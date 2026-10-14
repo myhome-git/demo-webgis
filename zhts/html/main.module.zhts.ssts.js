@@ -257,7 +257,7 @@
 	 * @param {Object} boolean
 	 */
 	module.setSendMessage = function(boolean){
-		//$.getJSON("http://192.168.1.103:9100"+getModuleURL("http.zhts.ssts.server.sendMessage")+"?isStart="+(boolean?"start":"end"));
+		//$.getJSON("http://[IP已脱敏]"+getModuleURL("http.zhts.ssts.server.sendMessage")+"?isStart="+(boolean?"start":"end"));
 	}
 	
 	/**

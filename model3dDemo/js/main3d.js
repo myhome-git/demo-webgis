@@ -380,7 +380,7 @@ function onClickTreeNode(event, treeId, treeNode, clickFlag) {
         } else if (model.locate()) {
 
             //创建tip对象
-            //basePath="http://10.55.188.185:8080/webgis";
+            //basePath="http://[IP已脱敏]/webgis";
             SWMX.createMx(option);
             SWMX.prepare = model._code;
             treeNode.checked = true;

@@ -5,19 +5,19 @@ var links = [
     {source: "上海恒天润逸金融信息服务有限公司", target: "广东恒天财富投资管理有限公司", type: "1", rela:"股东(机构)"},
     {source: "广东恒天财富投资管理有限公司", target: "朱学锦", type: "2", rela:"法人(自然人)"},
     {source: "朱学锦", target: "恒天中岩投资管理有限公司", type: "2", rela:"相关公司"},
-    // {source: "朱学锦", target: "北京实创天成资产管理有限公司", type: "3", rela:"股东"},
-    // {source: "上海恒天润逸金融信息服务有限公司", target: "广东恒天财富投资管理有限公司", type: "2", rela:"股东(机构)"},
+    // {source: "[人名已脱敏]", target: "[企业名已脱敏]", type: "3", rela:"股东"},
+    // {source: "[企业名已脱敏]", target: "[企业名已脱敏]", type: "2", rela:"股东(机构)"},
     {source: "广东恒天财富投资管理有限公司", target: "恒天融泽资产管理有限公司", type: "2", rela:"对外投资"},
-    // {source: "恒天融泽资产管理有限公司", target: "广东恒天财富投资管理有限公司", type: "2", rela:"股东"},
-    // {source: "恒天融泽资产管理", target: "广东恒天财富投资管理有限公司", type: "2", rela:"股东"},
+    // {source: "[企业名已脱敏]", target: "[企业名已脱敏]", type: "2", rela:"股东"},
+    // {source: "[企业名已脱敏]", target: "[企业名已脱敏]", type: "2", rela:"股东"},
  
     {source: "上海恒天润逸金融信息服务有限公司", target: "广东恒天财富投资管理有限公司", type: "2", rela:"股东(机构)"},
     {source: "广东恒天财富投资管理有限公司", target: "北京实创天成资产管理有限公司", type: "2", rela:"对外投资"},
     {source: "北京实创天成资产管理有限公司", target: "恒天中岩投资管理有限公司", type: "2", rela:"相同地址,相同法人"},
     {source: "恒天融泽资产管理有限公司", target: "恒天中岩投资管理有限公司", type: "2", rela:"相同地址,相同法人"},
  
-    // {source: "朱学锦", target: "恒天中岩投资管理有限公司", type: "2", rela:"相关公司"},
-    // {source: "恒天中岩投资管理有限公司", target: "恒天中岩投资管理有限公司", type: "resolved", },
+    // {source: "[人名已脱敏]", target: "[企业名已脱敏]", type: "2", rela:"相关公司"},
+    // {source: "[企业名已脱敏]", target: "[企业名已脱敏]", type: "resolved", },
 ];
  
 var nodes = {};

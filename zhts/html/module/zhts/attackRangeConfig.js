@@ -198,5 +198,5 @@
     //_win.AttackRangeConfig = a;
     //return a;
     // "attackRange": { "url": "/ds/softs/wzAttackRange/attackRange.js","descript":"打击范围","author":"wz"}
-    //zzxnQuerySource: "http://127.0.0.1:8081/",
+    //zzxnQuerySource: "http://[IP已脱敏]/",
 });

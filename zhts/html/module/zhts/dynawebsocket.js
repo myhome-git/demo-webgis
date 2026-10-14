@@ -2,7 +2,7 @@
  * 实时态势WebSocket处理
  */
 var SstsWebSocket = function (url, vhost, user, password, manager) {
-    //var ws = new WebSocket('ws://10.17.181.34:15674/ws');
+    //var ws = new WebSocket('ws://[IP已脱敏]/ws');
     var ws = new WebSocket(url);
     //var ws = new WebSocket('ws://' + window.location.hostname + ':15674/ws');
     var client = Stomp.over(ws);

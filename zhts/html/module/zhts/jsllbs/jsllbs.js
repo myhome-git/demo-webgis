@@ -18,7 +18,7 @@
 
     var hzmLayer;
     var baseUrl = {
-      searchCon: "/jsmbsl/queryJSSL"//http://10.55.188.162:20008
+      searchCon: "/jsmbsl/queryJSSL"//[IP已脱敏]
     };
   
     var jsllbs = function () {
@@ -148,7 +148,7 @@
               type: "POST",
               //url: baseUrl.searchCon,
               url: '/jsmbsl/queryJSSL',
-              //url: 'http://10.55.188.162:20013/jsmbsl/queryJSSL?sjnm=010200200000000981&type=bdmb',
+              //url: 'http://[IP已脱敏]/jsmbsl/queryJSSL?sjnm=010200200000000981&type=bdmb',
               data: param,
               success: function (data) {
                 var bianzhi = data.data.bianzhi;
