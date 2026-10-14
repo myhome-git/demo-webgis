@@ -2,7 +2,7 @@
 # 覆盖默认 Clean URL 行为：防止 /zhts/html/main.html 被 301 重定向到 /zhts/html/main
 
 # 1. 访问 main.html 时直接返回文件内容，保持 .html 后缀（200 = 内部重写，地址栏不变）
-/zhts/html/main.html  /zhts/html/main.html  200
+#/zhts/html/main.html  /zhts/html/main.html  200
 
 # 2. 备用：若直接访问无后缀 /main，则 307 重定向回 /main.html，保证 URL 统一
 /zhts/html/main  /zhts/html/main.html  307
