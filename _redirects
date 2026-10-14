@@ -5,4 +5,4 @@
 #/zhts/html/main.html  /zhts/html/main.html  200
 
 # 2. 备用：若直接访问无后缀 /main，则 307 重定向回 /main.html，保证 URL 统一
-/zhts/html/main  /zhts/html/main.html  200
+/zhts/html/main.html  /zhts/html/main.html  200
