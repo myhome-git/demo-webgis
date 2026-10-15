@@ -220,7 +220,7 @@ window.UserIsLogin();
 				index : 0,
 				id: "040100300000000539",
 				name: "洛克希德·马丁F-22“猛禽”",
-				path: "/model3d/data/model/f22-new/f22.glb",
+				path: "/model3d/data/model/Air.glb",
 				type: "空",
 				guojia: "美",
 				success : function(){
@@ -354,33 +354,35 @@ window.UserIsLogin();
 			_data = JSON.stringify(_data);
 			
 			xUtilBase.ajax({
-				url : "/model_3d/model/getClassTree",
+				url : "/model3d/data/model/getClassTree",
 				type : "post",
 				data : _data,
 				contentType : "application/json;charset=UTF-8",
 				success : function(result){
-					if(result["code"]=="0"){
-						if(!result.data){
-							return false;
-						}
+					console.info(result);
+					var nodes = [];
+					
+					$.each(result, function(index,el) {
+						nodes.push({
+							id : el.id,
+							name : el.name,
+							pId : el.pId,
+							other : el.other
+						});
+					});
+					
+					
+					_classPanelModelList.CreateTree(nodes);
+					// if(result["code"]=="0"){
+					// 	if(!result.data){
+					// 		return false;
+					// 	}
 						
-			        	var nodes = [];
 			        	
-			        	$.each(result.data, function(index,el) {
-		            		nodes.push({
-		            			id : el.id,
-		            			name : el.name,
-		            			pId : el.pId,
-		            			other : el.other
-		            		});
-		            	});
-		            	
-		            	
-						_classPanelModelList.CreateTree(nodes);
 						
-					}else{
-						top.layui.layer.msg("获取模型树失败");
-					}
+					// }else{
+					// 	top.layui.layer.msg("获取模型树失败");
+					// }
 				}
 			});
 			

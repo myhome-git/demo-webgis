@@ -374,77 +374,68 @@ var _FunctionObject = _FunctionObject || {};
 			_data = JSON.stringify(_data);
 			
 			xUtilBase.ajax({
-				url : "/model_3d/model/getClassTree",
+				url : "/model3d/data/model/getClassTree",
 				type : "post",
 				data : _data,
 				contentType : "application/json;charset=UTF-8",
 				success : function(result){
-					if(result["code"]=="0"){
-						if(!result.data){
-							return false;
+					var nodes = [];
+					
+					$.each(result.data, function(index,el) {
+						nodes.push({
+							id : el.id,
+							name : el.name,
+							pId : el.pId,
+							other : el.other
+						});
+					});
+					
+					var _iframe = $("#iframe-dic-class-main");
+					
+					//单击事件
+					function onClick(event, treeId, treeNode){
+						
+						_this.__modelTree.GetZTreeObj().checkNode(treeNode, !treeNode.checked, true);
+						
+						if(treeNode && (!treeNode.children || treeNode.children.length<1)){
+							
+							_iframe.attr("src","dict.class.main.html?id="+treeNode.other);
+							
+							_this.InitTable();
+							
+						}else{
+							
+							_iframe.attr("src","about:blank");
+							
 						}
 						
-			        	var nodes = [];
-			        	
-			        	$.each(result.data, function(index,el) {
-		            		nodes.push({
-		            			id : el.id,
-		            			name : el.name,
-		            			pId : el.pId,
-		            			other : el.other
-		            		});
-		            	});
-		            	
-		            	var _iframe = $("#iframe-dic-class-main");
-		            	
-						//单击事件
-						function onClick(event, treeId, treeNode){
-							
-							_this.__modelTree.GetZTreeObj().checkNode(treeNode, !treeNode.checked, true);
-							
-							if(treeNode && (!treeNode.children || treeNode.children.length<1)){
-								
-								_iframe.attr("src","dict.class.main.html?id="+treeNode.other);
-								
-								_this.InitTable();
-								
-							}else{
-								
-								_iframe.attr("src","about:blank");
-								
-							}
-							
-						}
-		
-						var setting = {
-							check: {
-								enable: false,
+					}
+	
+					var setting = {
+						check: {
+							enable: false,
 //								chkStyle: "radio",
 //								radioType : "all",
 //								autoCheckTrigger: true
-							},
-							data: {
-								simpleData: {
-									enable: true
-								}
-							},
-							callback :{
-								onClick: onClick,
+						},
+						data: {
+							simpleData: {
+								enable: true
 							}
-						};
-						var _xZTree = new xZTree();
-			
-						_xZTree.init({
-							element : $("#modelTree"),
-							setting : setting,
-							zNodes : nodes
-						});
-						
-						_this.__modelTree = _xZTree;
-						
-					}else{
-						top.layui.layer.msg("获取模型树失败");
-					}
+						},
+						callback :{
+							onClick: onClick,
+						}
+					};
+					var _xZTree = new xZTree();
+		
+					_xZTree.init({
+						element : $("#modelTree"),
+						setting : setting,
+						zNodes : nodes
+					});
+					
+					_this.__modelTree = _xZTree;
 				}
 			});
 				

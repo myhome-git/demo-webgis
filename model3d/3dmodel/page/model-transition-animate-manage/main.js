@@ -374,7 +374,7 @@ var _FunctionObject = _FunctionObject || {};
 			_data = JSON.stringify(_data);
 			
 			xUtilBase.ajax({
-				url : "/model_3d/model/getClassTree",
+				url : "/model_5d/model/getClassTree",
 				type : "post",
 				data : _data,
 				contentType : "application/json;charset=UTF-8",

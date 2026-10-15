@@ -43,7 +43,7 @@ function ClassPanelModelList(){
 				
 				var _classModelControl = _this.GetLinkClass("ClassModelControl");
 				
-				if(_classModelControl.__modelId && _ztreeThis.__ztreeOtherId != treeNode.other){
+				if(_ztreeThis.__ztreeOtherId != treeNode.other){
 					
 					layui.layer.confirm("确认选择其它模型吗？选择其它会清空当前模型。",function(index, layero){
 						
@@ -59,15 +59,24 @@ function ClassPanelModelList(){
 						var _classPanelModelChildrenEdit = _this.GetLinkClass("ClassPanelModelChildrenEdit");
 						
 						_classPanelModelChildrenEdit.ClosePanel();
+
+						var _object = {
+							index : 1,
+							identifier:1,
+							id: "040100300000000539",
+							name: "洛克希德·马丁F-22“猛禽”",
+							url: "/model3d/data/model/Air.glb",
+							model: "空",
+							country: "美",
+							success : function(){
+								
+								$("#x-view-model-name > font").html("洛克希德·马丁F-22“猛禽”");
+								
+							}
+						};
 						
 						//获取模型数据
-						_this.httpGetPageByIdentifier(treeNode.other,function(_data){
-							
-							_ztreeThis.__ztreeOtherId = treeNode.other;
-							
-							_this.LoadModel(_data);
-							
-						});
+						_this.LoadModel({ model: _object });
 						
 					});
 					
