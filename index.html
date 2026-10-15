@@ -80,7 +80,7 @@
         /* 系统卡片网格 */
         .system-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             margin-top: 20px;
         }
@@ -404,40 +404,33 @@
                 </div>
             </div>
 
-            <!-- 综合态势展现系统 -->
+            <!-- 三维模型演示（免登录） -->
             <div class="system-card">
                 <div class="card-header">
-                    <div class="card-icon">📊</div>
+                    <div class="card-icon" style="background: linear-gradient(135deg, #ffa726, #ef6c00); box-shadow: 0 4px 12px rgba(255, 167, 38, 0.3);">🎮</div>
                     <div class="card-title">
-                        综合态势展现系统
-                        <span class="english-name">Situation Visualization System</span>
+                        三维模型演示系统
+                        <span class="english-name">3D Model Demo</span>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="info-row">
                         <span class="info-label">访问地址</span>
-                        <span class="info-value">/zhts</span>
+                        <span class="info-value">/model3dDemo/</span>
                     </div>
                     <div class="info-row">
                         <span class="info-label">说明</span>
-                        <span class="info-value">态势展现、目标监控、网络分析等综合展示平台</span>
+                        <span class="info-value">三维模型浏览与交互演示，直接访问无需登录</span>
                     </div>
-                    <div class="account-box">
+                    <div class="account-box" style="border-color: rgba(255, 167, 38, 0.3); background: rgba(255, 167, 38, 0.08);">
                         <div class="account-row">
-                            <span class="label">账号</span>
-                            <span class="value">无</span>
-                            <button class="copy-btn" onclick="copyText(this)">复制</button>
-                        </div>
-                        <div class="account-row">
-                            <span class="label">密码</span>
-                            <span class="value">无</span>
-                            <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            <span class="value" style="color: #ffa726;">无需账号密码，直接访问</span>
                         </div>
                     </div>
-                    <div class="note-text">⚠ 登录需输入验证码，部署地址请以实际服务器 IP 为准</div>
+                    <div class="note-text">✔ 公开演示环境，无需登录验证</div>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-primary" href="/zhts" target="_blank">演示链接</a>
+                    <a class="btn btn-primary" href="/model3dDemo/" target="_blank">演示链接</a>
                 </div>
             </div>
 
@@ -478,33 +471,40 @@
                 </div>
             </div>
 
-            <!-- 三维模型演示（免登录） -->
+            <!-- 综合态势展现系统 -->
             <div class="system-card">
                 <div class="card-header">
-                    <div class="card-icon" style="background: linear-gradient(135deg, #ffa726, #ef6c00); box-shadow: 0 4px 12px rgba(255, 167, 38, 0.3);">🎮</div>
+                    <div class="card-icon">📊</div>
                     <div class="card-title">
-                        三维模型演示系统
-                        <span class="english-name">3D Model Demo</span>
+                        综合态势展现系统
+                        <span class="english-name">Situation Visualization System</span>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="info-row">
                         <span class="info-label">访问地址</span>
-                        <span class="info-value">/model3dDemo/</span>
+                        <span class="info-value">/zhts</span>
                     </div>
                     <div class="info-row">
                         <span class="info-label">说明</span>
-                        <span class="info-value">三维模型浏览与交互演示，直接访问无需登录</span>
+                        <span class="info-value">态势展现、目标监控、网络分析等综合展示平台</span>
                     </div>
-                    <div class="account-box" style="border-color: rgba(255, 167, 38, 0.3); background: rgba(255, 167, 38, 0.08);">
+                    <div class="account-box">
                         <div class="account-row">
-                            <span class="value" style="color: #ffa726;">无需账号密码，直接访问</span>
+                            <span class="label">账号</span>
+                            <span class="value">无</span>
+                            <button class="copy-btn" onclick="copyText(this)">复制</button>
+                        </div>
+                        <div class="account-row">
+                            <span class="label">密码</span>
+                            <span class="value">无</span>
+                            <button class="copy-btn" onclick="copyText(this)">复制</button>
                         </div>
                     </div>
-                    <div class="note-text">✔ 公开演示环境，无需登录验证</div>
+                    <div class="note-text">⚠ 登录需输入验证码，部署地址请以实际服务器 IP 为准</div>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-primary" href="/model3dDemo/" target="_blank">演示链接</a>
+                    <a class="btn btn-primary" href="/zhts" target="_blank">演示链接</a>
                 </div>
             </div>
 
