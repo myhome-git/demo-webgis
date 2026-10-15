@@ -1,0 +1,99 @@
+body{
+	background-color: #002d62;
+	color: #fff;
+}
+#body-window{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+#body-window:before{
+	display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/index-body-background-04.jpg);
+    background-size:cover;
+    filter: blur(30px);
+}
+.box{
+	width: 80%;
+	height: 500px;
+	margin: 200px auto;
+}
+
+/*明暗效果*/
+@keyframes animateTextShadowMove {
+	0% {
+		text-shadow:0px 2px 20px #f80,
+                        0 0 12px #f80;
+	}
+    50% {
+    	text-shadow:20px 2px 20px #f80,
+                        0 0 20px #f80;
+    }
+    100% {
+    	text-shadow:0px 2px 20px #f80,
+                        0 0 12px #f80;
+    }
+}
+.animateTextShadowMove{
+    animation: 3s linear 0s normal none infinite animateTextShadowMove;
+}
+@keyframes animateArcMove{
+	0% {
+		left: 0;
+	}
+    50% {
+    	left: 100%;
+    }
+    100% {
+    	left: 0%;
+    }
+}
+.animateArcMove{
+    animation: 20s linear 0s normal none infinite animateArcMove;
+}
+.box .title{
+	padding: 20px;
+	font-size: 60px;
+	text-align: center;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	position: relative;
+	transition: all 0.3s ease-in-out 0s;
+	/*text-shadow:-3px 0px 5px #FFFFFF,
+                0 -3px 5px #FFFFFF;*/
+}
+.box ul{
+	padding: 20px 40px;
+	display: table;
+	width: 100%;
+}
+.box li{
+	display: table-cell;
+	width: 20%;
+	cursor: pointer;
+}
+.box a{
+	display: block;
+	font-size: 20px;
+	background-color: #00CE00;
+	/*box-shadow:-1px 0px 12px #00CE00;*/
+	margin: 10px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+	transition: all 0.3s ease-in-out 0s;
+}
+.box a:hover{
+	background-color: #f80;
+	box-shadow:-1px 1px 20px #f80;
+	color: #fff;
+}
