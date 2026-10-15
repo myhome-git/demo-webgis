@@ -355,7 +355,7 @@ window.UserIsLogin();
 			
 			xUtilBase.ajax({
 				url : "/model3d/data/model/getClassTree",
-				type : "post",
+				type : "get",
 				data : _data,
 				contentType : "application/json;charset=UTF-8",
 				success : function(result){
