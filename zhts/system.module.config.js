@@ -103,7 +103,7 @@ var _SYSTEM_MODULE_CONFIG = {
  */
 function getModuleURL(name){
 	let _name = name.toLowerCase();
-	return _SYSTEM_MODULE_CONFIG[_name] || "";
+	return (_SYSTEM_MODULE_CONFIG[_name] || "").replace(/\.html$/, "");
 }
 
 /**
