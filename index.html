@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>系统导航页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "SimHei", Arial, sans-serif;
+            background: linear-gradient(135deg, #0c1445 0%, #1a237e 50%, #283593 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+        }
+
+        /* 背景装饰 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(0, 188, 212, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(63, 81, 181, 0.25) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 188, 212, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .page-wrapper {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 1200px;
+            padding: 40px 20px;
+        }
+
+        /* 顶部标题 */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            background: linear-gradient(90deg, #4fc3f7, #00bcd4, #4fc3f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: none;
+            margin-bottom: 12px;
+        }
+
+        .page-header .subtitle {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 4px;
+        }
+
+        .page-header .divider {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #00bcd4, transparent);
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        /* 系统卡片网格 */
+        .system-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        /* 母子系统专区分隔 */
+        .system-section {
+            margin-top: 40px;
+        }
+
+        .section-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .section-divider::before,
+        .section-divider::after {
+            content: '';
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 188, 212, 0.4), transparent);
+            flex: 1;
+        }
+
+        .section-divider span {
+            padding: 0 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 3px;
+            white-space: nowrap;
+        }
+
+        /* 母子系统并排一行 */
+        .system-grid-pair {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .system-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 28px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .system-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 188, 212, 0.5);
+            box-shadow: 0 12px 30px rgba(0, 188, 212, 0.2);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .system-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00bcd4, #4fc3f7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .system-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 卡片头部 */
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #00bcd4, #0288d1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-right: 16px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .card-title .english-name {
+            display: block;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* 卡片内容 */
+        .card-body {
+            flex: 1;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 10px;
+            font-size: 13px;
+            align-items: flex-start;
+        }
+
+        .info-label {
+            min-width: 60px;
+            color: rgba(255, 255, 255, 0.5);
+            flex-shrink: 0;
+            padding-top: 2px;
+        }
+
+        .info-value {
+            color: rgba(255, 255, 255, 0.9);
+            word-break: break-all;
+            flex: 1;
+        }
+
+        .account-box {
+            background: rgba(0, 188, 212, 0.08);
+            border: 1px dashed rgba(0, 188, 212, 0.3);
+            border-radius: 8px;
+            padding: 12px 14px;
+            margin: 8px 0 16px;
+        }
+
+        .account-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+            font-size: 13px;
+        }
+
+        .account-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .account-row .label {
+            color: rgba(255, 255, 255, 0.6);
+            margin-right: 8px;
+            min-width: 32px;
+        }
+
+        .account-row .value {
+            color: #4fc3f7;
+            font-family: Consolas, Monaco, monospace;
+            background: rgba(0, 188, 212, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            user-select: all;
+        }
+
+        .account-row .copy-btn {
+            margin-left: 8px;
+            background: rgba(0, 188, 212, 0.15);
+            border: 1px solid rgba(0, 188, 212, 0.3);
+            color: #4fc3f7;
+            border-radius: 4px;
+            padding: 1px 8px;
+            font-size: 11px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .account-row .copy-btn:hover {
+            background: rgba(0, 188, 212, 0.3);
+        }
+
+        .note-text {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        /* 按钮 */
+        .card-footer {
+            margin-top: auto;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 9px 20px;
+            border-radius: 6px;
+            font-size: 13px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00bcd4, #0288d1);
+            color: #fff;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #26c6da, #039be5);
+            box-shadow: 0 4px 16px rgba(0, 188, 212, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(0, 188, 212, 0.4);
+        }
+
+        /* 页脚 */
+        .page-footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
+            letter-spacing: 1px;
+        }
+
+        /* 提示Toast */
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            z-index: 9999;
+            transition: transform 0.3s ease;
+            pointer-events: none;
+            border: 1px solid rgba(0, 188, 212, 0.3);
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- 顶部标题 -->
+        <div class="page-header">
+            <h1>系统导航中心</h1>
+            <div class="subtitle">SYSTEM NAVIGATION CENTER</div>
+            <div class="divider"></div>
+        </div>
+
+        <!-- 系统卡片网格 -->
+        <div class="system-grid">
+
+            <!-- 综合态势展现系统 -->
+            <div class="system-card">
+                <div class="card-header">
+                    <div class="card-icon">📊</div>
+                    <div class="card-title">
+                        综合态势展现系统
+                        <span class="english-name">Situation Visualization System</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">访问地址</span>
+                        <span class="info-value">/zhts</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">说明</span>
+                        <span class="info-value">态势展现、目标监控、网络分析等综合展示平台</span>
+                    </div>
+                    <div class="account-box">
+                        <div class="account-row">
+                            <span class="label">账号</span>
+                            <span class="value">无</span>
+                            <button class="copy-btn" onclick="copyText(this)">复制</button>
+                        </div>
+                        <div class="account-row">
+                            <span class="label">密码</span>
+                            <span class="value">无</span>
+                            <button class="copy-btn" onclick="copyText(this)">复制</button>
+                        </div>
+                    </div>
+                    <div class="note-text">⚠ 登录需输入验证码，部署地址请以实际服务器 IP 为准</div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="/zhts" target="_blank">演示链接</a>
+                </div>
+            </div>
+
+            <!-- 三维模型数据整编系统 -->
+            <div class="system-card">
+                <div class="card-header">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #66bb6a, #2e7d32); box-shadow: 0 4px 12px rgba(102, 187, 106, 0.3);">🧊</div>
+                    <div class="card-title">
+                        三维模型数据整编系统
+                        <span class="english-name">3D Model Data Integration</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">访问地址</span>
+                        <span class="info-value">/model3d</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">说明</span>
+                        <span class="info-value">三维模型管理、模型动画、数据整编平台</span>
+                    </div>
+                    <div class="account-box">
+                        <div class="account-row">
+                            <span class="label">账号</span>
+                            <span class="value">无</span>
+                            <button class="copy-btn" onclick="copyText(this)">复制</button>
+                        </div>
+                        <div class="account-row">
+                            <span class="label">密码</span>
+                            <span class="value">无</span>
+                            <button class="copy-btn" onclick="copyText(this)">复制</button>
+                        </div>
+                    </div>
+                    <div class="note-text">⚠ 登录需输入验证码，部署地址请以实际服务器 IP 为准</div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="/model3d" target="_blank">演示链接</a>
+                </div>
+            </div>
+
+            <!-- 三维模型演示（免登录） -->
+            <div class="system-card">
+                <div class="card-header">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #ffa726, #ef6c00); box-shadow: 0 4px 12px rgba(255, 167, 38, 0.3);">🎮</div>
+                    <div class="card-title">
+                        三维模型演示系统
+                        <span class="english-name">3D Model Demo</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">访问地址</span>
+                        <span class="info-value">/model3dDemo/</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">说明</span>
+                        <span class="info-value">三维模型浏览与交互演示，直接访问无需登录</span>
+                    </div>
+                    <div class="account-box" style="border-color: rgba(255, 167, 38, 0.3); background: rgba(255, 167, 38, 0.08);">
+                        <div class="account-row">
+                            <span class="value" style="color: #ffa726;">无需账号密码，直接访问</span>
+                        </div>
+                    </div>
+                    <div class="note-text">✔ 公开演示环境，无需登录验证</div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="/model3dDemo/" target="_blank">演示链接</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 母子系统专区（单独一行） -->
+        <div class="system-section">
+            <div class="section-divider">
+                <span>手中线母子系统</span>
+            </div>
+            <div class="system-grid-pair">
+                <!-- 手中线母系统 -->
+                <div class="system-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #ab47bc, #7b1fa2); box-shadow: 0 4px 12px rgba(171, 71, 188, 0.3);">🔮</div>
+                        <div class="card-title">
+                            手中线母系统
+                            <span class="english-name">Mother System</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-row">
+                            <span class="info-label">访问地址</span>
+                            <span class="info-value">https://system-admin.myhome-test.ccwu.cc</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">说明</span>
+                            <span class="info-value">手中线母系统（待部署）</span>
+                        </div>
+                        <div class="account-box">
+                            <div class="account-row">
+                                <span class="label">账号</span>
+                                <span class="value">test</span>
+                                <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            </div>
+                            <div class="account-row">
+                                <span class="label">密码</span>
+                                <span class="value">test</span>
+                                <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            </div>
+                        </div>
+                        <div class="note-text">⏳ 系统尚未部署，此地址为占位链接</div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="https://system-admin.myhome-test.ccwu.cc" target="_blank">演示链接</a>
+                    </div>
+                </div>
+
+                <!-- 手动线子系统 -->
+                <div class="system-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #ec407a, #ad1457); box-shadow: 0 4px 12px rgba(236, 64, 122, 0.3);">🛰️</div>
+                        <div class="card-title">
+                            手动线子系统
+                            <span class="english-name">Child System</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-row">
+                            <span class="info-label">访问地址</span>
+                            <span class="info-value">https://system-admin-child.myhome-test.ccwu.cc</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">说明</span>
+                            <span class="info-value">手动线子系统（待部署）</span>
+                        </div>
+                        <div class="account-box">
+                            <div class="account-row">
+                                <span class="label">账号</span>
+                                <span class="value">1</span>
+                                <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            </div>
+                            <div class="account-row">
+                                <span class="label">密码</span>
+                                <span class="value">1</span>
+                                <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            </div>
+                        </div>
+                        <div class="note-text">⏳ 系统尚未部署，此地址为占位链接</div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="https://system-admin-child.myhome-test.ccwu.cc" target="_blank">演示链接</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="page-footer">
+            © 2026 系统导航中心 · 内部使用
+        </div>
+    </div>
+
+    <!-- Toast提示 -->
+    <div class="toast" id="toast"></div>
+
+    <script>
+        // 复制文本到剪贴板
+        function copyText(btn) {
+            var text = btn.previousElementSibling.innerText;
+            var toast = document.getElementById('toast');
+
+            // 使用 Clipboard API 复制
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(function() {
+                    showToast(toast, '已复制: ' + text);
+                }).catch(function() {
+                    fallbackCopy(text, toast);
+                });
+            } else {
+                fallbackCopy(text, toast);
+            }
+        }
+
+        // 备用复制方式
+        function fallbackCopy(text, toast) {
+            var tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            tempInput.style.position = 'fixed';
+            tempInput.style.opacity = '0';
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999);
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(toast, '已复制: ' + text);
+        }
+
+        // 显示Toast提示
+        function showToast(toast, message) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(function() {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
