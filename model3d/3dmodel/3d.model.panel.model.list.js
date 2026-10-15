@@ -331,7 +331,7 @@ function ClassPanelModelList(){
 			type: _model.type,
 			guojia: _model.country,
 			position : _position,
-			backGroundType: 2,
+			backGroundType: 3,
 			success : function(){
 				
 				console.info("模型加载完毕");
