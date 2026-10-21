@@ -1,12 +1,22 @@
 [
     {
-"name":"p8a",
-"id":11,			
-"pos":{"lon":136.29,"lat":30,"alt":1000},
-"layer":"55",	
-"type":0,
-"url":"/model3d/data/model/Air.glb",
-"mbnm":"1",
-"other":1
-}
+        "name":"f22",
+        "id":1,			
+        "pos":{"lon":136.29,"lat":30,"alt":1000},
+        "layer":"55",	
+        "type":0,
+        "url":"https://static-file.myhome-test.ccwu.cc/data/f22.glb",
+        "mbnm":"1",
+        "other":1
+    },
+    {
+        "name":"p8a",
+        "id":11,			
+        "pos":{"lon":136.29,"lat":30,"alt":1000},
+        "layer":"55",	
+        "type":0,
+        "url":"/model3d/data/model/Air.glb",
+        "mbnm":"1",
+        "other":1
+    }
 ]

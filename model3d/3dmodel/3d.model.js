@@ -367,7 +367,8 @@ window.UserIsLogin();
 							id : el.id,
 							name : el.name,
 							pId : el.pId,
-							other : el.other
+							other : el.other,
+							_url: el.url
 						});
 					});
 					

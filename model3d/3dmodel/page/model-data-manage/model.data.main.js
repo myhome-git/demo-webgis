@@ -394,7 +394,7 @@ var _FunctionObject = _FunctionObject || {};
 					
 					//单击事件
 					function onClick(event, treeId, treeNode){
-						
+						debugger
 						_this.__modelTree.GetZTreeObj().checkNode(treeNode, !treeNode.checked, true);
 						
 						if(treeNode && (!treeNode.children || treeNode.children.length<1)){

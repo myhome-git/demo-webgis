@@ -60,20 +60,27 @@ function ClassPanelModelList(){
 						
 						_classPanelModelChildrenEdit.ClosePanel();
 
-						var _object = {
-							index : 1,
-							identifier:1,
-							id: "040100300000000539",
-							name: "洛克希德·马丁F-22“猛禽”",
-							url: "/model3d/data/model/Air.glb",
+						// var _object = {
+						// 	index : 1,
+						// 	identifier:1,
+						// 	id: "040100300000000539",
+						// 	name: "洛克希德·马丁F-22“猛禽”",
+						// 	url: treeNode.url,
+						// 	model: "空",
+						// 	country: "美",
+						// 	success : function(){
+								
+						// 		$("#x-view-model-name > font").html("洛克希德·马丁F-22“猛禽”");
+								
+						// 	}
+						// };
+						const _object = nodes.find(item => item.id == treeNode.id)
+						Object.assign(_object, {
+							identifier: _object.id,
+							url: _object._url,
 							model: "空",
 							country: "美",
-							success : function(){
-								
-								$("#x-view-model-name > font").html("洛克希德·马丁F-22“猛禽”");
-								
-							}
-						};
+						})
 						
 						//获取模型数据
 						_this.LoadModel({ model: _object });
@@ -364,7 +371,7 @@ function ClassPanelModelList(){
 				
 				
 				//开始设置模型
-				_classModelControl.ShowGrid(true);
+				_classModelControl.ShowGrid(false);
 				
 				_classModelControl.FormatModelNodeAllList();
 				
