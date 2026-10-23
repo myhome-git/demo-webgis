@@ -365,8 +365,92 @@
         </div>
 
         <!-- 系统卡片网格 -->
-        <div class="system-grid">
+        <!-- 母子系统专区（单独一行） -->
+        <div class="system-section">
+            <div class="section-divider">
+                <span>手中线母子系统</span>
+            </div>
+            <div class="system-grid-pair">
+                <!-- 手中线母系统 -->
+                <div class="system-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #ab47bc, #7b1fa2); box-shadow: 0 4px 12px rgba(171, 71, 188, 0.3);">🔮</div>
+                        <div class="card-title">
+                            手中线-低代码系统（母系统）
+                            <span class="english-name">Mother System</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-row">
+                            <span class="info-label">访问地址</span>
+                            <span class="info-value">https://system-admin.myhome-test.ccwu.cc</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">说明</span>
+                            <span class="info-value">基础系统</span>
+                        </div>
+                        <div class="account-box">
+                            <div class="account-row">
+                                <span class="label">账号</span>
+                                <span class="value">test</span>
+                                <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            </div>
+                            <div class="account-row">
+                                <span class="label">密码</span>
+                                <span class="value">test</span>
+                                <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            </div>
+                        </div>
+                        <div class="note-text">⏳ 系统尚未部署，此地址为占位链接</div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="https://system-admin.myhome-test.ccwu.cc" target="_blank">演示链接</a>
+                    </div>
+                </div>
 
+                <!-- 手动线子系统 -->
+                <div class="system-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #ec407a, #ad1457); box-shadow: 0 4px 12px rgba(236, 64, 122, 0.3);">🛰️</div>
+                        <div class="card-title">
+                            手中线-低代码系统（子系统）
+                            <span class="english-name">Child System</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-row">
+                            <span class="info-label">访问地址</span>
+                            <span class="info-value">https://system-admin-child.myhome-test.ccwu.cc</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">说明</span>
+                            <span class="info-value">适合业务开发</span>
+                        </div>
+                        <div class="account-box">
+                            <div class="account-row">
+                                <span class="label">账号</span>
+                                <span class="value">1</span>
+                                <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            </div>
+                            <div class="account-row">
+                                <span class="label">密码</span>
+                                <span class="value">1</span>
+                                <button class="copy-btn" onclick="copyText(this)">复制</button>
+                            </div>
+                        </div>
+                        <div class="note-text">⏳ 系统尚未部署，此地址为占位链接</div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="https://system-admin-child.myhome-test.ccwu.cc" target="_blank">演示链接</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="system-grid">
+            <div class="section-divider" style="flex: 1; grid-column: 1 / -1;">
+                <span>其它系统</span>
+            </div>
             <!-- 大屏演示demo -->
             <div class="system-card">
                 <div class="card-header">
@@ -545,88 +629,6 @@
                 </div>
             </div>
 
-        </div>
-
-        <!-- 母子系统专区（单独一行） -->
-        <div class="system-section">
-            <div class="section-divider">
-                <span>手中线母子系统</span>
-            </div>
-            <div class="system-grid-pair">
-                <!-- 手中线母系统 -->
-                <div class="system-card">
-                    <div class="card-header">
-                        <div class="card-icon" style="background: linear-gradient(135deg, #ab47bc, #7b1fa2); box-shadow: 0 4px 12px rgba(171, 71, 188, 0.3);">🔮</div>
-                        <div class="card-title">
-                            手中线-低代码系统（母系统）
-                            <span class="english-name">Mother System</span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="info-row">
-                            <span class="info-label">访问地址</span>
-                            <span class="info-value">https://system-admin.myhome-test.ccwu.cc</span>
-                        </div>
-                        <div class="info-row">
-                            <span class="info-label">说明</span>
-                            <span class="info-value">基础系统</span>
-                        </div>
-                        <div class="account-box">
-                            <div class="account-row">
-                                <span class="label">账号</span>
-                                <span class="value">test</span>
-                                <button class="copy-btn" onclick="copyText(this)">复制</button>
-                            </div>
-                            <div class="account-row">
-                                <span class="label">密码</span>
-                                <span class="value">test</span>
-                                <button class="copy-btn" onclick="copyText(this)">复制</button>
-                            </div>
-                        </div>
-                        <div class="note-text">⏳ 系统尚未部署，此地址为占位链接</div>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-primary" href="https://system-admin.myhome-test.ccwu.cc" target="_blank">演示链接</a>
-                    </div>
-                </div>
-
-                <!-- 手动线子系统 -->
-                <div class="system-card">
-                    <div class="card-header">
-                        <div class="card-icon" style="background: linear-gradient(135deg, #ec407a, #ad1457); box-shadow: 0 4px 12px rgba(236, 64, 122, 0.3);">🛰️</div>
-                        <div class="card-title">
-                            手中线-低代码系统（子系统）
-                            <span class="english-name">Child System</span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="info-row">
-                            <span class="info-label">访问地址</span>
-                            <span class="info-value">https://system-admin-child.myhome-test.ccwu.cc</span>
-                        </div>
-                        <div class="info-row">
-                            <span class="info-label">说明</span>
-                            <span class="info-value">适合业务开发</span>
-                        </div>
-                        <div class="account-box">
-                            <div class="account-row">
-                                <span class="label">账号</span>
-                                <span class="value">1</span>
-                                <button class="copy-btn" onclick="copyText(this)">复制</button>
-                            </div>
-                            <div class="account-row">
-                                <span class="label">密码</span>
-                                <span class="value">1</span>
-                                <button class="copy-btn" onclick="copyText(this)">复制</button>
-                            </div>
-                        </div>
-                        <div class="note-text">⏳ 系统尚未部署，此地址为占位链接</div>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-primary" href="https://system-admin-child.myhome-test.ccwu.cc" target="_blank">演示链接</a>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- 页脚 -->
