@@ -1,0 +1,213 @@
+<style>
+	#jnns-user-nav{
+		position: fixed;
+		right:0;
+		bottom:100px;
+		border: 1px solid #108393;
+		border-radius: 4px;
+		background: #fff;
+		display: block;
+		opacity: 0.9;
+		filter: alpha(opacity=90);
+		-moz-opacity:0.9;	/*IE8伪类无效*/
+	}
+	
+	/*大于或等于360的时候才浮动*/
+	@media only screen and (max-width: 1154px) {
+		#jnns-user-nav{
+			display: none;
+		}
+	}
+	
+	#jnns-user-nav .user-nav-control-display{
+		position: absolute;
+		left:-20px;
+		top:73px;
+		width:20px;
+		height: 76px;
+		line-height: 76px;
+		background: #108393;
+		border-radius: 4px 0px 0px 4px;
+		font-weight:bold;
+		cursor:pointer;
+		text-align: center;
+	}
+	#jnns-user-nav .user-nav-control-display i{
+		color: #fff;
+	}
+	#jnns-user-nav .user-nav-bean{
+		position: relative;
+		*zoom: 1;
+		text-align: center;
+		padding:10px 10px 10px 10px;
+		cursor:pointer;
+		
+	}
+	
+	#jnns-user-nav .user-nav-bean:after{
+		content:"";
+		display: block;
+		position: absolute;
+		left:0;
+		bottom:-1px;
+		width: 100%;
+		border-bottom: 1px solid #108393;
+	}			
+
+	#jnns-user-nav .user-nav-bean:hover .bean-pub.bean-iconfont i{
+		color: #2196F3;
+		line-height: 1;
+	}
+	#jnns-user-nav .user-nav-bean .bean-pub.bean-iconfont{
+		outline: 0px solid #ff0000;
+		margin:0 auto;
+		line-height: 1;
+		padding-top:5px;
+	}
+	#jnns-user-nav .user-nav-bean .bean-pub.bean-iconfont i{
+		color: #108393;
+		font-size:30px;
+		outline: 0px solid #ff0000;
+	}
+	#jnns-user-nav .user-nav-bean .bean-pub.bean-span{
+		color: #333;
+	}
+	
+	#jnns-user-nav .user-nav-bean.gongzhonghao .gongzhong-box{
+		position: absolute;
+		right:72px;
+		top:-1px;
+		width:0px;
+		height: 200px;
+		border: 1px solid #d62631;
+		border-radius: 4px 0px 0px 4px;
+	}
+	#jnns-user-nav .user-nav-bean.gongzhonghao .gongzhong-box img{				
+		width:100%;
+		height: 100%;
+	}
+	#test,#test1,#test2{
+		background: #000;
+		color: #fff;
+		position: relative;
+		left:0;
+		bottom: 0;
+		width:100%;
+	}
+</style>
+<div id="jnns-user-nav">
+	<div data-state-name="block" class="user-nav-control-display" id="user-nav-control-display">
+		<i class="iconfont icon-xiangyoujiantou"></i>
+	</div>
+	<ul class="user-nav-ul">
+		<a href="javaScript:void(0)">
+			<li class="user-nav-bean kefu">
+				<div class="bean-pub bean-iconfont"><i class="iconfont icon-zaixiankefu"></i></div>
+				<div class="bean-pub bean-span"><span>在线客服</span></div>
+			</li>
+		</a>
+		<a href="javaScript:void(0)">
+			<li class="user-nav-bean gongzhonghao">
+				<div class="bean-pub bean-iconfont"><i class="iconfont icon-erweima"></i></div>
+				<div class="bean-pub bean-span"><span>公众号</span></div>
+				<div style="display: none;" class="gongzhong-box"></div>
+			</li>
+		</a>
+		<a href="#top">
+			<li class="user-nav-bean">
+				<div class="bean-pub bean-iconfont"><i class="iconfont icon-dingbu1"></i></div>
+				<div class="bean-pub bean-span"><span>返回顶部</span></div>
+			</li>
+		</a>
+	</ul>
+	
+</div>
+
+<script id="src_template_customer_service_erweima" type="text/html">
+	{{if isRun}}
+		<style>
+			#temp_erweima{padding:10px;}
+			#temp_erweima img{
+				width:260px;display: block;margin:10px auto 10px auto;
+				text-align: center;line-height: 260px;
+			}
+			#temp_erweima div{text-align: center;line-height: 30px;}
+		</style>
+		<div id="temp_erweima">
+			<!--<img src="{{src}}" alt="image loading error"/>-->
+			<img src="{{src}}" alt="image error"/>
+			<div class="xyd-color-blue xyd-background-f5" style="">请扫描上方的二维码</div>
+		</div>
+		
+	{{/if}}
+</script>
+<script>
+	(function($){
+		$(document).ready(documnetReadyUserNavLoading);
+		
+		function documnetReadyUserNavLoading(){
+			(function(){
+				var dom = $("#jnns-user-nav"),
+				ul = dom.find(".user-nav-ul"),
+				control = dom.find("#user-nav-control-display");
+				
+				control.on("click",function(){
+					var _this = $(this),						
+						state = _this.attr("data-state-name");
+					if(state=="block"){
+						_this.attr("data-state-name","none");
+						_this.html("<i class=\"iconfont icon-xiangzuojiantou\"></i>");						
+						dom.animate({"right":"-"+(ul.outerWidth()+2)+"px"},300);
+						window.pageObject.setLocalStorage("_isUserNavDisplay",false);
+					}else{
+						_this.attr("data-state-name","block");
+						_this.html("<i class=\"iconfont icon-xiangyoujiantou\"></i>");
+						dom.animate({"right":"0"}, 300);
+						window.pageObject.setLocalStorage("_isUserNavDisplay",true);						
+					}
+				});
+				
+				//客服
+				$("#nb_icon_wrap").css("visibility","hidden");
+				ul.find(".user-nav-bean.kefu").click(function(){
+					$("#nb_icon_wrap").trigger("click");
+				});
+				
+				//公众号
+				ul.find(".user-nav-bean.gongzhonghao").click(function(){
+					var _this = $(this);
+					var _data = {
+						isRun : true,
+						src : ""
+					};
+
+					html = template('src_template_customer_service_erweima', _data);
+		     		if(html==""){
+		     			return false;
+		     		}
+
+			     	layer.open({
+						type: 1,
+						title: false,
+						closeBtn: 0,
+						area: ['300px','330px'],
+						shadeClose: true,
+						skin: 'yourclass',
+						content: html,
+						scrollbar: false
+					});
+					
+				});
+	
+				var _isNavDisplay = window.pageObject.getLocalStorage("_isUserNavDisplay");
+				if(_isNavDisplay===false){
+					control.attr("data-state-name","none");
+					control.html("<i class=\"iconfont icon-xiangzuojiantou\"></i>");
+					dom.css({"right":"-"+(ul.outerWidth()+2)+"px"});
+				}
+				
+				
+			})();						
+		}
+	})(jQuery);
+</script>

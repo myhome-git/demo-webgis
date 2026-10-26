@@ -1,0 +1,104 @@
+.solve_banner{ width:100%; height:300px; position:relative; overflow:hidden; margin-top:85px;}
+.solve_banner img{ width:1920px; height:300px; position:absolute; left:50%; margin-left:-960px;}
+
+.protact_one{ height:525px; background:#fff; width:100%; overflow:hidden;}
+.protact_one_content,.protact_two_content{ width:1200px; height:655px; margin:0 auto; overflow:hidden; }
+.one1 img,.two2 img,.three3 img,.four4 img,.five5 img{ display:none;}
+.protact_one_img1{ float:left;  width:356px; height:610px; padding-top:45px;}
+.one1 .protact_one_img1{ width:483px;  padding-top:100px; height:399px;}
+.protact_one_right{ float:left; padding-top:100px; width:550px; margin-left:130px;}
+.protact_one_right h5{ color:#5c5050; font-size:24px; font-weight:normal; text-align:center;}
+.protact_ones a{ float:left;  margin-right:55px; margin-top:30px;}
+.protact_ones a:nth-child(1) div{ background:url(../images/xitongkaifa-xyd/protact_one_right1.png) 0 0 no-repeat; width:91px; height:91px;}
+.protact_ones a:nth-child(2) div{ background:url(../images/xitongkaifa-xyd/protact_one_right2.png) 0 0 no-repeat; width:91px; height:91px;}
+.protact_ones a:nth-child(3) div{ background:url(../images/xitongkaifa-xyd/protact_one_right3.png) 0 0 no-repeat; width:91px; height:91px;}
+.protact_ones a:nth-child(4) div{ background:url(../images/xitongkaifa-xyd/protact_one_right4.png) 0 0 no-repeat; width:91px; height:91px;}
+.protact_ones a:nth-child(5) div{ background:url(../images/xitongkaifa-xyd/protact_one_right5.png) 0 0 no-repeat; width:91px; height:91px;}
+.protact_ones a:nth-child(6) div{ background:url(../images/xitongkaifa-xyd/protact_one_right6.png) 0 0 no-repeat; width:91px; height:91px;}
+.protact_ones a:nth-child(7) div{ background:url(../images/xitongkaifa-xyd/protact_three_img7.png) 0 0 no-repeat; width:91px; height:91px;}
+.protact_ones a:nth-child(8) div{ background:url(../images/xitongkaifa-xyd/protact_three_img8.png) 0 0 no-repeat; width:91px; height:91px;}
+.protact_ones a:nth-child(4),.protact_ones a:nth-child(8){ margin-right:0px;}
+.protact_ones a p{ color:#5c5050; font-size:16px; text-align:center;}
+.protact_ones{ overflow:hidden;}
+
+.protact_two{ background:#e5f5fb; height:655px;}
+.protact_two_left{ float:left; width:430px; margin-right:44px; margin-left:70px;}
+.protact_two_left h5{color:#628393; font-size:24px; font-weight:normal; text-align:center; padding-top:150px;}
+.protact_two_left h6{color:#628393; font-size:16px; font-weight:normal; text-align:center; margin-top:5px;}
+.protact_twos{ overflow:hidden;}
+.protact_twos a{ float:left; margin-right:79px; margin-top:50px;}
+.two a:nth-child(1) div{ background:url(../images/xitongkaifa-xyd/protact_two_img1.png) 0 0 no-repeat; width:85px; height:85px;}
+.two a:nth-child(2) div{ background:url(../images/xitongkaifa-xyd/protact_two_img2.png) 0 0 no-repeat; width:85px; height:85px;}
+.two a:nth-child(3) div{ background:url(../images/xitongkaifa-xyd/protact_two_img3.png) 0 0 no-repeat; width:85px; height:85px;}
+.two a:nth-child(4) div{ background:url(../images/xitongkaifa-xyd/protact_two_img4.png) 0 0 no-repeat; width:85px; height:85px;}
+.two a:nth-child(5) div{ background:url(../images/xitongkaifa-xyd/protact_two_img5.png) 0 0 no-repeat; width:85px; height:85px;}
+.two a:nth-child(6) div{ background:url(../images/xitongkaifa-xyd/protact_two_img6.png) 0 0 no-repeat; width:85px; height:85px;}
+.two.t1 a:nth-child(1) div{ background:url(../images/xitongkaifa-xyd/protact_two_img_t1.png) 0 0 no-repeat; width:85px; height:85px;}
+.two.t1 a:nth-child(2) div{ background:url(../images/xitongkaifa-xyd/protact_two_img_t2.png) 0 0 no-repeat; width:85px; height:85px;}
+.two.t1 a:nth-child(3) div{ background:url(../images/xitongkaifa-xyd/protact_two_img_t3.png) 0 0 no-repeat; width:85px; height:85px;}
+.two.t1 a:nth-child(4) div{ background:url(../images/xitongkaifa-xyd/protact_two_img_t4.png) 0 0 no-repeat; width:85px; height:85px;}
+.two.t1 a:nth-child(5) div{ background:url(../images/xitongkaifa-xyd/protact_two_img_t5.png) 0 0 no-repeat; width:85px; height:85px;}
+.two.t1 a:nth-child(6) div{ background:url(../images/xitongkaifa-xyd/protact_two_img_t6.png) 0 0 no-repeat; width:85px; height:85px;}
+
+.three a:nth-child(3),.three a:nth-child(6),.two a:nth-child(3),.two a:nth-child(6){ margin-right:0px;}
+
+.three a:nth-child(1) div{ background:url(../images/xitongkaifa-xyd/protact_three_img1.png) 0 0 no-repeat; width:85px; height:85px;}
+.three a:nth-child(2) div{ background:url(../images/xitongkaifa-xyd/protact_three_img2.png) 0 0 no-repeat; width:85px; height:85px;}
+.three a:nth-child(3) div{ background:url(../images/xitongkaifa-xyd/protact_three_img3.png) 0 0 no-repeat; width:85px; height:85px;}
+
+.four a:nth-child(1) div{ background:url(../images/xitongkaifa-xyd/protact_four_img1.png) 0 0 no-repeat; width:85px; height:85px;}
+.four a:nth-child(2) div{ background:url(../images/xitongkaifa-xyd/protact_four_img2.png) 0 0 no-repeat; width:85px; height:85px;}
+.four a:nth-child(3) div{ background:url(../images/xitongkaifa-xyd/protact_four_img3.png) 0 0 no-repeat; width:85px; height:85px;}
+.four a:nth-child(4) div{ background:url(../images/xitongkaifa-xyd/protact_four_img4.png) 0 0 no-repeat; width:85px; height:85px;margin-right:0px;}
+.four a:nth-child(5) div{ background:url(../images/xitongkaifa-xyd/protact_four_img5.png) 0 0 no-repeat; width:85px; height:85px; }
+.four a:nth-child(6) div{ background:url(../images/xitongkaifa-xyd/protact_four_img6.png) 0 0 no-repeat; width:85px; height:85px;}
+.four a:nth-child(7) div{ background:url(../images/xitongkaifa-xyd/protact_four_img7.png) 0 0 no-repeat; width:85px; height:85px;}
+
+.five a:nth-child(1) div{ background:url(../images/xitongkaifa-xyd/protact_five_img1.png) 0 0 no-repeat; width:85px; height:85px;}
+.five a:nth-child(2) div{ background:url(../images/xitongkaifa-xyd/protact_five_img2.png) 0 0 no-repeat; width:85px; height:85px;}
+.five a:nth-child(3) div{ background:url(../images/xitongkaifa-xyd/protact_five_img3.png) 0 0 no-repeat; width:85px; height:85px;}
+.five a:nth-child(4) div{ background:url(../images/xitongkaifa-xyd/protact_five_img4.png) 0 0 no-repeat; width:85px; height:85px;}
+.five a:nth-child(5) div{ background:url(../images/xitongkaifa-xyd/protact_five_img5.png) 0 0 no-repeat; width:85px; height:85px;}
+.five a:nth-child(6) div{ background:url(../images/xitongkaifa-xyd/protact_five_img6.png) 0 0 no-repeat; width:85px; height:85px; }
+.five a:nth-child(7) div{ background:url(../images/xitongkaifa-xyd/protact_five_img7.png) 0 0 no-repeat; width:85px; height:85px;}
+
+
+.protact_twos a p{ color:#628393; font-size:16px; text-align:center; margin-top:10px;}
+.protact_two_imgs{ float:left; width:643px; margin-top: 144px;}
+.protact_three{ background:#f8f8f8; height:650px;}
+.protact_three_content{ width:1200px; height:650px; margin:0 auto; overflow:hidden;}
+.protact_three_imgleft{ float:left; padding-top:165px;}
+.protact_three_right{ float:left; width:425px; margin-left:65px;}
+.protact_three_right h5{ color:#525c66; font-size:24px; font-weight:normal; text-align:center; padding-top:150px;}
+.protact_three_right h6{ color:#525c66; font-size:16px; font-weight:normal; text-align:center; margin-top:6px;}
+.three a:nth-child(4) div{ background:url(../images/xitongkaifa-xyd/protact_three_img4.png) 0 0 no-repeat; width:85px; height:85px;}
+.three a:nth-child(5) div{ background:url(../images/xitongkaifa-xyd/protact_three_img5.png) 0 0 no-repeat; width:85px; height:85px;}
+.three a:nth-child(6) div{ background:url(../images/xitongkaifa-xyd/protact_three_img6.png) 0 0 no-repeat; width:85px; height:85px;}
+.protact_three_right .protact_twos a p{ color:#525c66; font-size:16px; text-align:center; margin-top:10px;}
+.protact_four{ background:#fff9e4; height:650px;}
+
+.protact_five{ background:#fff; height:650px;}
+.protact_four_content,.protact_five_content{ width:1200px; margin:0 auto; overflow:hidden; height:650px;}
+
+.protact_four_left{ width:580px; float:left; margin-left:70px;}
+.protact_four_left h5{ color:#5c5050; font-size:24px; font-weight:normal; text-align:center; padding-top:175px;}
+.protact_four_left .protact_twos a{ margin-right:34px; margin-left:26px;}
+.protact_four_left .four a:nth-child(5){ }
+.protact_four_left .protact_twos a p{ color:#5c5050; font-size:16px; text-align:center; margin-top:10px;}
+.five{ margin-left:79px; margin-right:0px;}
+.us_banner{ width:100%; height:398px; position:relative; overflow:hidden;margin-top:98px;}
+.us_banner img{ width:1920px; position:absolute; left:50%; margin-left:-960px;}
+/*招聘信息*/
+.talents_content{ width:1000px; margin:0 auto; margin-bottom:90px; overflow:hidden;}
+.talents_left{ float:left; width:225px; border:1px solid #c1bfbe; border-bottom:none; border-top:none;}
+.talents_h3{ background:#1d9fe0; font-size:18px; font-weight:normal; color:#fff; text-align:center; height:76px; line-height:76px;}
+.talents_ul li a{ display:block; width:225px; height:52px; color:#868686; font-size:16px; text-align:center; line-height:52px; border-bottom:1px solid #c1bfbe;}
+.talents_ul li .onit{ color:#1d9fe0;}
+.talents_right{ float:left; width:680px; margin-left:60px;}
+.talents_right ol{ padding-top:15px; display:none;}
+.talents_right ol li h5{ color:#1d9fe0; font-size:16px; line-height:20px; margin-top:20px;}
+.talents_right ol li p{ color:#6c6c6c; font-size:14px; line-height:26px;}
+/*招聘信息*/
+.taltent_bg{ width:100%; height:428px; background:url(../images/xitongkaifa-xyd/talent_bg.jpg) center center no-repeat;}
+.taltent_bg img{ display:block; margin:0 auto; padding-top:15px;}
+

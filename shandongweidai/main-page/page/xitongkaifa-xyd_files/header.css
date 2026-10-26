@@ -1,0 +1,36 @@
+.header{ position:fixed; top:0px; left:0px; right:0px; height:85px; z-index:9; background:white;}
+.header1{ background:#e7e7e7; height:37px;}
+.header1_content{ width:1200px; margin:0 auto; line-height:36px;}
+.header1_sy{ float:left; background:url(../images/icons_h3.png) left center no-repeat; padding-left:20px; color:#666;}
+.header1_tel{ float:left; background:url(../images/icons_tel3.png) left center no-repeat; padding-left:20px; margin-left:10px; color:#666;}
+.header2{ width:1200px; margin:0 auto; height:85px; background:white;}
+.logo{ float:left; width:187px; margin-top:20px;}
+
+/* --- for all three examples ----*/
+
+.navs {
+  text-align: center;
+  overflow: hidden;
+  width:650px;
+  font-size:14px;
+  padding-top:22px;
+  margin-left:550px;
+  position: relative; }
+  .navs a {
+    display: block;
+    position: relative;
+		float: left;
+		padding: 1em 0 2em;
+    width: 20%;
+		text-decoration: none;
+	  color: #393939;
+	 }
+	  .navs a:hover,.navs .onit {
+	    color: #1d9fe0; 
+		font-size:14px;
+		}
+
+
+.footer{  background:#535353; width:100%; padding-top:74px; padding-bottom:100px;}
+.footer img{ display:block; margin:0 auto;}
+.footer p{ font-size:16px; color:white; text-align:center; line-height:30px;}

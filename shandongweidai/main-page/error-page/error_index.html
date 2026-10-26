@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<script src="/xydWeb/main-page/include/systemHeaderResponseJS.js"></script>		
+		<script>
+			pageResponse("css","common");
+			pageResponse("css","style");
+			pageResponse("javascript","jquery183");
+			pageResponse("javascript","artTemplate");
+		</script>
+		<style>
+			.xyd_error{
+				background:#fff;
+				width:100%;
+				height:100%;
+			}
+			.xyd_error .error_content{
+				width:400px;
+				margin:0px auto;
+				outline:0px solid #f00;
+			}
+			.xyd_error .error_content .error_title{
+				font-size:50px;
+				line-height:1.1;
+				color:#666;
+				text-align:center;
+				outline:0px solid #f00;
+			}
+			.xyd_error .error_content .error_info{
+				font-size:20px;
+				color:#666;
+				text-align:center;
+				padding:5px 0px 5px 0px;
+			}
+			.xyd_error .error_content .error_state{
+				color:#666;
+				text-align:center;
+			}
+			.xyd_error .error_content .error_btnGroup{
+				margin:10px auto;
+				text-align:center;
+				outline:0px solid #f00;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="element_temppate_error">正在加载...</div>
+	</body>
+</html>
+<script id="src_template_error" type="text/html">
+	{{if isRun}}
+		<div class="xyd_error" style="margin-top:50px;">
+			{{each data as value i}}
+				{{if value.name==param}}
+				<div class="error_content">
+					<div class="error_title">{{value.name}}</div>
+					<div class="error_info">{{value.text}}</div>
+					<div class="error_state">{{value.info}}</div>
+					<div class="error_btnGroup">
+						<a class="xyd-btn btn-blue" href="">刷新</a>
+						<div class="xyd-inlineblock" style="width:20px;"></div>
+						<a id="go-home" class="xyd-btn btn-blue" target="_top" href="javascript:void(0)">转到主页</a>
+					</div>
+				</div>
+				{{/if}}
+			{{/each}}
+		</div>
+	{{/if}}
+</script>
+<script type="text/javascript">
+	(function($){
+		$(document).ready(main_documentReady);
+		
+		function main_documentReady(){
+			
+			function getUrlParam (name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r = window.location.search.substr(1).match(reg);
+				if (r != null) return unescape(r[2]); return null;
+			}
+			
+			var _template_data,html;
+			
+			_template_data = {
+				data : [
+					{name:"400",text : "请求无效",info : "抱歉，请求不对，猜猜看~"},
+					{name:"404",text : "页面未找到",info : "抱歉，页面好像去火星了~"},
+					{name:"500",text : "服务器内部错误",info : "抱歉，服务器好像出错了~"}
+				]
+			};
+			
+			var _error = getUrlParam("error");
+			
+			_template_data["param"] = _error;
+			_template_data["isRun"] = _error!=undefined &&_error.length>0 ? true : false;
+			html = template('src_template_error', _template_data);	
+     		if(html!="") document.getElementById('element_temppate_error').innerHTML = html;
+     		
+     		$("#go-home").click(function(){
+     			var _this = $(this);
+     			_this.attr("href",window.XYDCONFIG.PROBJECT_PATH+"/page/index.html?date="+new Date().getTime()).trigger();
+			});
+			//$("body").load("xyd_error_"+getUrlParam("error")+".html?date="+new Date().getTime());
+		}
+	})(jQuery);
+
+</script>

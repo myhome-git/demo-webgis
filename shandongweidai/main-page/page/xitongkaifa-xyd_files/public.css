@@ -1,0 +1,33 @@
+/* CSS Document */
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff; color:#414040;font-size:14px; margin-top:0px;font-family:"microsoft Yahei","Arial Narrow"; line-height:22px;}
+
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+a{ text-decoration:none;}
+
+.left{ float: left;}
+.right{ float: right;}
+.clearfix{ zoom:1;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+a{ outline: none;}
+
+ * 
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+/**
+ * 只针对ie6、7
+ * 下面的命令会触发hasLayout，从而包含浮动
+ */
+.cf {
+    *zoom: 1;
+}
